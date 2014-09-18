@@ -1,0 +1,6 @@
+.fuse*
+i3/startup.log
+mutt/mailboxes
+*.pyc
+pycard/abook.db
+vim/.netrwhist
