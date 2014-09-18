@@ -1,0 +1,47 @@
+# Account specific setting, need to be sourced at each account change
+
+#
+# Identity
+#
+
+set realname="David Beniamine"
+set my_name="David Beniamine"
+my_hdr User-Agent: Mutt
+
+#
+# Mailbox
+#
+
+#Folder
+set folder="$my_maildir/$my_account"
+
+set spoolfile=+INBOX
+set record=+Sent
+set postponed=+Drafts
+
+#Signature
+set signature="~/.mutt/signature-$my_account"
+
+#Check mail current account
+macro index,pager Ga "<shell-escape>xterm -e offlineimap -o -u ttyui -a $my_account &<enter>" "Check mail (current account)"
+
+#
+# Mu
+#
+
+#mu home
+set my_muhome="$my_mudir/$my_account"
+
+# Search complete maildir
+macro index <F2> "<change-folder-readonly>$my_mudir/results<enter><shell-escape>mu find --muhome=$my_muhome --clearlinks --linksdir=$my_mudir/results --format=links "    "mu find"
+macro index <F3> "<change-folder-readonly>$my_mudir/results\n"       "display mu find results"
+macro index <F4> "<shell-escape>mu index --muhome=$my_muhome --maildir=$folder<enter>"    "mu update index"
+macro index <F5> "<shell-escape>~/scripts/muClean.sh<enter>"   "Clean mu results"
+
+#
+# pgp signature
+#
+set pgp_autosign=yes
+set pgp_replyencrypt=yes
+unset pgp_autoencrypt
+set pgp_timeout=3600

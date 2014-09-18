@@ -1,0 +1,13 @@
+/usr/include/assert.h
+/usr/include/getopt.h
+/usr/include/math.h
+/usr/include/pthread.h
+/usr/include/semaphore.h
+/usr/include/string.h
+/usr/include/time.h
+/usr/include/stdc-predef.h
+/usr/include/stdio_ext.h
+/usr/include/stdlib.h
+/usr/include/stdint.h
+/usr/include/stdio.h
+

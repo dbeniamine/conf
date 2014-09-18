@@ -1,0 +1,790 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BUFSIZ	/usr/include/stdio.h	127;"	d
+CLK_TCK	/usr/include/time.h	46;"	d
+DOMAIN	/usr/include/math.h	345;"	d
+EOF	/usr/include/stdio.h	134;"	d
+EXIT_FAILURE	/usr/include/stdlib.h	133;"	d
+EXIT_SUCCESS	/usr/include/stdlib.h	134;"	d
+FILE	/usr/include/stdio.h	/^typedef struct _IO_FILE FILE;$/;"	t	typeref:struct:_IO_FILE
+FP_INFINITE	/usr/include/math.h	/^    FP_INFINITE =$/;"	e	enum:__anon1
+FP_INFINITE	/usr/include/math.h	195;"	d
+FP_NAN	/usr/include/math.h	/^    FP_NAN =$/;"	e	enum:__anon1
+FP_NAN	/usr/include/math.h	192;"	d
+FP_NORMAL	/usr/include/math.h	/^    FP_NORMAL =$/;"	e	enum:__anon1
+FP_NORMAL	/usr/include/math.h	204;"	d
+FP_SUBNORMAL	/usr/include/math.h	/^    FP_SUBNORMAL =$/;"	e	enum:__anon1
+FP_SUBNORMAL	/usr/include/math.h	201;"	d
+FP_ZERO	/usr/include/math.h	/^    FP_ZERO =$/;"	e	enum:__anon1
+FP_ZERO	/usr/include/math.h	198;"	d
+FSETLOCKING_BYCALLER	/usr/include/stdio_ext.h	/^  FSETLOCKING_BYCALLER$/;"	e	enum:__anon15
+FSETLOCKING_BYCALLER	/usr/include/stdio_ext.h	38;"	d
+FSETLOCKING_INTERNAL	/usr/include/stdio_ext.h	/^  FSETLOCKING_INTERNAL,$/;"	e	enum:__anon15
+FSETLOCKING_INTERNAL	/usr/include/stdio_ext.h	35;"	d
+FSETLOCKING_QUERY	/usr/include/stdio_ext.h	/^  FSETLOCKING_QUERY = 0,$/;"	e	enum:__anon15
+FSETLOCKING_QUERY	/usr/include/stdio_ext.h	31;"	d
+HUGE	/usr/include/math.h	353;"	d
+INT16_C	/usr/include/stdint.h	279;"	d
+INT16_MAX	/usr/include/stdint.h	161;"	d
+INT16_MIN	/usr/include/stdint.h	156;"	d
+INT32_C	/usr/include/stdint.h	280;"	d
+INT32_MAX	/usr/include/stdint.h	162;"	d
+INT32_MIN	/usr/include/stdint.h	157;"	d
+INT64_C	/usr/include/stdint.h	282;"	d
+INT64_C	/usr/include/stdint.h	284;"	d
+INT64_MAX	/usr/include/stdint.h	163;"	d
+INT64_MIN	/usr/include/stdint.h	158;"	d
+INT8_C	/usr/include/stdint.h	278;"	d
+INT8_MAX	/usr/include/stdint.h	160;"	d
+INT8_MIN	/usr/include/stdint.h	155;"	d
+INTMAX_C	/usr/include/stdint.h	299;"	d
+INTMAX_C	/usr/include/stdint.h	302;"	d
+INTMAX_MAX	/usr/include/stdint.h	238;"	d
+INTMAX_MIN	/usr/include/stdint.h	236;"	d
+INTPTR_MAX	/usr/include/stdint.h	226;"	d
+INTPTR_MAX	/usr/include/stdint.h	230;"	d
+INTPTR_MIN	/usr/include/stdint.h	225;"	d
+INTPTR_MIN	/usr/include/stdint.h	229;"	d
+INT_FAST16_MAX	/usr/include/stdint.h	203;"	d
+INT_FAST16_MAX	/usr/include/stdint.h	206;"	d
+INT_FAST16_MIN	/usr/include/stdint.h	193;"	d
+INT_FAST16_MIN	/usr/include/stdint.h	196;"	d
+INT_FAST32_MAX	/usr/include/stdint.h	204;"	d
+INT_FAST32_MAX	/usr/include/stdint.h	207;"	d
+INT_FAST32_MIN	/usr/include/stdint.h	194;"	d
+INT_FAST32_MIN	/usr/include/stdint.h	197;"	d
+INT_FAST64_MAX	/usr/include/stdint.h	209;"	d
+INT_FAST64_MIN	/usr/include/stdint.h	199;"	d
+INT_FAST8_MAX	/usr/include/stdint.h	201;"	d
+INT_FAST8_MIN	/usr/include/stdint.h	191;"	d
+INT_LEAST16_MAX	/usr/include/stdint.h	179;"	d
+INT_LEAST16_MIN	/usr/include/stdint.h	174;"	d
+INT_LEAST32_MAX	/usr/include/stdint.h	180;"	d
+INT_LEAST32_MIN	/usr/include/stdint.h	175;"	d
+INT_LEAST64_MAX	/usr/include/stdint.h	181;"	d
+INT_LEAST64_MIN	/usr/include/stdint.h	176;"	d
+INT_LEAST8_MAX	/usr/include/stdint.h	178;"	d
+INT_LEAST8_MIN	/usr/include/stdint.h	173;"	d
+MATH_ERREXCEPT	/usr/include/math.h	274;"	d
+MATH_ERRNO	/usr/include/math.h	273;"	d
+MAXFLOAT	/usr/include/math.h	359;"	d
+MB_CUR_MAX	/usr/include/stdlib.h	138;"	d
+M_1_PI	/usr/include/math.h	375;"	d
+M_1_PIl	/usr/include/math.h	394;"	d
+M_2_PI	/usr/include/math.h	376;"	d
+M_2_PIl	/usr/include/math.h	395;"	d
+M_2_SQRTPI	/usr/include/math.h	377;"	d
+M_2_SQRTPIl	/usr/include/math.h	396;"	d
+M_E	/usr/include/math.h	367;"	d
+M_El	/usr/include/math.h	386;"	d
+M_LN10	/usr/include/math.h	371;"	d
+M_LN10l	/usr/include/math.h	390;"	d
+M_LN2	/usr/include/math.h	370;"	d
+M_LN2l	/usr/include/math.h	389;"	d
+M_LOG10E	/usr/include/math.h	369;"	d
+M_LOG10El	/usr/include/math.h	388;"	d
+M_LOG2E	/usr/include/math.h	368;"	d
+M_LOG2El	/usr/include/math.h	387;"	d
+M_PI	/usr/include/math.h	372;"	d
+M_PI_2	/usr/include/math.h	373;"	d
+M_PI_2l	/usr/include/math.h	392;"	d
+M_PI_4	/usr/include/math.h	374;"	d
+M_PI_4l	/usr/include/math.h	393;"	d
+M_PIl	/usr/include/math.h	391;"	d
+M_SQRT1_2	/usr/include/math.h	379;"	d
+M_SQRT1_2l	/usr/include/math.h	398;"	d
+M_SQRT2	/usr/include/math.h	378;"	d
+M_SQRT2l	/usr/include/math.h	397;"	d
+OVERFLOW	/usr/include/math.h	347;"	d
+PLOSS	/usr/include/math.h	350;"	d
+PTHREAD_ADAPTIVE_MUTEX_INITIALIZER_NP	/usr/include/pthread.h	102;"	d
+PTHREAD_ADAPTIVE_MUTEX_INITIALIZER_NP	/usr/include/pthread.h	104;"	d
+PTHREAD_ADAPTIVE_MUTEX_INITIALIZER_NP	/usr/include/pthread.h	116;"	d
+PTHREAD_BARRIER_SERIAL_THREAD	/usr/include/pthread.h	235;"	d
+PTHREAD_CANCELED	/usr/include/pthread.h	224;"	d
+PTHREAD_CANCEL_ASYNCHRONOUS	/usr/include/pthread.h	/^  PTHREAD_CANCEL_ASYNCHRONOUS$/;"	e	enum:__anon12
+PTHREAD_CANCEL_ASYNCHRONOUS	/usr/include/pthread.h	222;"	d
+PTHREAD_CANCEL_DEFERRED	/usr/include/pthread.h	/^  PTHREAD_CANCEL_DEFERRED,$/;"	e	enum:__anon12
+PTHREAD_CANCEL_DEFERRED	/usr/include/pthread.h	220;"	d
+PTHREAD_CANCEL_DISABLE	/usr/include/pthread.h	/^  PTHREAD_CANCEL_DISABLE$/;"	e	enum:__anon11
+PTHREAD_CANCEL_DISABLE	/usr/include/pthread.h	215;"	d
+PTHREAD_CANCEL_ENABLE	/usr/include/pthread.h	/^  PTHREAD_CANCEL_ENABLE,$/;"	e	enum:__anon11
+PTHREAD_CANCEL_ENABLE	/usr/include/pthread.h	213;"	d
+PTHREAD_COND_INITIALIZER	/usr/include/pthread.h	197;"	d
+PTHREAD_CREATE_DETACHED	/usr/include/pthread.h	/^  PTHREAD_CREATE_DETACHED$/;"	e	enum:__anon3
+PTHREAD_CREATE_DETACHED	/usr/include/pthread.h	37;"	d
+PTHREAD_CREATE_JOINABLE	/usr/include/pthread.h	/^  PTHREAD_CREATE_JOINABLE,$/;"	e	enum:__anon3
+PTHREAD_CREATE_JOINABLE	/usr/include/pthread.h	35;"	d
+PTHREAD_ERRORCHECK_MUTEX_INITIALIZER_NP	/usr/include/pthread.h	100;"	d
+PTHREAD_ERRORCHECK_MUTEX_INITIALIZER_NP	/usr/include/pthread.h	114;"	d
+PTHREAD_EXPLICIT_SCHED	/usr/include/pthread.h	/^  PTHREAD_EXPLICIT_SCHED$/;"	e	enum:__anon8
+PTHREAD_EXPLICIT_SCHED	/usr/include/pthread.h	171;"	d
+PTHREAD_INHERIT_SCHED	/usr/include/pthread.h	/^  PTHREAD_INHERIT_SCHED,$/;"	e	enum:__anon8
+PTHREAD_INHERIT_SCHED	/usr/include/pthread.h	169;"	d
+PTHREAD_MUTEX_ADAPTIVE_NP	/usr/include/pthread.h	/^  PTHREAD_MUTEX_ADAPTIVE_NP$/;"	e	enum:__anon4
+PTHREAD_MUTEX_DEFAULT	/usr/include/pthread.h	/^  PTHREAD_MUTEX_DEFAULT = PTHREAD_MUTEX_NORMAL$/;"	e	enum:__anon4
+PTHREAD_MUTEX_ERRORCHECK	/usr/include/pthread.h	/^  PTHREAD_MUTEX_ERRORCHECK = PTHREAD_MUTEX_ERRORCHECK_NP,$/;"	e	enum:__anon4
+PTHREAD_MUTEX_ERRORCHECK_NP	/usr/include/pthread.h	/^  PTHREAD_MUTEX_ERRORCHECK_NP,$/;"	e	enum:__anon4
+PTHREAD_MUTEX_FAST_NP	/usr/include/pthread.h	/^  , PTHREAD_MUTEX_FAST_NP = PTHREAD_MUTEX_TIMED_NP$/;"	e	enum:__anon4
+PTHREAD_MUTEX_INITIALIZER	/usr/include/pthread.h	109;"	d
+PTHREAD_MUTEX_INITIALIZER	/usr/include/pthread.h	95;"	d
+PTHREAD_MUTEX_NORMAL	/usr/include/pthread.h	/^  PTHREAD_MUTEX_NORMAL = PTHREAD_MUTEX_TIMED_NP,$/;"	e	enum:__anon4
+PTHREAD_MUTEX_RECURSIVE	/usr/include/pthread.h	/^  PTHREAD_MUTEX_RECURSIVE = PTHREAD_MUTEX_RECURSIVE_NP,$/;"	e	enum:__anon4
+PTHREAD_MUTEX_RECURSIVE_NP	/usr/include/pthread.h	/^  PTHREAD_MUTEX_RECURSIVE_NP,$/;"	e	enum:__anon4
+PTHREAD_MUTEX_ROBUST	/usr/include/pthread.h	/^  PTHREAD_MUTEX_ROBUST,$/;"	e	enum:__anon5
+PTHREAD_MUTEX_ROBUST_NP	/usr/include/pthread.h	/^  PTHREAD_MUTEX_ROBUST_NP = PTHREAD_MUTEX_ROBUST$/;"	e	enum:__anon5
+PTHREAD_MUTEX_STALLED	/usr/include/pthread.h	/^  PTHREAD_MUTEX_STALLED,$/;"	e	enum:__anon5
+PTHREAD_MUTEX_STALLED_NP	/usr/include/pthread.h	/^  PTHREAD_MUTEX_STALLED_NP = PTHREAD_MUTEX_STALLED,$/;"	e	enum:__anon5
+PTHREAD_MUTEX_TIMED_NP	/usr/include/pthread.h	/^  PTHREAD_MUTEX_TIMED_NP,$/;"	e	enum:__anon4
+PTHREAD_ONCE_INIT	/usr/include/pthread.h	228;"	d
+PTHREAD_PRIO_INHERIT	/usr/include/pthread.h	/^  PTHREAD_PRIO_INHERIT,$/;"	e	enum:__anon6
+PTHREAD_PRIO_NONE	/usr/include/pthread.h	/^  PTHREAD_PRIO_NONE,$/;"	e	enum:__anon6
+PTHREAD_PRIO_PROTECT	/usr/include/pthread.h	/^  PTHREAD_PRIO_PROTECT$/;"	e	enum:__anon6
+PTHREAD_PROCESS_PRIVATE	/usr/include/pthread.h	/^  PTHREAD_PROCESS_PRIVATE,$/;"	e	enum:__anon10
+PTHREAD_PROCESS_PRIVATE	/usr/include/pthread.h	189;"	d
+PTHREAD_PROCESS_SHARED	/usr/include/pthread.h	/^  PTHREAD_PROCESS_SHARED$/;"	e	enum:__anon10
+PTHREAD_PROCESS_SHARED	/usr/include/pthread.h	191;"	d
+PTHREAD_RECURSIVE_MUTEX_INITIALIZER_NP	/usr/include/pthread.h	112;"	d
+PTHREAD_RECURSIVE_MUTEX_INITIALIZER_NP	/usr/include/pthread.h	98;"	d
+PTHREAD_RWLOCK_DEFAULT_NP	/usr/include/pthread.h	/^  PTHREAD_RWLOCK_DEFAULT_NP = PTHREAD_RWLOCK_PREFER_READER_NP$/;"	e	enum:__anon7
+PTHREAD_RWLOCK_INITIALIZER	/usr/include/pthread.h	143;"	d
+PTHREAD_RWLOCK_PREFER_READER_NP	/usr/include/pthread.h	/^  PTHREAD_RWLOCK_PREFER_READER_NP,$/;"	e	enum:__anon7
+PTHREAD_RWLOCK_PREFER_WRITER_NONRECURSIVE_NP	/usr/include/pthread.h	/^  PTHREAD_RWLOCK_PREFER_WRITER_NONRECURSIVE_NP,$/;"	e	enum:__anon7
+PTHREAD_RWLOCK_PREFER_WRITER_NP	/usr/include/pthread.h	/^  PTHREAD_RWLOCK_PREFER_WRITER_NP,$/;"	e	enum:__anon7
+PTHREAD_RWLOCK_WRITER_NONRECURSIVE_INITIALIZER_NP	/usr/include/pthread.h	147;"	d
+PTHREAD_RWLOCK_WRITER_NONRECURSIVE_INITIALIZER_NP	/usr/include/pthread.h	152;"	d
+PTHREAD_RWLOCK_WRITER_NONRECURSIVE_INITIALIZER_NP	/usr/include/pthread.h	156;"	d
+PTHREAD_SCOPE_PROCESS	/usr/include/pthread.h	/^  PTHREAD_SCOPE_PROCESS$/;"	e	enum:__anon9
+PTHREAD_SCOPE_PROCESS	/usr/include/pthread.h	181;"	d
+PTHREAD_SCOPE_SYSTEM	/usr/include/pthread.h	/^  PTHREAD_SCOPE_SYSTEM,$/;"	e	enum:__anon9
+PTHREAD_SCOPE_SYSTEM	/usr/include/pthread.h	179;"	d
+PTRDIFF_MAX	/usr/include/stdint.h	249;"	d
+PTRDIFF_MAX	/usr/include/stdint.h	252;"	d
+PTRDIFF_MIN	/usr/include/stdint.h	248;"	d
+PTRDIFF_MIN	/usr/include/stdint.h	251;"	d
+P_tmpdir	/usr/include/stdio.h	151;"	d
+RAND_MAX	/usr/include/stdlib.h	128;"	d
+SEEK_CUR	/usr/include/stdio.h	141;"	d
+SEEK_DATA	/usr/include/stdio.h	144;"	d
+SEEK_END	/usr/include/stdio.h	142;"	d
+SEEK_HOLE	/usr/include/stdio.h	145;"	d
+SEEK_SET	/usr/include/stdio.h	140;"	d
+SIG_ATOMIC_MAX	/usr/include/stdint.h	257;"	d
+SIG_ATOMIC_MIN	/usr/include/stdint.h	256;"	d
+SING	/usr/include/math.h	346;"	d
+SIZE_MAX	/usr/include/stdint.h	261;"	d
+SIZE_MAX	/usr/include/stdint.h	263;"	d
+TIME_UTC	/usr/include/time.h	182;"	d
+TLOSS	/usr/include/math.h	349;"	d
+UINT16_C	/usr/include/stdint.h	289;"	d
+UINT16_MAX	/usr/include/stdint.h	167;"	d
+UINT32_C	/usr/include/stdint.h	290;"	d
+UINT32_MAX	/usr/include/stdint.h	168;"	d
+UINT64_C	/usr/include/stdint.h	292;"	d
+UINT64_C	/usr/include/stdint.h	294;"	d
+UINT64_MAX	/usr/include/stdint.h	169;"	d
+UINT8_C	/usr/include/stdint.h	288;"	d
+UINT8_MAX	/usr/include/stdint.h	166;"	d
+UINTMAX_C	/usr/include/stdint.h	300;"	d
+UINTMAX_C	/usr/include/stdint.h	303;"	d
+UINTMAX_MAX	/usr/include/stdint.h	241;"	d
+UINTPTR_MAX	/usr/include/stdint.h	227;"	d
+UINTPTR_MAX	/usr/include/stdint.h	231;"	d
+UINT_FAST16_MAX	/usr/include/stdint.h	214;"	d
+UINT_FAST16_MAX	/usr/include/stdint.h	217;"	d
+UINT_FAST32_MAX	/usr/include/stdint.h	215;"	d
+UINT_FAST32_MAX	/usr/include/stdint.h	218;"	d
+UINT_FAST64_MAX	/usr/include/stdint.h	220;"	d
+UINT_FAST8_MAX	/usr/include/stdint.h	212;"	d
+UINT_LEAST16_MAX	/usr/include/stdint.h	185;"	d
+UINT_LEAST32_MAX	/usr/include/stdint.h	186;"	d
+UINT_LEAST64_MAX	/usr/include/stdint.h	187;"	d
+UINT_LEAST8_MAX	/usr/include/stdint.h	184;"	d
+UNDERFLOW	/usr/include/math.h	348;"	d
+WCHAR_MAX	/usr/include/stdint.h	270;"	d
+WCHAR_MIN	/usr/include/stdint.h	269;"	d
+WEXITSTATUS	/usr/include/stdlib.h	84;"	d
+WIFCONTINUED	/usr/include/stdlib.h	91;"	d
+WIFEXITED	/usr/include/stdlib.h	87;"	d
+WIFSIGNALED	/usr/include/stdlib.h	88;"	d
+WIFSTOPPED	/usr/include/stdlib.h	89;"	d
+WINT_MAX	/usr/include/stdint.h	275;"	d
+WINT_MIN	/usr/include/stdint.h	274;"	d
+WSTOPSIG	/usr/include/stdlib.h	86;"	d
+WTERMSIG	/usr/include/stdlib.h	85;"	d
+X_TLOSS	/usr/include/math.h	342;"	d
+_ASSERT_H	/usr/include/assert.h	24;"	d
+_ASSERT_H	/usr/include/assert.h	34;"	d
+_ASSERT_H_DECLS	/usr/include/assert.h	65;"	d
+_GETOPT_H	/usr/include/getopt.h	22;"	d
+_IEEE_	/usr/include/math.h	/^  _IEEE_ = -1,	\/* According to IEEE 754\/IEEE 854.  *\/$/;"	e	enum:__anon2
+_IOFBF	/usr/include/stdio.h	120;"	d
+_IOLBF	/usr/include/stdio.h	121;"	d
+_IONBF	/usr/include/stdio.h	122;"	d
+_ISOC_	/usr/include/math.h	/^  _ISOC_	\/* Actually this is ISO C99.  *\/$/;"	e	enum:__anon2
+_LIB_VERSION_TYPE	/usr/include/math.h	/^} _LIB_VERSION_TYPE;$/;"	t	typeref:enum:__anon2
+_MATH_H	/usr/include/math.h	24;"	d
+_Mdouble_	/usr/include/math.h	127;"	d
+_Mdouble_	/usr/include/math.h	133;"	d
+_Mdouble_	/usr/include/math.h	65;"	d
+_Mdouble_	/usr/include/math.h	70;"	d
+_Mdouble_	/usr/include/math.h	84;"	d
+_Mdouble_	/usr/include/math.h	89;"	d
+_Mdouble_BEGIN_NAMESPACE	/usr/include/math.h	129;"	d
+_Mdouble_BEGIN_NAMESPACE	/usr/include/math.h	134;"	d
+_Mdouble_BEGIN_NAMESPACE	/usr/include/math.h	67;"	d
+_Mdouble_BEGIN_NAMESPACE	/usr/include/math.h	71;"	d
+_Mdouble_BEGIN_NAMESPACE	/usr/include/math.h	86;"	d
+_Mdouble_BEGIN_NAMESPACE	/usr/include/math.h	90;"	d
+_Mdouble_END_NAMESPACE	/usr/include/math.h	130;"	d
+_Mdouble_END_NAMESPACE	/usr/include/math.h	135;"	d
+_Mdouble_END_NAMESPACE	/usr/include/math.h	68;"	d
+_Mdouble_END_NAMESPACE	/usr/include/math.h	72;"	d
+_Mdouble_END_NAMESPACE	/usr/include/math.h	87;"	d
+_Mdouble_END_NAMESPACE	/usr/include/math.h	91;"	d
+_Mfloat_	/usr/include/math.h	82;"	d
+_Mlong_double_	/usr/include/math.h	125;"	d
+_POSIX_	/usr/include/math.h	/^  _POSIX_,$/;"	e	enum:__anon2
+_PTHREAD_H	/usr/include/pthread.h	19;"	d
+_SEMAPHORE_H	/usr/include/semaphore.h	19;"	d
+_STDC_PREDEF_H	/usr/include/stdc-predef.h	19;"	d
+_STDINT_H	/usr/include/stdint.h	23;"	d
+_STDIO_EXT_H	/usr/include/stdio_ext.h	23;"	d
+_STDIO_H	/usr/include/stdio.h	26;"	d
+_STDIO_USES_IOSTREAM	/usr/include/stdio.h	72;"	d
+_STDLIB_H	/usr/include/stdlib.h	37;"	d
+_STRING_H	/usr/include/string.h	23;"	d
+_SVID_	/usr/include/math.h	/^  _SVID_,	\/* According to System V, release 4.  *\/$/;"	e	enum:__anon2
+_TIME_H	/usr/include/time.h	26;"	d
+_VA_LIST_DEFINED	/usr/include/stdio.h	80;"	d
+_XOPEN_	/usr/include/math.h	/^  _XOPEN_,	\/* Nowadays also Unix98.  *\/$/;"	e	enum:__anon2
+__ASSERT_FUNCTION	/usr/include/assert.h	106;"	d
+__ASSERT_VOID_CAST	/usr/include/assert.h	26;"	d
+__ASSERT_VOID_CAST	/usr/include/assert.h	38;"	d
+__ASSERT_VOID_CAST	/usr/include/assert.h	40;"	d
+__COMPAR_FN_T	/usr/include/stdlib.h	741;"	d
+__CORRECT_ISO_CPP_STRING_H_PROTO	/usr/include/string.h	40;"	d
+__FILE	/usr/include/stdio.h	/^typedef struct _IO_FILE __FILE;$/;"	t	typeref:struct:_IO_FILE
+__FILE_defined	/usr/include/stdio.h	56;"	d
+__GNUC_PREREQ	/usr/include/getopt.h	38;"	d
+__INT64_C	/usr/include/stdint.h	145;"	d
+__INT64_C	/usr/include/stdint.h	148;"	d
+__MATHCALL	/usr/include/math.h	143;"	d
+__MATHCALL	/usr/include/math.h	52;"	d
+__MATHCALLX	/usr/include/math.h	57;"	d
+__MATHDECL	/usr/include/math.h	142;"	d
+__MATHDECL	/usr/include/math.h	54;"	d
+__MATHDECLX	/usr/include/math.h	59;"	d
+__MATHDECL_1	/usr/include/math.h	113;"	d
+__MATHDECL_1	/usr/include/math.h	117;"	d
+__MATHDECL_1	/usr/include/math.h	141;"	d
+__MATHDECL_1	/usr/include/math.h	62;"	d
+__MATHDECL_2	/usr/include/math.h	114;"	d
+__MATH_DECLARE_LDOUBLE	/usr/include/math.h	131;"	d
+__MATH_PRECNAME	/usr/include/math.h	128;"	d
+__MATH_PRECNAME	/usr/include/math.h	136;"	d
+__MATH_PRECNAME	/usr/include/math.h	66;"	d
+__MATH_PRECNAME	/usr/include/math.h	73;"	d
+__MATH_PRECNAME	/usr/include/math.h	85;"	d
+__MATH_PRECNAME	/usr/include/math.h	92;"	d
+__NO_MATH_INLINES	/usr/include/math.h	406;"	d
+__PTHREAD_RWLOCK_INT_FLAGS_SHARED	/usr/include/pthread.h	138;"	d
+__PTHREAD_SPINS	/usr/include/pthread.h	87;"	d
+__PTHREAD_SPINS	/usr/include/pthread.h	89;"	d
+__PTHREAD_SPINS	/usr/include/pthread.h	91;"	d
+__REDIRECT_NTH	/usr/include/getopt.h	/^  extern int __REDIRECT_NTH (getopt, (int ___argc, char *const *___argv,$/;"	p	signature:(getopt, (int ___argc, char *const *___argv, const char *__shortopts), __posix_getopt)
+__REDIRECT_NTH	/usr/include/math.h	/^extern double __REDIRECT_NTH (nexttoward, (double __x, long double __y),$/;"	p	signature:(nexttoward, (double __x, long double __y), nextafter)
+__REDIRECT_NTH	/usr/include/math.h	/^extern float __REDIRECT_NTH (nexttowardf, (float __x, long double __y),$/;"	p	signature:(nexttowardf, (float __x, long double __y), __nldbl_nexttowardf)
+__REDIRECT_NTH	/usr/include/math.h	/^extern long double __REDIRECT_NTH (nexttowardl,$/;"	p	signature:(nexttowardl, (long double __x, long double __y), nextafter)
+__REDIRECT_NTH	/usr/include/stdio.h	/^extern int __REDIRECT_NTH (sscanf, (const char *__restrict __s,$/;"	p	signature:(sscanf, (const char *__restrict __s, const char *__restrict __format, ...), __isoc99_sscanf)
+__REDIRECT_NTH	/usr/include/stdio.h	/^extern int __REDIRECT_NTH (vsscanf,$/;"	p	signature:(vsscanf, (const char *__restrict __s, const char *__restrict __format, _G_va_list __arg), __isoc99_vsscanf)
+__STDC_IEC_559_COMPLEX__	/usr/include/stdc-predef.h	46;"	d
+__STDC_IEC_559_COMPLEX__	/usr/include/stdc-predef.h	49;"	d
+__STDC_IEC_559__	/usr/include/stdc-predef.h	38;"	d
+__STDC_IEC_559__	/usr/include/stdc-predef.h	41;"	d
+__STDC_ISO_10646__	/usr/include/stdc-predef.h	54;"	d
+__STDC_NO_THREADS__	/usr/include/stdc-predef.h	57;"	d
+__THROW	/usr/include/getopt.h	41;"	d
+__THROW	/usr/include/getopt.h	43;"	d
+__THROW	/usr/include/pthread.h	/^					  int __pref) __THROW __nonnull ((1));$/;"	p	signature:(1)
+__THROW	/usr/include/pthread.h	/^					int __pshared) __THROW __nonnull ((1));$/;"	p	signature:(1)
+__THROW	/usr/include/pthread.h	/^				       __param) __THROW __nonnull ((1, 2));$/;"	p	signature:(1, 2)
+__THROW	/usr/include/pthread.h	/^				  size_t __stacksize) __THROW __nonnull ((1));$/;"	p	signature:(1)
+__THROW	/usr/include/pthread.h	/^				__attr) __THROW __nonnull ((1));$/;"	p	signature:(1)
+__THROW	/usr/include/pthread.h	/^     __THROW __nonnull ((1));$/;"	p	signature:(1)
+__THROW	/usr/include/pthread.h	/^     __THROW __nonnull ((1, 2));$/;"	p	signature:(1, 2)
+__THROW	/usr/include/pthread.h	/^     __THROW __nonnull ((1, 2, 3));$/;"	p	signature:(1, 2, 3)
+__THROW	/usr/include/pthread.h	/^     __THROW __nonnull ((1, 3));$/;"	p	signature:(1, 3)
+__THROW	/usr/include/pthread.h	/^     __THROW __nonnull ((2));$/;"	p	signature:(2)
+__THROW	/usr/include/pthread.h	/^     __THROW __nonnull ((2, 3));$/;"	p	signature:(2, 3)
+__THROW	/usr/include/pthread.h	/^     __THROW __nonnull ((3));$/;"	p	signature:(3)
+__THROW	/usr/include/pthread.h	/^extern int pthread_attr_init (pthread_attr_t *__attr) __THROW __nonnull ((1));$/;"	p	signature:(1)
+__THROW	/usr/include/stdlib.h	/^			  __locale_t __loc) __THROW __nonnull ((1, 4));$/;"	p	signature:(1, 4)
+__THROW	/usr/include/stdlib.h	/^			size_t __statelen) __THROW __nonnull ((2));$/;"	p	signature:(2)
+__THROW	/usr/include/stdlib.h	/^		      double *__restrict __result) __THROW __nonnull ((1, 2));$/;"	p	signature:(1, 2)
+__THROW	/usr/include/stdlib.h	/^		     char **__restrict __endptr) __THROW __nonnull ((1));$/;"	p	signature:(1)
+__THROW	/usr/include/stdlib.h	/^		     int32_t *__restrict __result) __THROW __nonnull ((1, 2));$/;"	p	signature:(1, 2)
+__THROW	/usr/include/stdlib.h	/^		     struct drand48_data *__buffer) __THROW __nonnull ((1, 2));$/;"	p	signature:(1, 2)
+__THROW	/usr/include/stdlib.h	/^		   size_t __len) __THROW __nonnull ((3, 4, 5));$/;"	p	signature:(3, 4, 5)
+__THROW	/usr/include/stdlib.h	/^     __THROW __nonnull ((1));$/;"	p	signature:(1)
+__THROW	/usr/include/stdlib.h	/^     __THROW __nonnull ((1, 2));$/;"	p	signature:(1, 2)
+__THROW	/usr/include/stdlib.h	/^     __THROW __nonnull ((1, 3));$/;"	p	signature:(1, 3)
+__THROW	/usr/include/stdlib.h	/^     __THROW __nonnull ((1, 4));$/;"	p	signature:(1, 4)
+__THROW	/usr/include/stdlib.h	/^     __THROW __nonnull ((2));$/;"	p	signature:(2)
+__THROW	/usr/include/stdlib.h	/^     __THROW __nonnull ((2, 4));$/;"	p	signature:(2, 4)
+__THROW	/usr/include/stdlib.h	/^     __THROW __nonnull ((3, 4, 5));$/;"	p	signature:(3, 4, 5)
+__THROW	/usr/include/stdlib.h	/^extern char *mktemp (char *__template) __THROW __nonnull ((1));$/;"	p	signature:(1)
+__THROW	/usr/include/stdlib.h	/^extern char *setstate (char *__statebuf) __THROW __nonnull ((1));$/;"	p	signature:(1)
+__THROW	/usr/include/stdlib.h	/^extern double erand48 (unsigned short int __xsubi[3]) __THROW __nonnull ((1));$/;"	p	signature:(1)
+__THROW	/usr/include/stdlib.h	/^extern int at_quick_exit (void (*__func) (void)) __THROW __nonnull ((1));$/;"	p	signature:(1)
+__THROW	/usr/include/stdlib.h	/^extern int atexit (void (*__func) (void)) __THROW __nonnull ((1));$/;"	p	signature:(1)
+__THROW	/usr/include/stdlib.h	/^extern int putenv (char *__string) __THROW __nonnull ((1));$/;"	p	signature:(1)
+__THROW	/usr/include/stdlib.h	/^extern int unsetenv (const char *__name) __THROW __nonnull ((1));$/;"	p	signature:(1)
+__THROW	/usr/include/stdlib.h	/^extern void lcong48 (unsigned short int __param[7]) __THROW __nonnull ((1));$/;"	p	signature:(1)
+__THROW	/usr/include/stdlib.h	/^extern void setkey (const char *__key) __THROW __nonnull ((1));$/;"	p	signature:(1)
+__THROW	/usr/include/string.h	/^			 __locale_t __l) __THROW __nonnull ((2, 4));$/;"	p	signature:(2, 4)
+__THROW	/usr/include/string.h	/^		      size_t __n) __THROW __nonnull ((1, 2));$/;"	p	signature:(1, 2)
+__THROW	/usr/include/string.h	/^		     size_t __n) __THROW __nonnull ((1, 2));$/;"	p	signature:(1, 2)
+__THROW	/usr/include/string.h	/^     __THROW __nonnull ((1, 2));$/;"	p	signature:(1, 2)
+__THROW	/usr/include/string.h	/^     __THROW __nonnull ((2));$/;"	p	signature:(2)
+__THROW	/usr/include/string.h	/^     __THROW __nonnull ((2, 3));$/;"	p	signature:(2, 3)
+__THROW	/usr/include/string.h	/^extern char *basename (const char *__filename) __THROW __nonnull ((1));$/;"	p	signature:(1)
+__THROW	/usr/include/string.h	/^extern char *strfry (char *__string) __THROW __nonnull ((1));$/;"	p	signature:(1)
+__THROW	/usr/include/string.h	/^extern void *memfrob (void *__s, size_t __n) __THROW __nonnull ((1));$/;"	p	signature:(1)
+__THROW	/usr/include/string.h	/^extern void *memset (void *__s, int __c, size_t __n) __THROW __nonnull ((1));$/;"	p	signature:(1)
+__THROW	/usr/include/string.h	/^extern void __bzero (void *__s, size_t __n) __THROW __nonnull ((1));$/;"	p	signature:(1)
+__THROW	/usr/include/string.h	/^extern void bzero (void *__s, size_t __n) __THROW __nonnull ((1));$/;"	p	signature:(1)
+__THROW	/usr/include/time.h	/^     __THROW __nonnull ((1));$/;"	p	signature:(1)
+__THROWNL	/usr/include/pthread.h	/^				       __abstime) __THROWNL __nonnull ((1, 2));$/;"	p	signature:(1, 2)
+__THROWNL	/usr/include/pthread.h	/^				    __abstime) __THROWNL __nonnull ((1, 2));$/;"	p	signature:(1, 2)
+__THROWNL	/usr/include/pthread.h	/^			   void *__restrict __arg) __THROWNL __nonnull ((1, 3));$/;"	p	signature:(1, 3)
+__THROWNL	/usr/include/pthread.h	/^     __THROWNL __nonnull ((1));$/;"	p	signature:(1)
+__THROWNL	/usr/include/pthread.h	/^  __THROWNL __nonnull ((1));$/;"	p	signature:(1)
+__UINT64_C	/usr/include/stdint.h	146;"	d
+__UINT64_C	/usr/include/stdint.h	149;"	d
+__WAIT_INT	/usr/include/stdlib.h	50;"	d
+__WAIT_STATUS	/usr/include/stdlib.h	63;"	d
+__WAIT_STATUS_DEFN	/usr/include/stdlib.h	64;"	d
+____FILE_defined	/usr/include/stdio.h	66;"	d
+__a	/usr/include/stdlib.h	/^    __extension__ unsigned long long int __a;	\/* Factor in congruential$/;"	m	struct:drand48_data	access:public
+__anon13::__anon14::__cancel_jmp_buf	/usr/include/pthread.h	/^    __jmp_buf __cancel_jmp_buf;$/;"	m	struct:__anon13::__anon14	access:public
+__anon13::__anon14::__mask_was_saved	/usr/include/pthread.h	/^    int __mask_was_saved;$/;"	m	struct:__anon13::__anon14	access:public
+__anon13::__cancel_jmp_buf	/usr/include/pthread.h	/^  } __cancel_jmp_buf[1];$/;"	m	struct:__anon13	typeref:struct:__anon13::__anon14	access:public
+__anon13::__pad	/usr/include/pthread.h	/^  void *__pad[4];$/;"	m	struct:__anon13	access:public
+__anon16::quot	/usr/include/stdlib.h	/^    int quot;			\/* Quotient.  *\/$/;"	m	struct:__anon16	access:public
+__anon16::rem	/usr/include/stdlib.h	/^    int rem;			\/* Remainder.  *\/$/;"	m	struct:__anon16	access:public
+__anon17::quot	/usr/include/stdlib.h	/^    long int quot;		\/* Quotient.  *\/$/;"	m	struct:__anon17	access:public
+__anon17::rem	/usr/include/stdlib.h	/^    long int rem;		\/* Remainder.  *\/$/;"	m	struct:__anon17	access:public
+__anon18::quot	/usr/include/stdlib.h	/^    long long int quot;		\/* Quotient.  *\/$/;"	m	struct:__anon18	access:public
+__anon18::rem	/usr/include/stdlib.h	/^    long long int rem;		\/* Remainder.  *\/$/;"	m	struct:__anon18	access:public
+__arg	/usr/include/pthread.h	/^  void *__arg;                            \/* Its argument.  *\/$/;"	m	struct:_pthread_cleanup_buffer	access:public
+__attribute_deprecated__	/usr/include/stdio.h	/^extern char *gets (char *__s) __wur __attribute_deprecated__;$/;"	v
+__attribute_malloc__	/usr/include/string.h	/^     __THROW __attribute_malloc__ __nonnull ((1));$/;"	p	signature:(1)
+__attribute_pure__	/usr/include/string.h	/^      __THROW __asm ("memchr") __attribute_pure__ __nonnull ((1));$/;"	p	signature:(1)
+__attribute_pure__	/usr/include/string.h	/^      __THROW __asm ("memrchr") __attribute_pure__ __nonnull ((1));$/;"	p	signature:(1)
+__attribute_pure__	/usr/include/string.h	/^      __THROW __attribute_pure__ __nonnull ((1));$/;"	p	signature:(1)
+__attribute_pure__	/usr/include/string.h	/^     __THROW __asm ("index") __attribute_pure__ __nonnull ((1));$/;"	p	signature:(1)
+__attribute_pure__	/usr/include/string.h	/^     __THROW __asm ("rawmemchr") __attribute_pure__ __nonnull ((1));$/;"	p	signature:(1)
+__attribute_pure__	/usr/include/string.h	/^     __THROW __asm ("rindex") __attribute_pure__ __nonnull ((1));$/;"	p	signature:(1)
+__attribute_pure__	/usr/include/string.h	/^     __THROW __asm ("strcasestr") __attribute_pure__ __nonnull ((1, 2));$/;"	p	signature:(1, 2)
+__attribute_pure__	/usr/include/string.h	/^     __THROW __asm ("strchr") __attribute_pure__ __nonnull ((1));$/;"	p	signature:(1)
+__attribute_pure__	/usr/include/string.h	/^     __THROW __asm ("strchrnul") __attribute_pure__ __nonnull ((1));$/;"	p	signature:(1)
+__attribute_pure__	/usr/include/string.h	/^     __THROW __asm ("strpbrk") __attribute_pure__ __nonnull ((1, 2));$/;"	p	signature:(1, 2)
+__attribute_pure__	/usr/include/string.h	/^     __THROW __asm ("strrchr") __attribute_pure__ __nonnull ((1));$/;"	p	signature:(1)
+__attribute_pure__	/usr/include/string.h	/^     __THROW __asm ("strstr") __attribute_pure__ __nonnull ((1, 2));$/;"	p	signature:(1, 2)
+__attribute_pure__	/usr/include/string.h	/^     __THROW __attribute_pure__ __nonnull ((1));$/;"	p	signature:(1)
+__attribute_pure__	/usr/include/string.h	/^     __THROW __attribute_pure__ __nonnull ((1, 2));$/;"	p	signature:(1, 2)
+__attribute_pure__	/usr/include/string.h	/^     __THROW __attribute_pure__ __nonnull ((1, 2, 3));$/;"	p	signature:(1, 2, 3)
+__attribute_pure__	/usr/include/string.h	/^     __THROW __attribute_pure__ __nonnull ((1, 2, 4));$/;"	p	signature:(1, 2, 4)
+__attribute_pure__	/usr/include/string.h	/^     __THROW __attribute_pure__ __nonnull ((1, 3));$/;"	p	signature:(1, 3)
+__attribute_warn_unused_result__	/usr/include/stdlib.h	/^     __THROW __attribute_warn_unused_result__;$/;"	v
+__c	/usr/include/stdlib.h	/^    unsigned short int __c;	\/* Additive const. in congruential formula.  *\/$/;"	m	struct:drand48_data	access:public
+__cancel_arg	/usr/include/pthread.h	/^  void *__cancel_arg;$/;"	m	class:__pthread_cleanup_class	access:private
+__cancel_arg	/usr/include/pthread.h	/^  void *__cancel_arg;$/;"	m	struct:__pthread_cleanup_frame	access:public
+__cancel_jmp_buf	/usr/include/pthread.h	/^    __jmp_buf __cancel_jmp_buf;$/;"	m	struct:__anon13::__anon14	access:public
+__cancel_jmp_buf	/usr/include/pthread.h	/^  } __cancel_jmp_buf[1];$/;"	m	struct:__anon13	typeref:struct:__anon13::__anon14	access:public
+__cancel_routine	/usr/include/pthread.h	/^  void (*__cancel_routine) (void *);$/;"	m	class:__pthread_cleanup_class	access:private
+__cancel_routine	/usr/include/pthread.h	/^  void (*__cancel_routine) (void *);$/;"	m	struct:__pthread_cleanup_frame	access:public
+__cancel_type	/usr/include/pthread.h	/^  int __cancel_type;$/;"	m	class:__pthread_cleanup_class	access:private
+__cancel_type	/usr/include/pthread.h	/^  int __cancel_type;$/;"	m	struct:__pthread_cleanup_frame	access:public
+__canceltype	/usr/include/pthread.h	/^  int __canceltype;                       \/* Saved cancellation type. *\/$/;"	m	struct:_pthread_cleanup_buffer	access:public
+__cleanup_fct_attribute	/usr/include/pthread.h	546;"	d
+__clock_t_defined	/usr/include/time.h	53;"	d
+__clockid_t_defined	/usr/include/time.h	86;"	d
+__clockid_time_t	/usr/include/time.h	94;"	d
+__compar_d_fn_t	/usr/include/stdlib.h	/^typedef int (*__compar_d_fn_t) (const void *, const void *, void *);$/;"	t
+__compar_fn_t	/usr/include/stdlib.h	/^typedef int (*__compar_fn_t) (const void *, const void *);$/;"	t
+__defer	/usr/include/pthread.h	/^  void __defer () { pthread_setcanceltype (PTHREAD_CANCEL_DEFERRED,$/;"	f	class:__pthread_cleanup_class	access:public	signature:()
+__do_it	/usr/include/pthread.h	/^  int __do_it;$/;"	m	class:__pthread_cleanup_class	access:private
+__do_it	/usr/include/pthread.h	/^  int __do_it;$/;"	m	struct:__pthread_cleanup_frame	access:public
+__exception	/usr/include/math.h	/^struct __exception$/;"	s
+__exception::arg1	/usr/include/math.h	/^    double arg1;$/;"	m	struct:__exception	access:public
+__exception::arg2	/usr/include/math.h	/^    double arg2;$/;"	m	struct:__exception	access:public
+__exception::name	/usr/include/math.h	/^    char *name;$/;"	m	struct:__exception	access:public
+__exception::retval	/usr/include/math.h	/^    double retval;$/;"	m	struct:__exception	access:public
+__exception::type	/usr/include/math.h	/^    int type;$/;"	m	struct:__exception	access:public
+__init	/usr/include/stdlib.h	/^    unsigned short int __init;	\/* Flag for initializing.  *\/$/;"	m	struct:drand48_data	access:public
+__int8_t_defined	/usr/include/stdint.h	35;"	d
+__intptr_t_defined	/usr/include/stdint.h	120;"	d
+__intptr_t_defined	/usr/include/stdint.h	126;"	d
+__isleap	/usr/include/time.h	310;"	d
+__ldiv_t_defined	/usr/include/stdlib.h	110;"	d
+__lldiv_t_defined	/usr/include/stdlib.h	122;"	d
+__malloc_and_calloc_defined	/usr/include/stdlib.h	463;"	d
+__mask_was_saved	/usr/include/pthread.h	/^    int __mask_was_saved;$/;"	m	struct:__anon13::__anon14	access:public
+__need_FILE	/usr/include/stdio.h	36;"	d
+__need_FILE	/usr/include/stdio.h	58;"	d
+__need_NULL	/usr/include/stdio.h	32;"	d
+__need_NULL	/usr/include/stdlib.h	30;"	d
+__need_NULL	/usr/include/string.h	31;"	d
+__need_NULL	/usr/include/time.h	36;"	d
+__need___FILE	/usr/include/stdio.h	37;"	d
+__need___FILE	/usr/include/stdio.h	68;"	d
+__need_clock_t	/usr/include/time.h	66;"	d
+__need_getopt	/usr/include/getopt.h	189;"	d
+__need_getopt	/usr/include/stdio.h	927;"	d
+__need_malloc_and_calloc	/usr/include/stdlib.h	966;"	d
+__need_size_t	/usr/include/stdio.h	31;"	d
+__need_size_t	/usr/include/stdlib.h	27;"	d
+__need_size_t	/usr/include/string.h	30;"	d
+__need_size_t	/usr/include/time.h	35;"	d
+__need_time_t	/usr/include/time.h	82;"	d
+__need_timer_t	/usr/include/time.h	106;"	d
+__need_timespec	/usr/include/semaphore.h	24;"	d
+__need_timespec	/usr/include/time.h	127;"	d
+__need_wchar_t	/usr/include/stdlib.h	29;"	d
+__off64_t_defined	/usr/include/stdio.h	98;"	d
+__off_t_defined	/usr/include/stdio.h	94;"	d
+__old_x	/usr/include/stdlib.h	/^    unsigned short int __old_x[3]; \/* Old state.  *\/$/;"	m	struct:drand48_data	access:public
+__pad	/usr/include/pthread.h	/^  void *__pad[4];$/;"	m	struct:__anon13	access:public
+__pid_t_defined	/usr/include/time.h	175;"	d
+__prev	/usr/include/pthread.h	/^  struct _pthread_cleanup_buffer *__prev; \/* Chaining of cleanup functions.  *\/$/;"	m	struct:_pthread_cleanup_buffer	typeref:struct:_pthread_cleanup_buffer::_pthread_cleanup_buffer	access:public
+__pthread_cleanup_class	/usr/include/pthread.h	/^  __pthread_cleanup_class (void (*__fct) (void *), void *__arg)$/;"	f	class:__pthread_cleanup_class	access:public	signature:(void (*__fct) (void *), void *__arg)
+__pthread_cleanup_class	/usr/include/pthread.h	/^class __pthread_cleanup_class$/;"	c
+__pthread_cleanup_class::__cancel_arg	/usr/include/pthread.h	/^  void *__cancel_arg;$/;"	m	class:__pthread_cleanup_class	access:private
+__pthread_cleanup_class::__cancel_routine	/usr/include/pthread.h	/^  void (*__cancel_routine) (void *);$/;"	m	class:__pthread_cleanup_class	access:private
+__pthread_cleanup_class::__cancel_type	/usr/include/pthread.h	/^  int __cancel_type;$/;"	m	class:__pthread_cleanup_class	access:private
+__pthread_cleanup_class::__defer	/usr/include/pthread.h	/^  void __defer () { pthread_setcanceltype (PTHREAD_CANCEL_DEFERRED,$/;"	f	class:__pthread_cleanup_class	access:public	signature:()
+__pthread_cleanup_class::__do_it	/usr/include/pthread.h	/^  int __do_it;$/;"	m	class:__pthread_cleanup_class	access:private
+__pthread_cleanup_class::__pthread_cleanup_class	/usr/include/pthread.h	/^  __pthread_cleanup_class (void (*__fct) (void *), void *__arg)$/;"	f	class:__pthread_cleanup_class	access:public	signature:(void (*__fct) (void *), void *__arg)
+__pthread_cleanup_class::__restore	/usr/include/pthread.h	/^  void __restore () const { pthread_setcanceltype (__cancel_type, 0); }$/;"	f	class:__pthread_cleanup_class	access:public	signature:() const
+__pthread_cleanup_class::__setdoit	/usr/include/pthread.h	/^  void __setdoit (int __newval) { __do_it = __newval; }$/;"	f	class:__pthread_cleanup_class	access:public	signature:(int __newval)
+__pthread_cleanup_class::~__pthread_cleanup_class	/usr/include/pthread.h	/^  ~__pthread_cleanup_class () { if (__do_it) __cancel_routine (__cancel_arg); }$/;"	f	class:__pthread_cleanup_class	access:public	signature:()
+__pthread_cleanup_frame	/usr/include/pthread.h	/^struct __pthread_cleanup_frame$/;"	s
+__pthread_cleanup_frame::__cancel_arg	/usr/include/pthread.h	/^  void *__cancel_arg;$/;"	m	struct:__pthread_cleanup_frame	access:public
+__pthread_cleanup_frame::__cancel_routine	/usr/include/pthread.h	/^  void (*__cancel_routine) (void *);$/;"	m	struct:__pthread_cleanup_frame	access:public
+__pthread_cleanup_frame::__cancel_type	/usr/include/pthread.h	/^  int __cancel_type;$/;"	m	struct:__pthread_cleanup_frame	access:public
+__pthread_cleanup_frame::__do_it	/usr/include/pthread.h	/^  int __do_it;$/;"	m	struct:__pthread_cleanup_frame	access:public
+__pthread_cleanup_routine	/usr/include/pthread.h	/^__pthread_cleanup_routine (struct __pthread_cleanup_frame *__frame)$/;"	f	signature:(struct __pthread_cleanup_frame *__frame)
+__pthread_unwind_buf_t	/usr/include/pthread.h	/^} __pthread_unwind_buf_t __attribute__ ((__aligned__));$/;"	t	typeref:struct:__anon13
+__restore	/usr/include/pthread.h	/^  void __restore () const { pthread_setcanceltype (__cancel_type, 0); }$/;"	f	class:__pthread_cleanup_class	access:public	signature:() const
+__routine	/usr/include/pthread.h	/^  void (*__routine) (void *);             \/* Function to call.  *\/$/;"	m	struct:_pthread_cleanup_buffer	access:public
+__setdoit	/usr/include/pthread.h	/^  void __setdoit (int __newval) { __do_it = __newval; }$/;"	f	class:__pthread_cleanup_class	access:public	signature:(int __newval)
+__ssize_t_defined	/usr/include/stdio.h	103;"	d
+__time_t_defined	/usr/include/time.h	69;"	d
+__timer_t_defined	/usr/include/time.h	98;"	d
+__timespec_defined	/usr/include/time.h	114;"	d
+__tm_gmtoff	/usr/include/time.h	/^  long int __tm_gmtoff;		\/* Seconds east of UTC.  *\/$/;"	m	struct:tm	access:public
+__tm_zone	/usr/include/time.h	/^  const char *__tm_zone;	\/* Timezone abbreviation.  *\/$/;"	m	struct:tm	access:public
+__uint32_t_defined	/usr/include/stdint.h	52;"	d
+__wur	/usr/include/stdio.h	/^			  _IO_cookie_io_functions_t __io_funcs) __THROW __wur;$/;"	v
+__wur	/usr/include/stdio.h	/^     __THROW __attribute_malloc__ __wur;$/;"	v
+__wur	/usr/include/stdio.h	/^     __THROWNL __attribute__ ((__format__ (__printf__, 2, 0))) __wur;$/;"	v
+__wur	/usr/include/stdio.h	/^     __THROWNL __attribute__ ((__format__ (__printf__, 2, 3))) __wur;$/;"	v
+__wur	/usr/include/stdio.h	/^  __THROW __wur;$/;"	v
+__wur	/usr/include/stdio.h	/^extern FILE *fdopen (int __fd, const char *__modes) __THROW __wur;$/;"	v
+__wur	/usr/include/stdio.h	/^extern FILE *open_memstream (char **__bufloc, size_t *__sizeloc) __THROW __wur;$/;"	v
+__wur	/usr/include/stdio.h	/^extern char *tmpnam (char *__s) __THROW __wur;$/;"	v
+__wur	/usr/include/stdio.h	/^extern char *tmpnam_r (char *__s) __THROW __wur;$/;"	v
+__wur	/usr/include/stdio.h	/^extern int feof (FILE *__stream) __THROW __wur;$/;"	v
+__wur	/usr/include/stdio.h	/^extern int feof_unlocked (FILE *__stream) __THROW __wur;$/;"	v
+__wur	/usr/include/stdio.h	/^extern int ferror (FILE *__stream) __THROW __wur;$/;"	v
+__wur	/usr/include/stdio.h	/^extern int ferror_unlocked (FILE *__stream) __THROW __wur;$/;"	v
+__wur	/usr/include/stdio.h	/^extern int fileno (FILE *__stream) __THROW __wur;$/;"	v
+__wur	/usr/include/stdio.h	/^extern int fileno_unlocked (FILE *__stream) __THROW __wur;$/;"	v
+__wur	/usr/include/stdio.h	/^extern int ftrylockfile (FILE *__stream) __THROW __wur;$/;"	v
+__wur	/usr/include/stdlib.h	/^		       char *__restrict __resolved) __THROW __wur;$/;"	v
+__wur	/usr/include/stdlib.h	/^     __THROW __attribute__ ((__const__)) __wur;$/;"	v
+__wur	/usr/include/stdlib.h	/^     __THROW __attribute_malloc__ __wur;$/;"	v
+__wur	/usr/include/stdlib.h	/^extern char *l64a (long int __n) __THROW __wur;$/;"	v
+__wur	/usr/include/stdlib.h	/^extern char *ptsname (int __fd) __THROW __wur;$/;"	v
+__wur	/usr/include/stdlib.h	/^extern int abs (int __x) __THROW __attribute__ ((__const__)) __wur;$/;"	v
+__wur	/usr/include/stdlib.h	/^extern long int labs (long int __x) __THROW __attribute__ ((__const__)) __wur;$/;"	v
+__wur	/usr/include/stdlib.h	/^extern size_t __ctype_get_mb_cur_max (void) __THROW __wur;$/;"	v
+__wur	/usr/include/stdlib.h	/^extern void *malloc (size_t __size) __THROW __attribute_malloc__ __wur;$/;"	v
+__wur	/usr/include/stdlib.h	/^extern void *valloc (size_t __size) __THROW __attribute_malloc__ __wur;$/;"	v
+__x	/usr/include/stdlib.h	/^    unsigned short int __x[3];	\/* Current state.  *\/$/;"	m	struct:drand48_data	access:public
+_flushlbf	/usr/include/stdio_ext.h	/^extern void _flushlbf (void);$/;"	p	signature:(void)
+_pthread_cleanup_buffer	/usr/include/pthread.h	/^struct _pthread_cleanup_buffer$/;"	s
+_pthread_cleanup_buffer::__arg	/usr/include/pthread.h	/^  void *__arg;                            \/* Its argument.  *\/$/;"	m	struct:_pthread_cleanup_buffer	access:public
+_pthread_cleanup_buffer::__canceltype	/usr/include/pthread.h	/^  int __canceltype;                       \/* Saved cancellation type. *\/$/;"	m	struct:_pthread_cleanup_buffer	access:public
+_pthread_cleanup_buffer::__prev	/usr/include/pthread.h	/^  struct _pthread_cleanup_buffer *__prev; \/* Chaining of cleanup functions.  *\/$/;"	m	struct:_pthread_cleanup_buffer	typeref:struct:_pthread_cleanup_buffer::_pthread_cleanup_buffer	access:public
+_pthread_cleanup_buffer::__routine	/usr/include/pthread.h	/^  void (*__routine) (void *);             \/* Function to call.  *\/$/;"	m	struct:_pthread_cleanup_buffer	access:public
+arg1	/usr/include/math.h	/^    double arg1;$/;"	m	struct:__exception	access:public
+arg2	/usr/include/math.h	/^    double arg2;$/;"	m	struct:__exception	access:public
+assert	/usr/include/assert.h	25;"	d
+assert	/usr/include/assert.h	50;"	d
+assert	/usr/include/assert.h	88;"	d
+assert_perror	/usr/include/assert.h	29;"	d
+assert_perror	/usr/include/assert.h	59;"	d
+assert_perror	/usr/include/assert.h	94;"	d
+atoi	/usr/include/stdlib.h	/^__NTH (atoi (const char *__nptr))$/;"	f	signature:(const char *__nptr)
+atol	/usr/include/stdlib.h	/^__NTH (atol (const char *__nptr))$/;"	f	signature:(const char *__nptr)
+atoll	/usr/include/stdlib.h	/^__NTH (atoll (const char *__nptr))$/;"	f	signature:(const char *__nptr)
+clock_nanosleep	/usr/include/time.h	/^extern int clock_nanosleep (clockid_t __clock_id, int __flags,$/;"	p	signature:(clockid_t __clock_id, int __flags, const struct timespec *__req, struct timespec *__rem)
+clock_t	/usr/include/time.h	/^typedef __clock_t clock_t;$/;"	t
+clockid_t	/usr/include/time.h	/^typedef __clockid_t clockid_t;$/;"	t
+comparison_fn_t	/usr/include/stdlib.h	/^typedef __compar_fn_t comparison_fn_t;$/;"	t
+cuserid	/usr/include/stdio.h	/^extern char *cuserid (char *__s);$/;"	p	signature:(char *__s)
+div_t	/usr/include/stdlib.h	/^  } div_t;$/;"	t	typeref:struct:__anon16
+dprintf	/usr/include/stdio.h	/^extern int dprintf (int __fd, const char *__restrict __fmt, ...)$/;"	p	signature:(int __fd, const char *__restrict __fmt, ...)
+drand48_data	/usr/include/stdlib.h	/^struct drand48_data$/;"	s
+drand48_data::__a	/usr/include/stdlib.h	/^    __extension__ unsigned long long int __a;	\/* Factor in congruential$/;"	m	struct:drand48_data	access:public
+drand48_data::__c	/usr/include/stdlib.h	/^    unsigned short int __c;	\/* Additive const. in congruential formula.  *\/$/;"	m	struct:drand48_data	access:public
+drand48_data::__init	/usr/include/stdlib.h	/^    unsigned short int __init;	\/* Flag for initializing.  *\/$/;"	m	struct:drand48_data	access:public
+drand48_data::__old_x	/usr/include/stdlib.h	/^    unsigned short int __old_x[3]; \/* Old state.  *\/$/;"	m	struct:drand48_data	access:public
+drand48_data::__x	/usr/include/stdlib.h	/^    unsigned short int __x[3];	\/* Current state.  *\/$/;"	m	struct:drand48_data	access:public
+end_ptr	/usr/include/stdlib.h	/^    int32_t *end_ptr;		\/* Pointer behind state table.  *\/$/;"	m	struct:random_data	access:public
+fclose	/usr/include/stdio.h	/^extern int fclose (FILE *__stream);$/;"	p	signature:(FILE *__stream)
+fcloseall	/usr/include/stdio.h	/^extern int fcloseall (void);$/;"	p	signature:(void)
+fflush	/usr/include/stdio.h	/^extern int fflush (FILE *__stream);$/;"	p	signature:(FILE *__stream)
+fflush_unlocked	/usr/include/stdio.h	/^extern int fflush_unlocked (FILE *__stream);$/;"	p	signature:(FILE *__stream)
+fgetc	/usr/include/stdio.h	/^extern int fgetc (FILE *__stream);$/;"	p	signature:(FILE *__stream)
+fgetc_unlocked	/usr/include/stdio.h	/^extern int fgetc_unlocked (FILE *__stream);$/;"	p	signature:(FILE *__stream)
+fgetpos	/usr/include/stdio.h	/^extern int fgetpos (FILE *__restrict __stream, fpos_t *__restrict __pos);$/;"	p	signature:(FILE *__restrict __stream, fpos_t *__restrict __pos)
+fgetpos64	/usr/include/stdio.h	/^extern int fgetpos64 (FILE *__restrict __stream, fpos64_t *__restrict __pos);$/;"	p	signature:(FILE *__restrict __stream, fpos64_t *__restrict __pos)
+flag	/usr/include/getopt.h	/^  int *flag;$/;"	m	struct:option	access:public
+fpclassify	/usr/include/math.h	210;"	d
+fpclassify	/usr/include/math.h	213;"	d
+fpos64_t	/usr/include/stdio.h	/^typedef _G_fpos64_t fpos64_t;$/;"	t
+fpos_t	/usr/include/stdio.h	/^typedef _G_fpos_t fpos_t;$/;"	t
+fprintf	/usr/include/stdio.h	/^extern int fprintf (FILE *__restrict __stream,$/;"	p	signature:(FILE *__restrict __stream, const char *__restrict __format, ...)
+fptr	/usr/include/stdlib.h	/^    int32_t *fptr;		\/* Front pointer.  *\/$/;"	m	struct:random_data	access:public
+fputc	/usr/include/stdio.h	/^extern int fputc (int __c, FILE *__stream);$/;"	p	signature:(int __c, FILE *__stream)
+fputc_unlocked	/usr/include/stdio.h	/^extern int fputc_unlocked (int __c, FILE *__stream);$/;"	p	signature:(int __c, FILE *__stream)
+fputs	/usr/include/stdio.h	/^extern int fputs (const char *__restrict __s, FILE *__restrict __stream);$/;"	p	signature:(const char *__restrict __s, FILE *__restrict __stream)
+fputs_unlocked	/usr/include/stdio.h	/^extern int fputs_unlocked (const char *__restrict __s,$/;"	p	signature:(const char *__restrict __s, FILE *__restrict __stream)
+fscanf	/usr/include/stdio.h	457;"	d
+fseek	/usr/include/stdio.h	/^extern int fseek (FILE *__stream, long int __off, int __whence);$/;"	p	signature:(FILE *__stream, long int __off, int __whence)
+fseeko	/usr/include/stdio.h	/^extern int fseeko (FILE *__stream, __off_t __off, int __whence);$/;"	p	signature:(FILE *__stream, __off_t __off, int __whence)
+fseeko64	/usr/include/stdio.h	/^extern int fseeko64 (FILE *__stream, __off64_t __off, int __whence);$/;"	p	signature:(FILE *__stream, __off64_t __off, int __whence)
+fsetpos	/usr/include/stdio.h	/^extern int fsetpos (FILE *__stream, const fpos_t *__pos);$/;"	p	signature:(FILE *__stream, const fpos_t *__pos)
+fsetpos64	/usr/include/stdio.h	/^extern int fsetpos64 (FILE *__stream, const fpos64_t *__pos);$/;"	p	signature:(FILE *__stream, const fpos64_t *__pos)
+fwrite	/usr/include/stdio.h	/^extern size_t fwrite (const void *__restrict __ptr, size_t __size,$/;"	p	signature:(const void *__restrict __ptr, size_t __size, size_t __n, FILE *__restrict __s)
+fwrite_unlocked	/usr/include/stdio.h	/^extern size_t fwrite_unlocked (const void *__restrict __ptr, size_t __size,$/;"	p	signature:(const void *__restrict __ptr, size_t __size, size_t __n, FILE *__restrict __stream)
+getc	/usr/include/stdio.h	/^extern int getc (FILE *__stream);$/;"	p	signature:(FILE *__stream)
+getc	/usr/include/stdio.h	543;"	d
+getc_unlocked	/usr/include/stdio.h	/^extern int getc_unlocked (FILE *__stream);$/;"	p	signature:(FILE *__stream)
+getchar	/usr/include/stdio.h	/^extern int getchar (void);$/;"	p	signature:(void)
+getchar_unlocked	/usr/include/stdio.h	/^extern int getchar_unlocked (void);$/;"	p	signature:(void)
+getdate	/usr/include/time.h	/^extern struct tm *getdate (const char *__string);$/;"	p	signature:(const char *__string)
+getdate_r	/usr/include/time.h	/^extern int getdate_r (const char *__restrict __string,$/;"	p	signature:(const char *__restrict __string, struct tm *__restrict __resbufp)
+getopt	/usr/include/getopt.h	/^extern int getopt ();$/;"	p	signature:()
+getopt	/usr/include/getopt.h	165;"	d
+getpt	/usr/include/stdlib.h	/^extern int getpt (void);$/;"	p	signature:(void)
+getw	/usr/include/stdio.h	/^extern int getw (FILE *__stream);$/;"	p	signature:(FILE *__stream)
+has_arg	/usr/include/getopt.h	/^  int has_arg;$/;"	m	struct:option	access:public
+int16_t	/usr/include/stdint.h	/^typedef short int		int16_t;$/;"	t
+int32_t	/usr/include/stdint.h	/^typedef int			int32_t;$/;"	t
+int64_t	/usr/include/stdint.h	/^typedef long int		int64_t;$/;"	t
+int64_t	/usr/include/stdint.h	/^typedef long long int		int64_t;$/;"	t
+int8_t	/usr/include/stdint.h	/^typedef signed char		int8_t;$/;"	t
+int_fast16_t	/usr/include/stdint.h	/^typedef int			int_fast16_t;$/;"	t
+int_fast16_t	/usr/include/stdint.h	/^typedef long int		int_fast16_t;$/;"	t
+int_fast32_t	/usr/include/stdint.h	/^typedef int			int_fast32_t;$/;"	t
+int_fast32_t	/usr/include/stdint.h	/^typedef long int		int_fast32_t;$/;"	t
+int_fast64_t	/usr/include/stdint.h	/^typedef long int		int_fast64_t;$/;"	t
+int_fast64_t	/usr/include/stdint.h	/^typedef long long int		int_fast64_t;$/;"	t
+int_fast8_t	/usr/include/stdint.h	/^typedef signed char		int_fast8_t;$/;"	t
+int_least16_t	/usr/include/stdint.h	/^typedef short int		int_least16_t;$/;"	t
+int_least32_t	/usr/include/stdint.h	/^typedef int			int_least32_t;$/;"	t
+int_least64_t	/usr/include/stdint.h	/^typedef long int		int_least64_t;$/;"	t
+int_least64_t	/usr/include/stdint.h	/^typedef long long int		int_least64_t;$/;"	t
+int_least8_t	/usr/include/stdint.h	/^typedef signed char		int_least8_t;$/;"	t
+intmax_t	/usr/include/stdint.h	/^typedef long int		intmax_t;$/;"	t
+intmax_t	/usr/include/stdint.h	/^typedef long long int		intmax_t;$/;"	t
+intptr_t	/usr/include/stdint.h	/^typedef int			intptr_t;$/;"	t
+intptr_t	/usr/include/stdint.h	/^typedef long int		intptr_t;$/;"	t
+isfinite	/usr/include/math.h	234;"	d
+isfinite	/usr/include/math.h	237;"	d
+isgreater	/usr/include/math.h	416;"	d
+isgreater	/usr/include/math.h	440;"	d
+isgreaterequal	/usr/include/math.h	417;"	d
+isgreaterequal	/usr/include/math.h	448;"	d
+isinf	/usr/include/math.h	262;"	d
+isinf	/usr/include/math.h	265;"	d
+isless	/usr/include/math.h	418;"	d
+isless	/usr/include/math.h	456;"	d
+islessequal	/usr/include/math.h	419;"	d
+islessequal	/usr/include/math.h	464;"	d
+islessgreater	/usr/include/math.h	420;"	d
+islessgreater	/usr/include/math.h	472;"	d
+isnan	/usr/include/math.h	250;"	d
+isnan	/usr/include/math.h	253;"	d
+isnormal	/usr/include/math.h	245;"	d
+issignaling	/usr/include/math.h	288;"	d
+issignaling	/usr/include/math.h	291;"	d
+isunordered	/usr/include/math.h	421;"	d
+isunordered	/usr/include/math.h	480;"	d
+it_interval	/usr/include/time.h	/^    struct timespec it_interval;$/;"	m	struct:itimerspec	typeref:struct:itimerspec::timespec	access:public
+it_value	/usr/include/time.h	/^    struct timespec it_value;$/;"	m	struct:itimerspec	typeref:struct:itimerspec::timespec	access:public
+itimerspec	/usr/include/time.h	/^struct itimerspec$/;"	s
+itimerspec::it_interval	/usr/include/time.h	/^    struct timespec it_interval;$/;"	m	struct:itimerspec	typeref:struct:itimerspec::timespec	access:public
+itimerspec::it_value	/usr/include/time.h	/^    struct timespec it_value;$/;"	m	struct:itimerspec	typeref:struct:itimerspec::timespec	access:public
+ldiv_t	/usr/include/stdlib.h	/^  } ldiv_t;$/;"	t	typeref:struct:__anon17
+lldiv_t	/usr/include/stdlib.h	/^  } lldiv_t;$/;"	t	typeref:struct:__anon18
+math_errhandling	/usr/include/math.h	280;"	d
+matherr	/usr/include/math.h	/^extern int matherr (struct __exception *__exc) throw ();$/;"	p	signature:(struct __exception *__exc)
+matherr	/usr/include/math.h	/^extern int matherr (struct exception *__exc);$/;"	p	signature:(struct exception *__exc)
+mkostemp	/usr/include/stdlib.h	680;"	d
+mkostemps	/usr/include/stdlib.h	702;"	d
+mkstemp	/usr/include/stdlib.h	626;"	d
+mkstemps	/usr/include/stdlib.h	648;"	d
+name	/usr/include/getopt.h	/^  const char *name;$/;"	m	struct:option	access:public
+name	/usr/include/math.h	/^    char *name;$/;"	m	struct:__exception	access:public
+nanosleep	/usr/include/time.h	/^extern int nanosleep (const struct timespec *__requested_time,$/;"	p	signature:(const struct timespec *__requested_time, struct timespec *__remaining)
+no_argument	/usr/include/getopt.h	116;"	d
+off64_t	/usr/include/stdio.h	/^typedef __off64_t off64_t;$/;"	t
+off_t	/usr/include/stdio.h	/^typedef __off64_t off_t;$/;"	t
+off_t	/usr/include/stdio.h	/^typedef __off_t off_t;$/;"	t
+option	/usr/include/getopt.h	/^struct option$/;"	s
+option::flag	/usr/include/getopt.h	/^  int *flag;$/;"	m	struct:option	access:public
+option::has_arg	/usr/include/getopt.h	/^  int has_arg;$/;"	m	struct:option	access:public
+option::name	/usr/include/getopt.h	/^  const char *name;$/;"	m	struct:option	access:public
+option::val	/usr/include/getopt.h	/^  int val;$/;"	m	struct:option	access:public
+optional_argument	/usr/include/getopt.h	118;"	d
+pclose	/usr/include/stdio.h	/^extern int pclose (FILE *__stream);$/;"	p	signature:(FILE *__stream)
+perror	/usr/include/stdio.h	/^extern void perror (const char *__s);$/;"	p	signature:(const char *__s)
+pid_t	/usr/include/time.h	/^typedef __pid_t pid_t;$/;"	t
+printf	/usr/include/stdio.h	/^extern int printf (const char *__restrict __format, ...);$/;"	p	signature:(const char *__restrict __format, ...)
+pthread_cancel	/usr/include/pthread.h	/^extern int pthread_cancel (pthread_t __th);$/;"	p	signature:(pthread_t __th)
+pthread_cleanup_pop	/usr/include/pthread.h	592;"	d
+pthread_cleanup_pop	/usr/include/pthread.h	641;"	d
+pthread_cleanup_pop	/usr/include/pthread.h	696;"	d
+pthread_cleanup_pop_restore_np	/usr/include/pthread.h	608;"	d
+pthread_cleanup_pop_restore_np	/usr/include/pthread.h	661;"	d
+pthread_cleanup_pop_restore_np	/usr/include/pthread.h	732;"	d
+pthread_cleanup_push	/usr/include/pthread.h	586;"	d
+pthread_cleanup_push	/usr/include/pthread.h	632;"	d
+pthread_cleanup_push	/usr/include/pthread.h	675;"	d
+pthread_cleanup_push_defer_np	/usr/include/pthread.h	600;"	d
+pthread_cleanup_push_defer_np	/usr/include/pthread.h	649;"	d
+pthread_cleanup_push_defer_np	/usr/include/pthread.h	710;"	d
+pthread_equal	/usr/include/pthread.h	/^__NTH (pthread_equal (pthread_t __thread1, pthread_t __thread2))$/;"	f	signature:(pthread_t __thread1, pthread_t __thread2)
+pthread_exit	/usr/include/pthread.h	/^extern void pthread_exit (void *__retval) __attribute__ ((__noreturn__));$/;"	p	signature:(void *__retval)
+pthread_join	/usr/include/pthread.h	/^extern int pthread_join (pthread_t __th, void **__thread_return);$/;"	p	signature:(pthread_t __th, void **__thread_return)
+pthread_setcancelstate	/usr/include/pthread.h	/^extern int pthread_setcancelstate (int __state, int *__oldstate);$/;"	p	signature:(int __state, int *__oldstate)
+pthread_setcanceltype	/usr/include/pthread.h	/^extern int pthread_setcanceltype (int __type, int *__oldtype);$/;"	p	signature:(int __type, int *__oldtype)
+pthread_testcancel	/usr/include/pthread.h	/^extern void pthread_testcancel (void);$/;"	p	signature:(void)
+pthread_timedjoin_np	/usr/include/pthread.h	/^extern int pthread_timedjoin_np (pthread_t __th, void **__thread_return,$/;"	p	signature:(pthread_t __th, void **__thread_return, const struct timespec *__abstime)
+putc	/usr/include/stdio.h	/^extern int putc (int __c, FILE *__stream);$/;"	p	signature:(int __c, FILE *__stream)
+putc	/usr/include/stdio.h	585;"	d
+putc_unlocked	/usr/include/stdio.h	/^extern int putc_unlocked (int __c, FILE *__stream);$/;"	p	signature:(int __c, FILE *__stream)
+putchar	/usr/include/stdio.h	/^extern int putchar (int __c);$/;"	p	signature:(int __c)
+putchar_unlocked	/usr/include/stdio.h	/^extern int putchar_unlocked (int __c);$/;"	p	signature:(int __c)
+puts	/usr/include/stdio.h	/^extern int puts (const char *__s);$/;"	p	signature:(const char *__s)
+putw	/usr/include/stdio.h	/^extern int putw (int __w, FILE *__stream);$/;"	p	signature:(int __w, FILE *__stream)
+quot	/usr/include/stdlib.h	/^    int quot;			\/* Quotient.  *\/$/;"	m	struct:__anon16	access:public
+quot	/usr/include/stdlib.h	/^    long int quot;		\/* Quotient.  *\/$/;"	m	struct:__anon17	access:public
+quot	/usr/include/stdlib.h	/^    long long int quot;		\/* Quotient.  *\/$/;"	m	struct:__anon18	access:public
+rand_deg	/usr/include/stdlib.h	/^    int rand_deg;		\/* Degree of random number generator.  *\/$/;"	m	struct:random_data	access:public
+rand_sep	/usr/include/stdlib.h	/^    int rand_sep;		\/* Distance between front and rear.  *\/$/;"	m	struct:random_data	access:public
+rand_type	/usr/include/stdlib.h	/^    int rand_type;		\/* Type of random number generator.  *\/$/;"	m	struct:random_data	access:public
+random_data	/usr/include/stdlib.h	/^struct random_data$/;"	s
+random_data::end_ptr	/usr/include/stdlib.h	/^    int32_t *end_ptr;		\/* Pointer behind state table.  *\/$/;"	m	struct:random_data	access:public
+random_data::fptr	/usr/include/stdlib.h	/^    int32_t *fptr;		\/* Front pointer.  *\/$/;"	m	struct:random_data	access:public
+random_data::rand_deg	/usr/include/stdlib.h	/^    int rand_deg;		\/* Degree of random number generator.  *\/$/;"	m	struct:random_data	access:public
+random_data::rand_sep	/usr/include/stdlib.h	/^    int rand_sep;		\/* Distance between front and rear.  *\/$/;"	m	struct:random_data	access:public
+random_data::rand_type	/usr/include/stdlib.h	/^    int rand_type;		\/* Type of random number generator.  *\/$/;"	m	struct:random_data	access:public
+random_data::rptr	/usr/include/stdlib.h	/^    int32_t *rptr;		\/* Rear pointer.  *\/$/;"	m	struct:random_data	access:public
+random_data::state	/usr/include/stdlib.h	/^    int32_t *state;		\/* Array of state values.  *\/$/;"	m	struct:random_data	access:public
+rem	/usr/include/stdlib.h	/^    int rem;			\/* Remainder.  *\/$/;"	m	struct:__anon16	access:public
+rem	/usr/include/stdlib.h	/^    long int rem;		\/* Remainder.  *\/$/;"	m	struct:__anon17	access:public
+rem	/usr/include/stdlib.h	/^    long long int rem;		\/* Remainder.  *\/$/;"	m	struct:__anon18	access:public
+required_argument	/usr/include/getopt.h	117;"	d
+retval	/usr/include/math.h	/^    double retval;$/;"	m	struct:__exception	access:public
+rewind	/usr/include/stdio.h	/^extern void rewind (FILE *__stream);$/;"	p	signature:(FILE *__stream)
+rptr	/usr/include/stdlib.h	/^    int32_t *rptr;		\/* Rear pointer.  *\/$/;"	m	struct:random_data	access:public
+scanf	/usr/include/stdio.h	458;"	d
+sem_timedwait	/usr/include/semaphore.h	/^extern int sem_timedwait (sem_t *__restrict __sem,$/;"	p	signature:(sem_t *__restrict __sem, const struct timespec *__restrict __abstime)
+sem_wait	/usr/include/semaphore.h	/^extern int sem_wait (sem_t *__sem);$/;"	p	signature:(sem_t *__sem)
+signbit	/usr/include/math.h	222;"	d
+signbit	/usr/include/math.h	225;"	d
+sscanf	/usr/include/stdio.h	459;"	d
+ssize_t	/usr/include/stdio.h	/^typedef __ssize_t ssize_t;$/;"	t
+state	/usr/include/stdlib.h	/^    int32_t *state;		\/* Array of state values.  *\/$/;"	m	struct:random_data	access:public
+static_assert	/usr/include/assert.h	120;"	d
+static_assert	/usr/include/assert.h	121;"	d
+stderr	/usr/include/stdio.h	174;"	d
+stdin	/usr/include/stdio.h	172;"	d
+stdout	/usr/include/stdio.h	173;"	d
+strdupa	/usr/include/string.h	190;"	d
+strndupa	/usr/include/string.h	200;"	d
+time_t	/usr/include/time.h	/^typedef __time_t time_t;$/;"	t
+timer_t	/usr/include/time.h	/^typedef __timer_t timer_t;$/;"	t
+timespec	/usr/include/time.h	/^struct timespec$/;"	s
+timespec::tv_nsec	/usr/include/time.h	/^    __syscall_slong_t tv_nsec;	\/* Nanoseconds.  *\/$/;"	m	struct:timespec	access:public
+timespec::tv_sec	/usr/include/time.h	/^    __time_t tv_sec;		\/* Seconds.  *\/$/;"	m	struct:timespec	access:public
+tm	/usr/include/time.h	/^struct tm$/;"	s
+tm::__tm_gmtoff	/usr/include/time.h	/^  long int __tm_gmtoff;		\/* Seconds east of UTC.  *\/$/;"	m	struct:tm	access:public
+tm::__tm_zone	/usr/include/time.h	/^  const char *__tm_zone;	\/* Timezone abbreviation.  *\/$/;"	m	struct:tm	access:public
+tm::tm_gmtoff	/usr/include/time.h	/^  long int tm_gmtoff;		\/* Seconds east of UTC.  *\/$/;"	m	struct:tm	access:public
+tm::tm_hour	/usr/include/time.h	/^  int tm_hour;			\/* Hours.	[0-23] *\/$/;"	m	struct:tm	access:public
+tm::tm_isdst	/usr/include/time.h	/^  int tm_isdst;			\/* DST.		[-1\/0\/1]*\/$/;"	m	struct:tm	access:public
+tm::tm_mday	/usr/include/time.h	/^  int tm_mday;			\/* Day.		[1-31] *\/$/;"	m	struct:tm	access:public
+tm::tm_min	/usr/include/time.h	/^  int tm_min;			\/* Minutes.	[0-59] *\/$/;"	m	struct:tm	access:public
+tm::tm_mon	/usr/include/time.h	/^  int tm_mon;			\/* Month.	[0-11] *\/$/;"	m	struct:tm	access:public
+tm::tm_sec	/usr/include/time.h	/^  int tm_sec;			\/* Seconds.	[0-60] (1 leap second) *\/$/;"	m	struct:tm	access:public
+tm::tm_wday	/usr/include/time.h	/^  int tm_wday;			\/* Day of week.	[0-6] *\/$/;"	m	struct:tm	access:public
+tm::tm_yday	/usr/include/time.h	/^  int tm_yday;			\/* Days in year.[0-365]	*\/$/;"	m	struct:tm	access:public
+tm::tm_year	/usr/include/time.h	/^  int tm_year;			\/* Year	- 1900.  *\/$/;"	m	struct:tm	access:public
+tm::tm_zone	/usr/include/time.h	/^  const char *tm_zone;		\/* Timezone abbreviation.  *\/$/;"	m	struct:tm	access:public
+tm_gmtoff	/usr/include/time.h	/^  long int tm_gmtoff;		\/* Seconds east of UTC.  *\/$/;"	m	struct:tm	access:public
+tm_hour	/usr/include/time.h	/^  int tm_hour;			\/* Hours.	[0-23] *\/$/;"	m	struct:tm	access:public
+tm_isdst	/usr/include/time.h	/^  int tm_isdst;			\/* DST.		[-1\/0\/1]*\/$/;"	m	struct:tm	access:public
+tm_mday	/usr/include/time.h	/^  int tm_mday;			\/* Day.		[1-31] *\/$/;"	m	struct:tm	access:public
+tm_min	/usr/include/time.h	/^  int tm_min;			\/* Minutes.	[0-59] *\/$/;"	m	struct:tm	access:public
+tm_mon	/usr/include/time.h	/^  int tm_mon;			\/* Month.	[0-11] *\/$/;"	m	struct:tm	access:public
+tm_sec	/usr/include/time.h	/^  int tm_sec;			\/* Seconds.	[0-60] (1 leap second) *\/$/;"	m	struct:tm	access:public
+tm_wday	/usr/include/time.h	/^  int tm_wday;			\/* Day of week.	[0-6] *\/$/;"	m	struct:tm	access:public
+tm_yday	/usr/include/time.h	/^  int tm_yday;			\/* Days in year.[0-365]	*\/$/;"	m	struct:tm	access:public
+tm_year	/usr/include/time.h	/^  int tm_year;			\/* Year	- 1900.  *\/$/;"	m	struct:tm	access:public
+tm_zone	/usr/include/time.h	/^  const char *tm_zone;		\/* Timezone abbreviation.  *\/$/;"	m	struct:tm	access:public
+tv_nsec	/usr/include/time.h	/^    __syscall_slong_t tv_nsec;	\/* Nanoseconds.  *\/$/;"	m	struct:timespec	access:public
+tv_sec	/usr/include/time.h	/^    __time_t tv_sec;		\/* Seconds.  *\/$/;"	m	struct:timespec	access:public
+type	/usr/include/math.h	/^    int type;$/;"	m	struct:__exception	access:public
+uint16_t	/usr/include/stdint.h	/^typedef unsigned short int	uint16_t;$/;"	t
+uint32_t	/usr/include/stdint.h	/^typedef unsigned int		uint32_t;$/;"	t
+uint64_t	/usr/include/stdint.h	/^typedef unsigned long int	uint64_t;$/;"	t
+uint64_t	/usr/include/stdint.h	/^typedef unsigned long long int	uint64_t;$/;"	t
+uint8_t	/usr/include/stdint.h	/^typedef unsigned char		uint8_t;$/;"	t
+uint_fast16_t	/usr/include/stdint.h	/^typedef unsigned int		uint_fast16_t;$/;"	t
+uint_fast16_t	/usr/include/stdint.h	/^typedef unsigned long int	uint_fast16_t;$/;"	t
+uint_fast32_t	/usr/include/stdint.h	/^typedef unsigned int		uint_fast32_t;$/;"	t
+uint_fast32_t	/usr/include/stdint.h	/^typedef unsigned long int	uint_fast32_t;$/;"	t
+uint_fast64_t	/usr/include/stdint.h	/^typedef unsigned long int	uint_fast64_t;$/;"	t
+uint_fast64_t	/usr/include/stdint.h	/^typedef unsigned long long int	uint_fast64_t;$/;"	t
+uint_fast8_t	/usr/include/stdint.h	/^typedef unsigned char		uint_fast8_t;$/;"	t
+uint_least16_t	/usr/include/stdint.h	/^typedef unsigned short int	uint_least16_t;$/;"	t
+uint_least32_t	/usr/include/stdint.h	/^typedef unsigned int		uint_least32_t;$/;"	t
+uint_least64_t	/usr/include/stdint.h	/^typedef unsigned long int	uint_least64_t;$/;"	t
+uint_least64_t	/usr/include/stdint.h	/^typedef unsigned long long int	uint_least64_t;$/;"	t
+uint_least8_t	/usr/include/stdint.h	/^typedef unsigned char		uint_least8_t;$/;"	t
+uintmax_t	/usr/include/stdint.h	/^typedef unsigned long int	uintmax_t;$/;"	t
+uintmax_t	/usr/include/stdint.h	/^typedef unsigned long long int	uintmax_t;$/;"	t
+uintptr_t	/usr/include/stdint.h	/^typedef unsigned int		uintptr_t;$/;"	t
+uintptr_t	/usr/include/stdint.h	/^typedef unsigned long int	uintptr_t;$/;"	t
+ungetc	/usr/include/stdio.h	/^extern int ungetc (int __c, FILE *__stream);$/;"	p	signature:(int __c, FILE *__stream)
+va_list	/usr/include/stdio.h	/^typedef _G_va_list va_list;$/;"	t
+val	/usr/include/getopt.h	/^  int val;$/;"	m	struct:option	access:public
+vdprintf	/usr/include/stdio.h	/^extern int vdprintf (int __fd, const char *__restrict __fmt,$/;"	p	signature:(int __fd, const char *__restrict __fmt, _G_va_list __arg)
+vfprintf	/usr/include/stdio.h	/^extern int vfprintf (FILE *__restrict __s, const char *__restrict __format,$/;"	p	signature:(FILE *__restrict __s, const char *__restrict __format, _G_va_list __arg)
+vfscanf	/usr/include/stdio.h	516;"	d
+vprintf	/usr/include/stdio.h	/^extern int vprintf (const char *__restrict __format, _G_va_list __arg);$/;"	p	signature:(const char *__restrict __format, _G_va_list __arg)
+vscanf	/usr/include/stdio.h	517;"	d
+vsscanf	/usr/include/stdio.h	518;"	d
+~__pthread_cleanup_class	/usr/include/pthread.h	/^  ~__pthread_cleanup_class () { if (__do_it) __cancel_routine (__cancel_arg); }$/;"	f	class:__pthread_cleanup_class	access:public	signature:()

@@ -1,0 +1,1322 @@
+
+** (nm-applet:1623): WARNING **: Couldn't register with accessibility bus: Did not receive a reply. Possible causes include: the remote application did not send a reply, the message bus security policy blocked the reply, the reply timeout expired, or the network connection was broken.
+	Evdev Wheel Emulation (276):	0
+	Evdev Wheel Emulation Axes (277):	0, 0, 4, 5
+	Evdev Wheel Emulation Inertia (278):	10
+	Evdev Wheel Emulation Timeout (279):	200
+	Evdev Wheel Emulation Button (280):	4
+/usr/bin/xbacklight -set 30
+
+(nm-applet:1623): libnm-glib-CRITICAL **: nm_secret_agent_register: assertion 'priv->registered == FALSE' failed
+screen : LVDS1
+resolution : 1600
+main screen LVDS1 with res 1600
+gpg-agent: gpg-agent running and available
+VGA1
+HDMI1
+DP1
+HDMI2
+HDMI3
+DP2
+DP3
+xrandr --output LVDS1 --auto --rotate normal --primary --output VGA1 --off --output HDMI1 --off --output DP1 --off --output HDMI2 --off --output HDMI3 --off --output DP2 --off --output DP3 --off
+[{"success":true}]
+QDBusConnection: session D-Bus connection created before QCoreApplication. Application may misbehave.
+QDBusConnection: session D-Bus connection created before QCoreApplication. Application may misbehave.
+QSystemTrayIcon::setVisible: No Icon set
+[{"success":true}]
+[{"success":true}]
+Connecting to deprecated signal QDBusConnectionInterface::serviceOwnerChanged(QString,QString,QString)
+QDBusConnection: session D-Bus connection created before QCoreApplication. Application may misbehave.
+QDBusConnection: session D-Bus connection created before QCoreApplication. Application may misbehave.
+kbuildsycoca4 running...
+kbuildsycoca4(1918) KBuildSycoca::checkTimestamps: checking file timestamps
+kbuildsycoca4(1918) KBuildSycoca::checkTimestamps: timestamps check ok
+kbuildsycoca4(1918) kdemain: Emitting notifyDatabaseChanged ()
+korgac(1881)/libakonadi Akonadi::AgentManagerPrivate::createDBusInterface: AgentManager failed to get a valid AgentManager DBus interface. Error is: 1 "org.freedesktop.DBus.Error.NameHasNoOwner" "Could not get owner of name 'org.freedesktop.Akonadi.Control': no such name" 
+korgac(1881)/libakonadi Akonadi::SessionPrivate::socketError: Socket error occurred: "QLocalSocket::connectToServer: Invalid name" 
+korgac(1881)/libakonadi Akonadi::SessionPrivate::socketError: Socket error occurred: "QLocalSocket::connectToServer: Invalid name" 
+Connecting to deprecated signal QDBusConnectionInterface::serviceOwnerChanged(QString,QString,QString)
+search paths:  ("/usr/local/bin", "/usr/bin", "/bin", "/usr/local/games", "/usr/games", "/usr/sbin", "/usr/local/sbin", "/usr/local/libexec", "/usr/libexec", "/opt/mysql/libexec", "/opt/local/lib/mysql5/bin", "/opt/mysql/sbin") 
+Found mysql_install_db:  "/usr/bin/mysql_install_db" 
+Found mysqlcheck:  "" 
+MySQL version OK (required "5.1" , available "5.5" ) 
+Database "akonadi" opened using driver "QMYSQL" 
+DbInitializer::run() 
+checking table  "SchemaVersionTable" 
+checking table  "ResourceTable" 
+checking table  "CollectionTable" 
+checking table  "MimeTypeTable" 
+checking table  "PimItemTable" 
+checking table  "FlagTable" 
+checking table  "PartTypeTable" 
+checking table  "PartTable" 
+checking table  "CollectionAttributeTable" 
+checking table  "TagTypeTable" 
+checking table  "TagTable" 
+checking table  "TagAttributeTable" 
+checking table  "TagRemoteIdResourceRelationTable" 
+checking table  "PimItemFlagRelation" 
+checking table  "PimItemTagRelation" 
+checking table  "CollectionMimeTypeRelation" 
+checking table  "CollectionPimItemRelation" 
+DbInitializer::run() done 
+skipping update 2 
+skipping update 3 
+skipping update 4 
+skipping update 8 
+skipping update 10 
+skipping update 12 
+skipping update 13 
+skipping update 14 
+skipping update 15 
+skipping update 16 
+skipping update 17 
+skipping update 18 
+skipping update 19 
+skipping update 20 
+skipping update 21 
+skipping update 22 
+skipping update 23 
+skipping update 24 
+skipping update 25 
+skipping update 26 
+skipping update 28 
+Indexes successfully created 
+Search loop is waiting, will wake again in -1 ms 
+Database "akonadi" opened using driver "QMYSQL" 
+Database "akonadi" opened using driver "QMYSQL" 
+Database "akonadi" opened using driver "QMYSQL" 
+Connecting to deprecated signal QDBusConnectionInterface::serviceOwnerChanged(QString,QString,QString)
+DataStore::unhideAllPimItems() 
+Database "akonadi" opened using driver "QMYSQL" 
+search paths:  ("/usr/lib", "/usr/lib/qt4/plugins/", "/usr/lib/kde4/", "/usr/lib/kde4/plugins/", "/usr/lib/qt4/plugins/", "/usr/lib/x86_64-linux-gnu/qt4/plugins", "/usr/bin", "/home/david/.kde/lib/kde4/") 
+SEARCH MANAGER: searching in  "/usr/lib/akonadi" : () 
+SEARCH MANAGER: searching in  "/usr/lib/qt4/plugins//akonadi" : () 
+SEARCH MANAGER: searching in  "/usr/lib/kde4//akonadi" : () 
+SEARCH MANAGER: searching in  "/usr/lib/kde4/plugins//akonadi" : () 
+SEARCH MANAGER: searching in  "/usr/lib/qt4/plugins//akonadi" : () 
+SEARCH MANAGER: searching in  "/usr/lib/x86_64-linux-gnu/qt4/plugins/akonadi" : () 
+SEARCH MANAGER: searching in  "/usr/bin/akonadi" : () 
+SEARCH MANAGER: searching in  "/home/david/.kde/lib/kde4//akonadi" : () 
+PLUGINS:  "/usr/share/akonadi/agents" 
+PLUGINS:  ("akonadinepomukfeederagent.desktop", "akonotesresource.desktop", "birthdaysresource.desktop", "contactsresource.desktop", "davgroupwareresource.desktop", "googlecalendarresource.desktop", "googlecontactsresource.desktop", "icaldirresource.desktop", "icalresource.desktop", "imapresource.desktop", "invitationsagent.desktop", "kabcresource.desktop", "kalarmdirresource.desktop", "kalarmresource.desktop", "kcalresource.desktop", "kdeaccountsresource.desktop", "kolabproxyresource.desktop", "kolabresource.desktop", "localbookmarksresource.desktop", "maildirresource.desktop", "maildispatcheragent.desktop", "mboxresource.desktop", "migrationagent.desktop", "mixedmaildirresource.desktop", "mtdummyresource.desktop", "newmailnotifieragent.desktop", "nntpresource.desktop", "notesresource.desktop", "openxchangeresource.desktop", "pop3resource.desktop", "vcarddirresource.desktop", "vcardresource.desktop") 
+search paths:  ("/usr/local/bin", "/usr/bin", "/bin", "/usr/local/games", "/usr/games") 
+Executable "akonadi_nepomuk_feeder" for agent "akonadi_nepomuk_feeder" could not be found!
+PLUGINS inserting:  "akonadi_akonotes_resource" 1 ("Resource", "Notes") 
+PLUGINS inserting:  "akonadi_birthdays_resource" 0 ("Resource", "Unique") 
+PLUGINS inserting:  "akonadi_contacts_resource" 1 ("Resource") 
+PLUGINS inserting:  "akonadi_davgroupware_resource" 2 ("Resource", "FreeBusyProvider") 
+PLUGINS inserting:  "akonadi_googlecalendar_resource" 0 ("Resource") 
+PLUGINS inserting:  "akonadi_googlecontacts_resource" 0 ("Resource") 
+PLUGINS inserting:  "akonadi_icaldir_resource" 0 ("Resource") 
+PLUGINS inserting:  "akonadi_ical_resource" 2 ("Resource") 
+PLUGINS inserting:  "akonadi_imap_resource" 0 ("Resource") 
+PLUGINS inserting:  "akonadi_invitations_agent" 0 ("NoConfig") 
+PLUGINS inserting:  "akonadi_kabc_resource" 0 ("Resource") 
+PLUGINS inserting:  "akonadi_kalarm_dir_resource" 0 ("Resource") 
+PLUGINS inserting:  "akonadi_kalarm_resource" 0 ("Resource") 
+PLUGINS inserting:  "akonadi_kcal_resource" 0 ("Resource") 
+PLUGINS inserting:  "akonadi_kdeaccounts_resource" 0 ("Resource") 
+PLUGINS inserting:  "akonadi_kolabproxy_resource" 0 ("Resource", "Unique") 
+PLUGINS inserting:  "akonadi_kolab_resource" 0 ("Resource") 
+PLUGINS inserting:  "akonadi_localbookmarks_resource" 0 ("Resource") 
+PLUGINS inserting:  "akonadi_maildir_resource" 1 ("Resource") 
+PLUGINS inserting:  "akonadi_maildispatcher_agent" 0 ("Unique", "Autostart") 
+PLUGINS inserting:  "akonadi_mbox_resource" 0 ("Resource") 
+PLUGINS inserting:  "akonadi_migration_agent" 0 ("Unique", "Autostart") 
+PLUGINS inserting:  "akonadi_mixedmaildir_resource" 0 ("Resource") 
+PLUGINS inserting:  "akonadi_mailtransport_dummy_resource" 0 ("Resource", "MailTransport") 
+PLUGINS inserting:  "akonadi_newmailnotifier_agent" 0 ("Unique", "Autostart") 
+PLUGINS inserting:  "akonadi_nntp_resource" 0 ("Resource") 
+PLUGINS inserting:  "akonadi_notes_resource" 0 ("Resource") 
+PLUGINS inserting:  "akonadi_openxchange_resource" 0 ("Resource") 
+PLUGINS inserting:  "akonadi_pop3_resource" 0 ("Resource") 
+PLUGINS inserting:  "akonadi_vcarddir_resource" 0 ("Resource") 
+PLUGINS inserting:  "akonadi_vcard_resource" 0 ("Resource") 
+Akonadi server is now operational. 
+search paths:  ("/usr/lib", "/usr/lib/qt4/plugins/", "/usr/lib/kde4/", "/usr/lib/kde4/plugins/", "/usr/lib/qt4/plugins/", "/usr/lib/x86_64-linux-gnu/qt4/plugins", "/usr/bin", "/home/david/.kde/lib/kde4/") 
+search paths:  ("/usr/lib", "/usr/lib/qt4/plugins/", "/usr/lib/kde4/", "/usr/lib/kde4/plugins/", "/usr/lib/qt4/plugins/", "/usr/lib/x86_64-linux-gnu/qt4/plugins", "/usr/bin", "/home/david/.kde/lib/kde4/") 
+search paths:  ("/usr/lib", "/usr/lib/qt4/plugins/", "/usr/lib/kde4/", "/usr/lib/kde4/plugins/", "/usr/lib/qt4/plugins/", "/usr/lib/x86_64-linux-gnu/qt4/plugins", "/usr/bin", "/home/david/.kde/lib/kde4/") 
+QDBusObjectPath Akonadi::Server::NotificationManager::subscribeV2(const QString&, bool) Akonadi::Server::NotificationManager(0x145d380) "korgac_1881_Nehs7O" true 
+QDBusObjectPath Akonadi::Server::NotificationManager::subscribeV3(const QString&, bool, bool) Akonadi::Server::NotificationManager(0x145d380) "korgac_1881_Nehs7O" true false 
+Database "akonadi" opened using driver "QMYSQL" 
+Database "akonadi" opened using driver "QMYSQL" 
+QDBusObjectPath Akonadi::Server::NotificationManager::subscribeV2(const QString&, bool) Akonadi::Server::NotificationManager(0x145d380) "AkonadiAgentServer_1980_9edPGk" true 
+QDBusObjectPath Akonadi::Server::NotificationManager::subscribeV3(const QString&, bool, bool) Akonadi::Server::NotificationManager(0x145d380) "AkonadiAgentServer_1980_9edPGk" true false 
+QDBusObjectPath Akonadi::Server::NotificationManager::subscribeV2(const QString&, bool) Akonadi::Server::NotificationManager(0x145d380) "AkonadiAgentServer_1979_FLzJC5" true 
+QDBusObjectPath Akonadi::Server::NotificationManager::subscribeV3(const QString&, bool, bool) Akonadi::Server::NotificationManager(0x145d380) "AkonadiAgentServer_1979_FLzJC5" true false 
+QDBusObjectPath Akonadi::Server::NotificationManager::subscribeV2(const QString&, bool) Akonadi::Server::NotificationManager(0x145d380) "AkonadiAgentServer_1983_hiry8x" true 
+QDBusObjectPath Akonadi::Server::NotificationManager::subscribeV3(const QString&, bool, bool) Akonadi::Server::NotificationManager(0x145d380) "AkonadiAgentServer_1983_hiry8x" true false 
+Database "akonadi" opened using driver "QMYSQL" 
+Database "akonadi" opened using driver "QMYSQL" 
+Database "akonadi" opened using driver "QMYSQL" 
+Database "akonadi" opened using driver "QMYSQL" 
+QDBusObjectPath Akonadi::Server::NotificationManager::subscribeV2(const QString&, bool) Akonadi::Server::NotificationManager(0x145d380) "akonadi_migration_agent_1985_JHnF3f" true 
+QDBusObjectPath Akonadi::Server::NotificationManager::subscribeV3(const QString&, bool, bool) Akonadi::Server::NotificationManager(0x145d380) "akonadi_migration_agent_1985_JHnF3f" true false 
+QDBusObjectPath Akonadi::Server::NotificationManager::subscribeV2(const QString&, bool) Akonadi::Server::NotificationManager(0x145d380) "akonadi_davgroupware_resource_1_1982_aJo5iY" true 
+QDBusObjectPath Akonadi::Server::NotificationManager::subscribeV3(const QString&, bool, bool) Akonadi::Server::NotificationManager(0x145d380) "akonadi_davgroupware_resource_1_1982_aJo5iY" true false 
+QDBusObjectPath Akonadi::Server::NotificationManager::subscribeV2(const QString&, bool) Akonadi::Server::NotificationManager(0x145d380) "akonadi_newmailnotifier_agent_1992_iLPJz8" true 
+QDBusObjectPath Akonadi::Server::NotificationManager::subscribeV3(const QString&, bool, bool) Akonadi::Server::NotificationManager(0x145d380) "akonadi_newmailnotifier_agent_1992_iLPJz8" true false 
+Agent instance created in separate process. 
+Database "akonadi" opened using driver "QMYSQL" 
+Database "akonadi" opened using driver "QMYSQL" 
+Agent instance created in separate process. 
+Agent instance created in separate process. 
+Database "akonadi" opened using driver "QMYSQL" 
+QDBusObjectPath Akonadi::Server::NotificationManager::subscribeV2(const QString&, bool) Akonadi::Server::NotificationManager(0x145d380) "akonadi_davgroupware_resource_0_1981_FaCDl3" true 
+QDBusObjectPath Akonadi::Server::NotificationManager::subscribeV3(const QString&, bool, bool) Akonadi::Server::NotificationManager(0x145d380) "akonadi_davgroupware_resource_0_1981_FaCDl3" true false 
+Database "akonadi" opened using driver "QMYSQL" 
+QDBusObjectPath Akonadi::Server::NotificationManager::subscribeV2(const QString&, bool) Akonadi::Server::NotificationManager(0x145d380) "akonadi_maildispatcher_agent_1984_T31FOb" true 
+QDBusObjectPath Akonadi::Server::NotificationManager::subscribeV3(const QString&, bool, bool) Akonadi::Server::NotificationManager(0x145d380) "akonadi_maildispatcher_agent_1984_T31FOb" true false 
+Hspell: can't open /usr/share/hspell/hebrew.wgz.sizes.
+QDBusObjectPath Akonadi::Server::NotificationManager::subscribeV2(const QString&, bool) Akonadi::Server::NotificationManager(0x145d380) "akonadi_maildispatcher_agent_1984_9hScGd" true 
+QDBusObjectPath Akonadi::Server::NotificationManager::subscribeV3(const QString&, bool, bool) Akonadi::Server::NotificationManager(0x145d380) "akonadi_maildispatcher_agent_1984_9hScGd" true false 
+QDBusConnection: session D-Bus connection created before QCoreApplication. Application may misbehave.
+QDBusObjectPath Akonadi::Server::NotificationManager::subscribeV2(const QString&, bool) Akonadi::Server::NotificationManager(0x145d380) "akonadi_maildispatcher_agent_1984_Dcr0fa" true 
+QDBusObjectPath Akonadi::Server::NotificationManager::subscribeV3(const QString&, bool, bool) Akonadi::Server::NotificationManager(0x145d380) "akonadi_maildispatcher_agent_1984_Dcr0fa" true false 
+QDBusConnection: session D-Bus connection created before QCoreApplication. Application may misbehave.
+QDBusConnection: session D-Bus connection created before QCoreApplication. Application may misbehave.
+QDBusConnection: session D-Bus connection created before QCoreApplication. Application may misbehave.
+QDBusConnection: name 'org.kde.kwalletd' had owner '' but we thought it was ':1.30'
+QDBusConnection: name 'org.kde.kwalletd' had owner '' but we thought it was ':1.30'
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kbuildsycoca4 running...
+kbuildsycoca4(16313) kdemain: Reusing existing ksycoca
+kbuildsycoca4(16313) KBuildSycoca::recreate: Recreating ksycoca file ("/var/tmp/kdecache-david/ksycoca4", version 240)
+kbuildsycoca4(16313) KBuildSycoca::build: Still in the time dict (i.e. deleted files) ("apps")
+kbuildsycoca4(16313) VFolderMenu::mergeFile: VFolderMenu::mergeFile: "/home/david/.config/menus/applications-merged/javaws.menu"
+kbuildsycoca4(16313) VFolderMenu::mergeFile: VFolderMenu::mergeFile: "/home/david/.config/menus/applications-merged/xdg-desktop-menu-dummy.menu"
+kbuildsycoca4(16313) VFolderMenu::loadDoc: Parse error in  "/home/david/.config/menus/applications-merged/xdg-desktop-menu-dummy.menu" , line  1 , col  1 :  "unexpected end of file" 
+kbuildsycoca4(16313) VFolderMenu::mergeFile: VFolderMenu::mergeFile: "/etc/xdg/menus/debian-menu.menu"
+kbuildsycoca4(16313) foldNode: "Directory" and "debian.directory" requires combining!
+kbuildsycoca4(16313) VFolderMenu::pushDocInfo: Menu "applications-kmenuedit.menu" not found.
+kbuildsycoca4(16313) VFolderMenu::processMenu: Processing KDE Legacy dirs for <KDE>
+kbuildsycoca4(16313) VFolderMenu::processKDELegacyDirs:
+kbuildsycoca4(16313) VFolderMenu::loadApplications: Looking up applications under "/usr/share/applications/"
+kbuildsycoca4(16313) KBuildSycoca::createEntry: new: "/usr/share/applications/display-im6.desktop" in apps
+kbuildsycoca4(16313) VFolderMenu::loadApplications: Looking up applications under "/usr/share/applications/screensavers"
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/usr/share/applications/inkscape.desktop" in apps
+kbuildsycoca4(16313) VFolderMenu::loadApplications: Looking up applications under "/usr/share/applications/kde4"
+kbuildsycoca4(16313) KBuildSycoca::createEntry: new: "/usr/share/applications/display-im6.q16.desktop" in apps
+kbuildsycoca4(16313) VFolderMenu::loadApplications: Looking up applications under "/home/david/.local/share/applications/"
+kbuildsycoca4(16313) VFolderMenu::processMenu: Menu "Java WebStart" does not specify a directory file.
+kbuildsycoca4(16313) VFolderMenu::processMenu: Menu "Neocoretech" does not specify a directory file.
+kbuildsycoca4(16313) VFolderMenu::loadApplications: Looking up applications under "/var/lib/menu-xdg/applications/"
+kbuildsycoca4(16313) VFolderMenu::loadApplications: Looking up applications under "/var/lib/menu-xdg/applications/menu-xdg"
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Sound-banshee.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Games-Card-pysolfc_solitaire_games.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Programming-tkwish8.5.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Editors-emacs_23_(x11).desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Programming-tclsh8.6.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Programming-python_(v3.4).desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Administration-unetbootin.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Science-Data-Analysis-gnu_r.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Programming-qt4_linguist.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Screen-Locking-lock_screen_(xscreensaver).desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Emulators-virtualbox.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Shells-sh.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Terminal-Emulators-xterm_(unicode).desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Office-libreoffice_impress.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Editors-gedit.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Screen-Saving-reinitialize_xscreensaver.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Editors-xpad.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Video-vlc_media_player.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Network-Monitoring-wireshark.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Hardware-xvidtune.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Graphics-lefty.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Graphics-dotty.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Sound-exaile.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Sound-ex_falso.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Administration-xkill.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Administration-openbox_configuration_manager.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Office-hplip_fax_utility.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Administration-xrefresh.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Shells-bash.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Editors-xournal.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Office-hplip_fax_address_book.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Hardware-arandr.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Editors-leafpad.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Programming-qt_creator.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Network-Communication-irssi.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Network-Web-Browsing-chromium.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Science-Engineering-dia.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Administration-debian_task_selector.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Network-Communication-telnet.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Screen-Saving-disable_xscreensaver.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Science-Mathematics-bc.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Programming-ruby_(irb1.9.1).desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Hardware-gpointing-device-settings.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Programming-qt4_designer.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Programming-tkwish8.6.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Games-Action-stormbaan_coureur.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Hardware-fprint_demonstration_utility.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Programming-gnat_programming_studio.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Screen-Saving-activate_screensaver_(previous).desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Administration-texconfig.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Shells-dash.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Monitoring-xev.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Screen-Saving-enable_xscreensaver.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Games-Strategy-pingus_-_enhanced_lemmings_clone.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Network-Communication-mutt.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-File-Management-brasero.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Hardware-lstopo.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Administration-lxappearance.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Viewers-xpdf.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-File-Management-xarchiver.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Network-File-Transfer-transmission_bittorrent_client_(gtk).desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Screen-Saving-activate_screensaver_(random).desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Administration-editres.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Games-Puzzles-2048-qt.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Package-Management-aptitude_package_manager_(text).desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Administration-hplip_file_printing.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Network-Web-Browsing-lynx-cur.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Monitoring-pstree.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Science-Mathematics-dc.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Sound-pavucontrol.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Programming-qt4_assistant.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Monitoring-lxtask.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Data-Management-libreoffice_base.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Science-Mathematics-gnuplot.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Programming-python_(v2.7).desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Office-libreoffice_writer.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Programming-gdb.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Administration-reportbug.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Graphics-libreoffice_draw.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Games-Action-supertuxkart.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Sound-gmpc.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Editors-nano.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Administration-xfontsel.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Terminal-Emulators-lxterminal.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Monitoring-conky.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Help-texdoctk.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Screen-Saving-screensaver_preferences.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Network-Communication-pidgin.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Help-yelp.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Science-Mathematics-galculator.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Programming-tclsh8.5.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Terminal-Emulators-x-terminal_as_root_(gksu).desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Editors-gvim.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Help-info.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Security-seahorse.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Monitoring-htop.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Screen-Saving-activate_screensaver_(next).desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Network-Web-Browsing-w3m.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Viewers-evince.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Sound-ncmpcpp.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Office-libreoffice_calc.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Administration-reportbug_(gtk+).desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Administration-gnome_partition_editor.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Science-Mathematics-libreoffice_math.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Terminal-Emulators-xterm.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Video-winff.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Network-vnc_viewer.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Hardware-hplip_toolbox.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Screen-Saving-demo_screen_hacks.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-File-Management-pcmanfm.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Viewers-shotwell.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Viewers-xdvi.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Monitoring-top.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Editors-emacs_23_(text).desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Monitoring-lxrandr.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Graphics-the_gimp.desktop" in apps
+kbuildsycoca4(16313) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Programming-cmake_qt4_gui_(cmake-gui).desktop" in apps
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.q16.desktop" specifies undefined mimetype/servicetype "image/avs"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.q16.desktop" specifies undefined mimetype/servicetype "image/bie"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.q16.desktop" specifies undefined mimetype/servicetype "image/x-ms-bmp"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.q16.desktop" specifies undefined mimetype/servicetype "image/cmyk"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.q16.desktop" specifies undefined mimetype/servicetype "image/dcx"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.q16.desktop" specifies undefined mimetype/servicetype "image/eps"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.q16.desktop" specifies undefined mimetype/servicetype "image/fax"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.q16.desktop" specifies undefined mimetype/servicetype "image/gray"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.q16.desktop" specifies undefined mimetype/servicetype "image/miff"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.q16.desktop" specifies undefined mimetype/servicetype "image/mono"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.q16.desktop" specifies undefined mimetype/servicetype "image/mtv"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.q16.desktop" specifies undefined mimetype/servicetype "image/pcd"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.q16.desktop" specifies undefined mimetype/servicetype "image/pcx"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.q16.desktop" specifies undefined mimetype/servicetype "image/pict"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.q16.desktop" specifies undefined mimetype/servicetype "image/ps"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.q16.desktop" specifies undefined mimetype/servicetype "image/rad"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.q16.desktop" specifies undefined mimetype/servicetype "image/rgba"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.q16.desktop" specifies undefined mimetype/servicetype "image/rla"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.q16.desktop" specifies undefined mimetype/servicetype "image/sgi"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.q16.desktop" specifies undefined mimetype/servicetype "image/sun-raster"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.q16.desktop" specifies undefined mimetype/servicetype "image/targa"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.q16.desktop" specifies undefined mimetype/servicetype "image/uyvy"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.q16.desktop" specifies undefined mimetype/servicetype "image/vid"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.q16.desktop" specifies undefined mimetype/servicetype "image/viff"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.q16.desktop" specifies undefined mimetype/servicetype "image/yuv"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "plasma-kpart.desktop" specifies undefined mimetype/servicetype "KParts/Part"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/lib/libreoffice/share/xdg/calc.desktop" specifies undefined mimetype/servicetype "application/csv"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/lib/libreoffice/share/xdg/calc.desktop" specifies undefined mimetype/servicetype "application/excel"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/lib/libreoffice/share/xdg/calc.desktop" specifies undefined mimetype/servicetype "application/tab-separated-values"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/lib/libreoffice/share/xdg/calc.desktop" specifies undefined mimetype/servicetype "application/x-dos_ms_excel"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/lib/libreoffice/share/xdg/calc.desktop" specifies undefined mimetype/servicetype "application/x-excel"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/lib/libreoffice/share/xdg/calc.desktop" specifies undefined mimetype/servicetype "application/x-ms-excel"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/lib/libreoffice/share/xdg/calc.desktop" specifies undefined mimetype/servicetype "text/comma-separated-values"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/lib/libreoffice/share/xdg/calc.desktop" specifies undefined mimetype/servicetype "application/clarisworks"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/gimp.desktop" specifies undefined mimetype/servicetype "image/x-gimp-gbr"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/gimp.desktop" specifies undefined mimetype/servicetype "image/x-gimp-pat"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/gimp.desktop" specifies undefined mimetype/servicetype "image/x-gimp-gih"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/gimp.desktop" specifies undefined mimetype/servicetype "image/x-psp"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/brasero.desktop" specifies undefined mimetype/servicetype "application/x-toc"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/lib/libreoffice/share/xdg/draw.desktop" specifies undefined mimetype/servicetype "image/x-freehand"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/lib/libreoffice/share/xdg/draw.desktop" specifies undefined mimetype/servicetype "application/clarisworks"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.desktop" specifies undefined mimetype/servicetype "image/avs"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.desktop" specifies undefined mimetype/servicetype "image/bie"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.desktop" specifies undefined mimetype/servicetype "image/x-ms-bmp"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.desktop" specifies undefined mimetype/servicetype "image/cmyk"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.desktop" specifies undefined mimetype/servicetype "image/dcx"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.desktop" specifies undefined mimetype/servicetype "image/eps"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.desktop" specifies undefined mimetype/servicetype "image/fax"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.desktop" specifies undefined mimetype/servicetype "image/gray"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.desktop" specifies undefined mimetype/servicetype "image/miff"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.desktop" specifies undefined mimetype/servicetype "image/mono"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.desktop" specifies undefined mimetype/servicetype "image/mtv"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.desktop" specifies undefined mimetype/servicetype "image/pcd"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.desktop" specifies undefined mimetype/servicetype "image/pcx"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.desktop" specifies undefined mimetype/servicetype "image/pict"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.desktop" specifies undefined mimetype/servicetype "image/ps"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.desktop" specifies undefined mimetype/servicetype "image/rad"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.desktop" specifies undefined mimetype/servicetype "image/rgba"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.desktop" specifies undefined mimetype/servicetype "image/rla"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.desktop" specifies undefined mimetype/servicetype "image/sgi"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.desktop" specifies undefined mimetype/servicetype "image/sun-raster"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.desktop" specifies undefined mimetype/servicetype "image/targa"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.desktop" specifies undefined mimetype/servicetype "image/uyvy"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.desktop" specifies undefined mimetype/servicetype "image/vid"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.desktop" specifies undefined mimetype/servicetype "image/viff"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.desktop" specifies undefined mimetype/servicetype "image/yuv"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/gpicview.desktop" specifies undefined mimetype/servicetype "image/jpg"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/gpicview.desktop" specifies undefined mimetype/servicetype "image/x-targa"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/gpicview.desktop" specifies undefined mimetype/servicetype "image/x-portable-greymap"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/gpicview.desktop" specifies undefined mimetype/servicetype "application/pcx"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/gpicview.desktop" specifies undefined mimetype/servicetype "image/svg-xml"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/rstudio.desktop" specifies undefined mimetype/servicetype "text/x-r"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/rstudio.desktop" specifies undefined mimetype/servicetype "text/x-R"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/lib/libreoffice/share/xdg/writer.desktop" specifies undefined mimetype/servicetype "application/x-doc"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/lib/libreoffice/share/xdg/writer.desktop" specifies undefined mimetype/servicetype "application/x-extension-txt"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/lib/libreoffice/share/xdg/writer.desktop" specifies undefined mimetype/servicetype "application/macwriteii"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/lib/libreoffice/share/xdg/writer.desktop" specifies undefined mimetype/servicetype "application/clarisworks"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/exaile.desktop" specifies undefined mimetype/servicetype "audio/musepack"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/exaile.desktop" specifies undefined mimetype/servicetype "application/musepack"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/exaile.desktop" specifies undefined mimetype/servicetype "application/x-ape"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/exaile.desktop" specifies undefined mimetype/servicetype "audio/ape"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/exaile.desktop" specifies undefined mimetype/servicetype "application/x-musepack"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/exaile.desktop" specifies undefined mimetype/servicetype "application/x-id3"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/exaile.desktop" specifies undefined mimetype/servicetype "audio/x-mpeg-3"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/exaile.desktop" specifies undefined mimetype/servicetype "audio/mpeg3"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/exaile.desktop" specifies undefined mimetype/servicetype "audio/mpc"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/exaile.desktop" specifies undefined mimetype/servicetype "audio/x-mpc"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/exaile.desktop" specifies undefined mimetype/servicetype "audio/mp"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/exaile.desktop" specifies undefined mimetype/servicetype "audio/x-mp"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/exaile.desktop" specifies undefined mimetype/servicetype "application/x-flac"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "katesnippetsplugin.desktop" specifies undefined mimetype/servicetype "Kate/Plugin"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "windowsexethumbnail.desktop" specifies undefined mimetype/servicetype "application/x-msdownload"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "application/x-extension-mp4"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "audio/168sv"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "audio/8svx"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "audio/aiff"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "audio/mpeg2"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "audio/mpeg3"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "audio/vnd.rn-realmedia"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "audio/x-16sv"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "audio/x-8svx"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "audio/x-basic"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "audio/x-mpeg2"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "audio/x-mpeg3"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "audio/x-pn-aiff"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "audio/x-pn-au"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "audio/x-pn-wav"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "audio/x-pn-windows-acm"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "audio/x-real-audio"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "audio/x-realaudio"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "image/ilbm"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "image/x-png"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "video/anim"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "video/mkv"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "video/mng"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "video/mpeg-system"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "video/mpg"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "video/x-mpeg-system"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "video/x-ms-wma"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "video/x-quicktime"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/vlc.desktop" specifies undefined mimetype/servicetype "video/x-flc"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/vlc.desktop" specifies undefined mimetype/servicetype "audio/x-ms-asf"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/vlc.desktop" specifies undefined mimetype/servicetype "audio/x-ms-wax"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/vlc.desktop" specifies undefined mimetype/servicetype "audio/x-real-audio"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/vlc.desktop" specifies undefined mimetype/servicetype "application/x-flac"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/vlc.desktop" specifies undefined mimetype/servicetype "misc/ultravox"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/vlc.desktop" specifies undefined mimetype/servicetype "audio/x-pn-aiff"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/vlc.desktop" specifies undefined mimetype/servicetype "audio/x-pn-au"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/vlc.desktop" specifies undefined mimetype/servicetype "audio/x-pn-wav"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/vlc.desktop" specifies undefined mimetype/servicetype "audio/x-pn-windows-acm"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/vlc.desktop" specifies undefined mimetype/servicetype "application/x-extension-mp4"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/emacs23.desktop" specifies undefined mimetype/servicetype "text/english"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/emacs23.desktop" specifies undefined mimetype/servicetype "text/x-c++"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/xarchiver.desktop" specifies undefined mimetype/servicetype "application/arj"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/xarchiver.desktop" specifies undefined mimetype/servicetype "application/x-bzip2-compressed-tar"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/xarchiver.desktop" specifies undefined mimetype/servicetype "application/deb"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "application/musepack"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "application/x-ape"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "application/x-democracy"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "application/x-extension-m4a"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "application/x-extension-mp4"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "application/x-flac"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "application/x-id3"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "application/x-miro"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "application/x-musepack"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "application/x-troff-msvideo"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "audio/ape"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "audio/avi"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "audio/mp"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "audio/mp4a-latm"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "audio/mpc"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "audio/mpeg3"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "audio/musepack"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "audio/wave"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "audio/x-mp"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "audio/x-mpc"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "audio/x-mpeg-3"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "audio/x-ms-asf"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "audio/x-ms-wax"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "audio/x-pn-aiff"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "audio/x-pn-au"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "audio/x-pn-wav"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "audio/x-pn-windows-acm"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "audio/x-sbc"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "image/avi"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "misc/ultravox"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "video/x-flc"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "video/x-mpg"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/chromium.desktop" specifies undefined mimetype/servicetype "application/xhtml_xml"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/jpg"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-3fr"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-arw"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-bay"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-cap"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-cr2"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-crw"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-dcr"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-dcs"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-dng"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-drf"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-eip"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-erf"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-fff"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-iiq"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-k25"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-kdc"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-mef"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-mos"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-mrw"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-nef"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-nrw"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-orf"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-pef"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-png"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-ptx"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-pxn"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-r3d"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-raf"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-raw"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-rw2"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-rwl"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-rwz"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-sr2"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-srf"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-x3f"
+kbuildsycoca4(16313) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/qtcreator.desktop" specifies undefined mimetype/servicetype "text/x-xsrc"
+kbuildsycoca4(16313) KMimeAssociations::parseAllMimeAppsList: Parsing "/home/david/.local/share/applications/mimeapps.list"
+kbuildsycoca4(16313) KBuildSycoca::save: Saving
+kbuildsycoca4(16313) kdemain: Emitting notifyDatabaseChanged ("apps", "apps")
+kbuildsycoca4 running...
+kbuildsycoca4(21297) kdemain: Reusing existing ksycoca
+kbuildsycoca4(21297) KBuildSycoca::recreate: Recreating ksycoca file ("/var/tmp/kdecache-david/ksycoca4", version 240)
+kbuildsycoca4(21297) KBuildSycoca::build: Still in the time dict (i.e. deleted files) ("apps")
+kbuildsycoca4(21297) VFolderMenu::mergeFile: VFolderMenu::mergeFile: "/home/david/.config/menus/applications-merged/javaws.menu"
+kbuildsycoca4(21297) VFolderMenu::mergeFile: VFolderMenu::mergeFile: "/home/david/.config/menus/applications-merged/xdg-desktop-menu-dummy.menu"
+kbuildsycoca4(21297) VFolderMenu::loadDoc: Parse error in  "/home/david/.config/menus/applications-merged/xdg-desktop-menu-dummy.menu" , line  1 , col  1 :  "unexpected end of file" 
+kbuildsycoca4(21297) VFolderMenu::mergeFile: VFolderMenu::mergeFile: "/etc/xdg/menus/debian-menu.menu"
+kbuildsycoca4(21297) foldNode: "Directory" and "debian.directory" requires combining!
+kbuildsycoca4(21297) VFolderMenu::pushDocInfo: Menu "applications-kmenuedit.menu" not found.
+kbuildsycoca4(21297) VFolderMenu::processMenu: Processing KDE Legacy dirs for <KDE>
+kbuildsycoca4(21297) VFolderMenu::processKDELegacyDirs:
+kbuildsycoca4(21297) VFolderMenu::loadApplications: Looking up applications under "/usr/share/applications/"
+kbuildsycoca4(21297) VFolderMenu::loadApplications: Looking up applications under "/usr/share/applications/screensavers"
+kbuildsycoca4(21297) VFolderMenu::loadApplications: Looking up applications under "/usr/share/applications/kde4"
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/usr/share/applications/python3.4.desktop" in apps
+kbuildsycoca4(21297) VFolderMenu::loadApplications: Looking up applications under "/home/david/.local/share/applications/"
+kbuildsycoca4(21297) VFolderMenu::processMenu: Menu "Java WebStart" does not specify a directory file.
+kbuildsycoca4(21297) VFolderMenu::processMenu: Menu "Neocoretech" does not specify a directory file.
+kbuildsycoca4(21297) VFolderMenu::loadApplications: Looking up applications under "/var/lib/menu-xdg/applications/"
+kbuildsycoca4(21297) VFolderMenu::loadApplications: Looking up applications under "/var/lib/menu-xdg/applications/menu-xdg"
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Sound-banshee.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Games-Card-pysolfc_solitaire_games.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Programming-tkwish8.5.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Editors-emacs_23_(x11).desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Programming-tclsh8.6.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Administration-unetbootin.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Science-Data-Analysis-gnu_r.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Programming-qt4_linguist.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Screen-Locking-lock_screen_(xscreensaver).desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Emulators-virtualbox.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Shells-sh.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Terminal-Emulators-xterm_(unicode).desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Office-libreoffice_impress.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Editors-gedit.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Screen-Saving-reinitialize_xscreensaver.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Editors-xpad.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Video-vlc_media_player.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Network-Monitoring-wireshark.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Hardware-xvidtune.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Graphics-lefty.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Graphics-dotty.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Sound-exaile.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Sound-ex_falso.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Administration-xkill.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Administration-openbox_configuration_manager.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Office-hplip_fax_utility.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Administration-xrefresh.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Shells-bash.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Editors-xournal.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Office-hplip_fax_address_book.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Hardware-arandr.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Editors-leafpad.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Programming-qt_creator.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Network-Communication-irssi.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Network-Web-Browsing-chromium.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Science-Engineering-dia.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Administration-debian_task_selector.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Network-Communication-telnet.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Screen-Saving-disable_xscreensaver.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Science-Mathematics-bc.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Programming-ruby_(irb1.9.1).desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Hardware-gpointing-device-settings.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Programming-qt4_designer.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Programming-tkwish8.6.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Games-Action-stormbaan_coureur.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Hardware-fprint_demonstration_utility.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Programming-gnat_programming_studio.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Screen-Saving-activate_screensaver_(previous).desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Administration-texconfig.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Shells-dash.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Monitoring-xev.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Screen-Saving-enable_xscreensaver.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Games-Strategy-pingus_-_enhanced_lemmings_clone.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Network-Communication-mutt.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-File-Management-brasero.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Hardware-lstopo.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Administration-lxappearance.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Viewers-xpdf.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-File-Management-xarchiver.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Network-File-Transfer-transmission_bittorrent_client_(gtk).desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Screen-Saving-activate_screensaver_(random).desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Administration-editres.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Games-Puzzles-2048-qt.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Package-Management-aptitude_package_manager_(text).desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Administration-hplip_file_printing.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Network-Web-Browsing-lynx-cur.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Monitoring-pstree.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Science-Mathematics-dc.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Sound-pavucontrol.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Programming-qt4_assistant.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Monitoring-lxtask.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Data-Management-libreoffice_base.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Science-Mathematics-gnuplot.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Programming-python_(v2.7).desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Office-libreoffice_writer.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Programming-gdb.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Administration-reportbug.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Graphics-libreoffice_draw.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Games-Action-supertuxkart.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Sound-gmpc.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Editors-nano.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Administration-xfontsel.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Terminal-Emulators-lxterminal.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Monitoring-conky.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Help-texdoctk.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Screen-Saving-screensaver_preferences.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Network-Communication-pidgin.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Help-yelp.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Science-Mathematics-galculator.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Programming-tclsh8.5.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Terminal-Emulators-x-terminal_as_root_(gksu).desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Editors-gvim.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Help-info.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Security-seahorse.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Monitoring-htop.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Screen-Saving-activate_screensaver_(next).desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Network-Web-Browsing-w3m.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Viewers-evince.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Sound-ncmpcpp.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Office-libreoffice_calc.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Administration-reportbug_(gtk+).desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Administration-gnome_partition_editor.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Science-Mathematics-libreoffice_math.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Terminal-Emulators-xterm.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Video-winff.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Network-vnc_viewer.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Hardware-hplip_toolbox.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Screen-Saving-demo_screen_hacks.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-File-Management-pcmanfm.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Viewers-shotwell.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Viewers-xdvi.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Monitoring-top.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Editors-emacs_23_(text).desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Monitoring-lxrandr.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Graphics-the_gimp.desktop" in apps
+kbuildsycoca4(21297) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Programming-cmake_qt4_gui_(cmake-gui).desktop" in apps
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.q16.desktop" specifies undefined mimetype/servicetype "image/avs"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.q16.desktop" specifies undefined mimetype/servicetype "image/bie"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.q16.desktop" specifies undefined mimetype/servicetype "image/x-ms-bmp"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.q16.desktop" specifies undefined mimetype/servicetype "image/cmyk"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.q16.desktop" specifies undefined mimetype/servicetype "image/dcx"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.q16.desktop" specifies undefined mimetype/servicetype "image/eps"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.q16.desktop" specifies undefined mimetype/servicetype "image/fax"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.q16.desktop" specifies undefined mimetype/servicetype "image/gray"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.q16.desktop" specifies undefined mimetype/servicetype "image/miff"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.q16.desktop" specifies undefined mimetype/servicetype "image/mono"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.q16.desktop" specifies undefined mimetype/servicetype "image/mtv"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.q16.desktop" specifies undefined mimetype/servicetype "image/pcd"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.q16.desktop" specifies undefined mimetype/servicetype "image/pcx"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.q16.desktop" specifies undefined mimetype/servicetype "image/pict"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.q16.desktop" specifies undefined mimetype/servicetype "image/ps"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.q16.desktop" specifies undefined mimetype/servicetype "image/rad"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.q16.desktop" specifies undefined mimetype/servicetype "image/rgba"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.q16.desktop" specifies undefined mimetype/servicetype "image/rla"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.q16.desktop" specifies undefined mimetype/servicetype "image/sgi"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.q16.desktop" specifies undefined mimetype/servicetype "image/sun-raster"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.q16.desktop" specifies undefined mimetype/servicetype "image/targa"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.q16.desktop" specifies undefined mimetype/servicetype "image/uyvy"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.q16.desktop" specifies undefined mimetype/servicetype "image/vid"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.q16.desktop" specifies undefined mimetype/servicetype "image/viff"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.q16.desktop" specifies undefined mimetype/servicetype "image/yuv"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "plasma-kpart.desktop" specifies undefined mimetype/servicetype "KParts/Part"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/lib/libreoffice/share/xdg/calc.desktop" specifies undefined mimetype/servicetype "application/csv"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/lib/libreoffice/share/xdg/calc.desktop" specifies undefined mimetype/servicetype "application/excel"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/lib/libreoffice/share/xdg/calc.desktop" specifies undefined mimetype/servicetype "application/tab-separated-values"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/lib/libreoffice/share/xdg/calc.desktop" specifies undefined mimetype/servicetype "application/x-dos_ms_excel"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/lib/libreoffice/share/xdg/calc.desktop" specifies undefined mimetype/servicetype "application/x-excel"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/lib/libreoffice/share/xdg/calc.desktop" specifies undefined mimetype/servicetype "application/x-ms-excel"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/lib/libreoffice/share/xdg/calc.desktop" specifies undefined mimetype/servicetype "text/comma-separated-values"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/lib/libreoffice/share/xdg/calc.desktop" specifies undefined mimetype/servicetype "application/clarisworks"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/gimp.desktop" specifies undefined mimetype/servicetype "image/x-gimp-gbr"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/gimp.desktop" specifies undefined mimetype/servicetype "image/x-gimp-pat"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/gimp.desktop" specifies undefined mimetype/servicetype "image/x-gimp-gih"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/gimp.desktop" specifies undefined mimetype/servicetype "image/x-psp"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/brasero.desktop" specifies undefined mimetype/servicetype "application/x-toc"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/lib/libreoffice/share/xdg/draw.desktop" specifies undefined mimetype/servicetype "image/x-freehand"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/lib/libreoffice/share/xdg/draw.desktop" specifies undefined mimetype/servicetype "application/clarisworks"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.desktop" specifies undefined mimetype/servicetype "image/avs"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.desktop" specifies undefined mimetype/servicetype "image/bie"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.desktop" specifies undefined mimetype/servicetype "image/x-ms-bmp"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.desktop" specifies undefined mimetype/servicetype "image/cmyk"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.desktop" specifies undefined mimetype/servicetype "image/dcx"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.desktop" specifies undefined mimetype/servicetype "image/eps"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.desktop" specifies undefined mimetype/servicetype "image/fax"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.desktop" specifies undefined mimetype/servicetype "image/gray"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.desktop" specifies undefined mimetype/servicetype "image/miff"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.desktop" specifies undefined mimetype/servicetype "image/mono"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.desktop" specifies undefined mimetype/servicetype "image/mtv"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.desktop" specifies undefined mimetype/servicetype "image/pcd"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.desktop" specifies undefined mimetype/servicetype "image/pcx"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.desktop" specifies undefined mimetype/servicetype "image/pict"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.desktop" specifies undefined mimetype/servicetype "image/ps"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.desktop" specifies undefined mimetype/servicetype "image/rad"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.desktop" specifies undefined mimetype/servicetype "image/rgba"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.desktop" specifies undefined mimetype/servicetype "image/rla"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.desktop" specifies undefined mimetype/servicetype "image/sgi"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.desktop" specifies undefined mimetype/servicetype "image/sun-raster"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.desktop" specifies undefined mimetype/servicetype "image/targa"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.desktop" specifies undefined mimetype/servicetype "image/uyvy"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.desktop" specifies undefined mimetype/servicetype "image/vid"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.desktop" specifies undefined mimetype/servicetype "image/viff"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.desktop" specifies undefined mimetype/servicetype "image/yuv"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/gpicview.desktop" specifies undefined mimetype/servicetype "image/jpg"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/gpicview.desktop" specifies undefined mimetype/servicetype "image/x-targa"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/gpicview.desktop" specifies undefined mimetype/servicetype "image/x-portable-greymap"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/gpicview.desktop" specifies undefined mimetype/servicetype "application/pcx"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/gpicview.desktop" specifies undefined mimetype/servicetype "image/svg-xml"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/rstudio.desktop" specifies undefined mimetype/servicetype "text/x-r"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/rstudio.desktop" specifies undefined mimetype/servicetype "text/x-R"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/lib/libreoffice/share/xdg/writer.desktop" specifies undefined mimetype/servicetype "application/x-doc"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/lib/libreoffice/share/xdg/writer.desktop" specifies undefined mimetype/servicetype "application/x-extension-txt"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/lib/libreoffice/share/xdg/writer.desktop" specifies undefined mimetype/servicetype "application/macwriteii"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/lib/libreoffice/share/xdg/writer.desktop" specifies undefined mimetype/servicetype "application/clarisworks"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/exaile.desktop" specifies undefined mimetype/servicetype "audio/musepack"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/exaile.desktop" specifies undefined mimetype/servicetype "application/musepack"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/exaile.desktop" specifies undefined mimetype/servicetype "application/x-ape"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/exaile.desktop" specifies undefined mimetype/servicetype "audio/ape"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/exaile.desktop" specifies undefined mimetype/servicetype "application/x-musepack"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/exaile.desktop" specifies undefined mimetype/servicetype "application/x-id3"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/exaile.desktop" specifies undefined mimetype/servicetype "audio/x-mpeg-3"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/exaile.desktop" specifies undefined mimetype/servicetype "audio/mpeg3"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/exaile.desktop" specifies undefined mimetype/servicetype "audio/mpc"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/exaile.desktop" specifies undefined mimetype/servicetype "audio/x-mpc"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/exaile.desktop" specifies undefined mimetype/servicetype "audio/mp"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/exaile.desktop" specifies undefined mimetype/servicetype "audio/x-mp"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/exaile.desktop" specifies undefined mimetype/servicetype "application/x-flac"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "katesnippetsplugin.desktop" specifies undefined mimetype/servicetype "Kate/Plugin"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "windowsexethumbnail.desktop" specifies undefined mimetype/servicetype "application/x-msdownload"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "application/x-extension-mp4"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "audio/168sv"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "audio/8svx"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "audio/aiff"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "audio/mpeg2"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "audio/mpeg3"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "audio/vnd.rn-realmedia"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "audio/x-16sv"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "audio/x-8svx"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "audio/x-basic"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "audio/x-mpeg2"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "audio/x-mpeg3"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "audio/x-pn-aiff"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "audio/x-pn-au"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "audio/x-pn-wav"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "audio/x-pn-windows-acm"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "audio/x-real-audio"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "audio/x-realaudio"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "image/ilbm"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "image/x-png"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "video/anim"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "video/mkv"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "video/mng"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "video/mpeg-system"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "video/mpg"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "video/x-mpeg-system"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "video/x-ms-wma"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "video/x-quicktime"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/vlc.desktop" specifies undefined mimetype/servicetype "video/x-flc"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/vlc.desktop" specifies undefined mimetype/servicetype "audio/x-ms-asf"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/vlc.desktop" specifies undefined mimetype/servicetype "audio/x-ms-wax"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/vlc.desktop" specifies undefined mimetype/servicetype "audio/x-real-audio"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/vlc.desktop" specifies undefined mimetype/servicetype "application/x-flac"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/vlc.desktop" specifies undefined mimetype/servicetype "misc/ultravox"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/vlc.desktop" specifies undefined mimetype/servicetype "audio/x-pn-aiff"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/vlc.desktop" specifies undefined mimetype/servicetype "audio/x-pn-au"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/vlc.desktop" specifies undefined mimetype/servicetype "audio/x-pn-wav"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/vlc.desktop" specifies undefined mimetype/servicetype "audio/x-pn-windows-acm"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/vlc.desktop" specifies undefined mimetype/servicetype "application/x-extension-mp4"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/emacs23.desktop" specifies undefined mimetype/servicetype "text/english"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/emacs23.desktop" specifies undefined mimetype/servicetype "text/x-c++"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/xarchiver.desktop" specifies undefined mimetype/servicetype "application/arj"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/xarchiver.desktop" specifies undefined mimetype/servicetype "application/x-bzip2-compressed-tar"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/xarchiver.desktop" specifies undefined mimetype/servicetype "application/deb"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "application/musepack"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "application/x-ape"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "application/x-democracy"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "application/x-extension-m4a"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "application/x-extension-mp4"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "application/x-flac"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "application/x-id3"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "application/x-miro"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "application/x-musepack"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "application/x-troff-msvideo"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "audio/ape"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "audio/avi"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "audio/mp"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "audio/mp4a-latm"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "audio/mpc"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "audio/mpeg3"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "audio/musepack"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "audio/wave"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "audio/x-mp"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "audio/x-mpc"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "audio/x-mpeg-3"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "audio/x-ms-asf"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "audio/x-ms-wax"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "audio/x-pn-aiff"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "audio/x-pn-au"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "audio/x-pn-wav"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "audio/x-pn-windows-acm"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "audio/x-sbc"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "image/avi"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "misc/ultravox"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "video/x-flc"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "video/x-mpg"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/chromium.desktop" specifies undefined mimetype/servicetype "application/xhtml_xml"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/jpg"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-3fr"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-arw"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-bay"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-cap"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-cr2"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-crw"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-dcr"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-dcs"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-dng"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-drf"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-eip"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-erf"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-fff"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-iiq"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-k25"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-kdc"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-mef"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-mos"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-mrw"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-nef"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-nrw"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-orf"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-pef"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-png"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-ptx"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-pxn"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-r3d"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-raf"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-raw"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-rw2"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-rwl"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-rwz"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-sr2"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-srf"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-x3f"
+kbuildsycoca4(21297) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/qtcreator.desktop" specifies undefined mimetype/servicetype "text/x-xsrc"
+kbuildsycoca4(21297) KMimeAssociations::parseAllMimeAppsList: Parsing "/home/david/.local/share/applications/mimeapps.list"
+kbuildsycoca4(21297) KBuildSycoca::save: Saving
+kbuildsycoca4(21297) kdemain: Emitting notifyDatabaseChanged ("apps", "apps")
+kbuildsycoca4 running...
+kbuildsycoca4(22734) kdemain: Reusing existing ksycoca
+kbuildsycoca4(22734) KBuildSycoca::recreate: Recreating ksycoca file ("/var/tmp/kdecache-david/ksycoca4", version 240)
+kbuildsycoca4(22734) KBuildSycoca::build: Still in the time dict (i.e. deleted files) ("apps")
+kbuildsycoca4(22734) VFolderMenu::mergeFile: VFolderMenu::mergeFile: "/home/david/.config/menus/applications-merged/javaws.menu"
+kbuildsycoca4(22734) VFolderMenu::mergeFile: VFolderMenu::mergeFile: "/home/david/.config/menus/applications-merged/xdg-desktop-menu-dummy.menu"
+kbuildsycoca4(22734) VFolderMenu::loadDoc: Parse error in  "/home/david/.config/menus/applications-merged/xdg-desktop-menu-dummy.menu" , line  1 , col  1 :  "unexpected end of file" 
+kbuildsycoca4(22734) VFolderMenu::mergeFile: VFolderMenu::mergeFile: "/etc/xdg/menus/debian-menu.menu"
+kbuildsycoca4(22734) foldNode: "Directory" and "debian.directory" requires combining!
+kbuildsycoca4(22734) VFolderMenu::pushDocInfo: Menu "applications-kmenuedit.menu" not found.
+kbuildsycoca4(22734) VFolderMenu::processMenu: Processing KDE Legacy dirs for <KDE>
+kbuildsycoca4(22734) VFolderMenu::processKDELegacyDirs:
+kbuildsycoca4(22734) VFolderMenu::loadApplications: Looking up applications under "/usr/share/applications/"
+kbuildsycoca4(22734) VFolderMenu::loadApplications: Looking up applications under "/usr/share/applications/screensavers"
+kbuildsycoca4(22734) VFolderMenu::loadApplications: Looking up applications under "/usr/share/applications/kde4"
+kbuildsycoca4(22734) VFolderMenu::loadApplications: Looking up applications under "/home/david/.local/share/applications/"
+kbuildsycoca4(22734) VFolderMenu::processMenu: Menu "Java WebStart" does not specify a directory file.
+kbuildsycoca4(22734) VFolderMenu::processMenu: Menu "Neocoretech" does not specify a directory file.
+kbuildsycoca4(22734) VFolderMenu::loadApplications: Looking up applications under "/var/lib/menu-xdg/applications/"
+kbuildsycoca4(22734) VFolderMenu::loadApplications: Looking up applications under "/var/lib/menu-xdg/applications/menu-xdg"
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Sound-banshee.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Games-Card-pysolfc_solitaire_games.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Programming-tkwish8.5.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Editors-emacs_23_(x11).desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Programming-tclsh8.6.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: new: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Programming-python_(v3.4).desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Administration-unetbootin.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Science-Data-Analysis-gnu_r.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Programming-qt4_linguist.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Screen-Locking-lock_screen_(xscreensaver).desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Emulators-virtualbox.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Shells-sh.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Terminal-Emulators-xterm_(unicode).desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Office-libreoffice_impress.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Editors-gedit.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Screen-Saving-reinitialize_xscreensaver.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Editors-xpad.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Video-vlc_media_player.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Network-Monitoring-wireshark.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Hardware-xvidtune.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Graphics-lefty.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Graphics-dotty.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Sound-exaile.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Sound-ex_falso.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Administration-xkill.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Administration-openbox_configuration_manager.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Office-hplip_fax_utility.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Administration-xrefresh.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Shells-bash.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Editors-xournal.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Office-hplip_fax_address_book.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Hardware-arandr.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Editors-leafpad.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Programming-qt_creator.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Network-Communication-irssi.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Network-Web-Browsing-chromium.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Science-Engineering-dia.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Administration-debian_task_selector.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Network-Communication-telnet.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Screen-Saving-disable_xscreensaver.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Science-Mathematics-bc.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Programming-ruby_(irb1.9.1).desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Hardware-gpointing-device-settings.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Programming-qt4_designer.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Programming-tkwish8.6.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Games-Action-stormbaan_coureur.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Hardware-fprint_demonstration_utility.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Programming-gnat_programming_studio.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Screen-Saving-activate_screensaver_(previous).desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Administration-texconfig.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Shells-dash.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Monitoring-xev.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Screen-Saving-enable_xscreensaver.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Games-Strategy-pingus_-_enhanced_lemmings_clone.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Network-Communication-mutt.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-File-Management-brasero.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Hardware-lstopo.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Administration-lxappearance.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Viewers-xpdf.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-File-Management-xarchiver.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Network-File-Transfer-transmission_bittorrent_client_(gtk).desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Screen-Saving-activate_screensaver_(random).desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Administration-editres.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Games-Puzzles-2048-qt.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Package-Management-aptitude_package_manager_(text).desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Administration-hplip_file_printing.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Network-Web-Browsing-lynx-cur.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Monitoring-pstree.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Science-Mathematics-dc.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Sound-pavucontrol.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Programming-qt4_assistant.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Monitoring-lxtask.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Data-Management-libreoffice_base.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Science-Mathematics-gnuplot.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Programming-python_(v2.7).desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Office-libreoffice_writer.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Programming-gdb.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Administration-reportbug.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Graphics-libreoffice_draw.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Games-Action-supertuxkart.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Sound-gmpc.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Editors-nano.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Administration-xfontsel.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Terminal-Emulators-lxterminal.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Monitoring-conky.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Help-texdoctk.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Screen-Saving-screensaver_preferences.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: new: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Graphics-inkscape.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Network-Communication-pidgin.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Help-yelp.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Science-Mathematics-galculator.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Programming-tclsh8.5.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Terminal-Emulators-x-terminal_as_root_(gksu).desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Editors-gvim.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Help-info.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Security-seahorse.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Monitoring-htop.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Screen-Saving-activate_screensaver_(next).desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Network-Web-Browsing-w3m.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Viewers-evince.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Sound-ncmpcpp.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Office-libreoffice_calc.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Administration-reportbug_(gtk+).desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Administration-gnome_partition_editor.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Science-Mathematics-libreoffice_math.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Terminal-Emulators-xterm.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Video-winff.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Network-vnc_viewer.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Hardware-hplip_toolbox.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Screen-Saving-demo_screen_hacks.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-File-Management-pcmanfm.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Viewers-shotwell.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Viewers-xdvi.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Monitoring-top.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Editors-emacs_23_(text).desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-System-Monitoring-lxrandr.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Graphics-the_gimp.desktop" in apps
+kbuildsycoca4(22734) KBuildSycoca::createEntry: modified: "/var/lib/menu-xdg/applications/menu-xdg/X-Debian-Applications-Programming-cmake_qt4_gui_(cmake-gui).desktop" in apps
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.q16.desktop" specifies undefined mimetype/servicetype "image/avs"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.q16.desktop" specifies undefined mimetype/servicetype "image/bie"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.q16.desktop" specifies undefined mimetype/servicetype "image/x-ms-bmp"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.q16.desktop" specifies undefined mimetype/servicetype "image/cmyk"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.q16.desktop" specifies undefined mimetype/servicetype "image/dcx"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.q16.desktop" specifies undefined mimetype/servicetype "image/eps"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.q16.desktop" specifies undefined mimetype/servicetype "image/fax"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.q16.desktop" specifies undefined mimetype/servicetype "image/gray"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.q16.desktop" specifies undefined mimetype/servicetype "image/miff"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.q16.desktop" specifies undefined mimetype/servicetype "image/mono"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.q16.desktop" specifies undefined mimetype/servicetype "image/mtv"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.q16.desktop" specifies undefined mimetype/servicetype "image/pcd"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.q16.desktop" specifies undefined mimetype/servicetype "image/pcx"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.q16.desktop" specifies undefined mimetype/servicetype "image/pict"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.q16.desktop" specifies undefined mimetype/servicetype "image/ps"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.q16.desktop" specifies undefined mimetype/servicetype "image/rad"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.q16.desktop" specifies undefined mimetype/servicetype "image/rgba"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.q16.desktop" specifies undefined mimetype/servicetype "image/rla"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.q16.desktop" specifies undefined mimetype/servicetype "image/sgi"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.q16.desktop" specifies undefined mimetype/servicetype "image/sun-raster"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.q16.desktop" specifies undefined mimetype/servicetype "image/targa"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.q16.desktop" specifies undefined mimetype/servicetype "image/uyvy"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.q16.desktop" specifies undefined mimetype/servicetype "image/vid"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.q16.desktop" specifies undefined mimetype/servicetype "image/viff"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.q16.desktop" specifies undefined mimetype/servicetype "image/yuv"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "plasma-kpart.desktop" specifies undefined mimetype/servicetype "KParts/Part"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/lib/libreoffice/share/xdg/calc.desktop" specifies undefined mimetype/servicetype "application/csv"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/lib/libreoffice/share/xdg/calc.desktop" specifies undefined mimetype/servicetype "application/excel"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/lib/libreoffice/share/xdg/calc.desktop" specifies undefined mimetype/servicetype "application/tab-separated-values"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/lib/libreoffice/share/xdg/calc.desktop" specifies undefined mimetype/servicetype "application/x-dos_ms_excel"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/lib/libreoffice/share/xdg/calc.desktop" specifies undefined mimetype/servicetype "application/x-excel"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/lib/libreoffice/share/xdg/calc.desktop" specifies undefined mimetype/servicetype "application/x-ms-excel"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/lib/libreoffice/share/xdg/calc.desktop" specifies undefined mimetype/servicetype "text/comma-separated-values"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/lib/libreoffice/share/xdg/calc.desktop" specifies undefined mimetype/servicetype "application/clarisworks"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/gimp.desktop" specifies undefined mimetype/servicetype "image/x-gimp-gbr"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/gimp.desktop" specifies undefined mimetype/servicetype "image/x-gimp-pat"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/gimp.desktop" specifies undefined mimetype/servicetype "image/x-gimp-gih"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/gimp.desktop" specifies undefined mimetype/servicetype "image/x-psp"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/brasero.desktop" specifies undefined mimetype/servicetype "application/x-toc"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/lib/libreoffice/share/xdg/draw.desktop" specifies undefined mimetype/servicetype "image/x-freehand"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/lib/libreoffice/share/xdg/draw.desktop" specifies undefined mimetype/servicetype "application/clarisworks"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.desktop" specifies undefined mimetype/servicetype "image/avs"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.desktop" specifies undefined mimetype/servicetype "image/bie"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.desktop" specifies undefined mimetype/servicetype "image/x-ms-bmp"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.desktop" specifies undefined mimetype/servicetype "image/cmyk"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.desktop" specifies undefined mimetype/servicetype "image/dcx"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.desktop" specifies undefined mimetype/servicetype "image/eps"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.desktop" specifies undefined mimetype/servicetype "image/fax"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.desktop" specifies undefined mimetype/servicetype "image/gray"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.desktop" specifies undefined mimetype/servicetype "image/miff"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.desktop" specifies undefined mimetype/servicetype "image/mono"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.desktop" specifies undefined mimetype/servicetype "image/mtv"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.desktop" specifies undefined mimetype/servicetype "image/pcd"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.desktop" specifies undefined mimetype/servicetype "image/pcx"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.desktop" specifies undefined mimetype/servicetype "image/pict"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.desktop" specifies undefined mimetype/servicetype "image/ps"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.desktop" specifies undefined mimetype/servicetype "image/rad"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.desktop" specifies undefined mimetype/servicetype "image/rgba"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.desktop" specifies undefined mimetype/servicetype "image/rla"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.desktop" specifies undefined mimetype/servicetype "image/sgi"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.desktop" specifies undefined mimetype/servicetype "image/sun-raster"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.desktop" specifies undefined mimetype/servicetype "image/targa"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.desktop" specifies undefined mimetype/servicetype "image/uyvy"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.desktop" specifies undefined mimetype/servicetype "image/vid"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.desktop" specifies undefined mimetype/servicetype "image/viff"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/display-im6.desktop" specifies undefined mimetype/servicetype "image/yuv"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/gpicview.desktop" specifies undefined mimetype/servicetype "image/jpg"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/gpicview.desktop" specifies undefined mimetype/servicetype "image/x-targa"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/gpicview.desktop" specifies undefined mimetype/servicetype "image/x-portable-greymap"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/gpicview.desktop" specifies undefined mimetype/servicetype "application/pcx"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/gpicview.desktop" specifies undefined mimetype/servicetype "image/svg-xml"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/rstudio.desktop" specifies undefined mimetype/servicetype "text/x-r"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/rstudio.desktop" specifies undefined mimetype/servicetype "text/x-R"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/lib/libreoffice/share/xdg/writer.desktop" specifies undefined mimetype/servicetype "application/x-doc"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/lib/libreoffice/share/xdg/writer.desktop" specifies undefined mimetype/servicetype "application/x-extension-txt"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/lib/libreoffice/share/xdg/writer.desktop" specifies undefined mimetype/servicetype "application/macwriteii"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/lib/libreoffice/share/xdg/writer.desktop" specifies undefined mimetype/servicetype "application/clarisworks"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/exaile.desktop" specifies undefined mimetype/servicetype "audio/musepack"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/exaile.desktop" specifies undefined mimetype/servicetype "application/musepack"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/exaile.desktop" specifies undefined mimetype/servicetype "application/x-ape"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/exaile.desktop" specifies undefined mimetype/servicetype "audio/ape"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/exaile.desktop" specifies undefined mimetype/servicetype "application/x-musepack"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/exaile.desktop" specifies undefined mimetype/servicetype "application/x-id3"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/exaile.desktop" specifies undefined mimetype/servicetype "audio/x-mpeg-3"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/exaile.desktop" specifies undefined mimetype/servicetype "audio/mpeg3"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/exaile.desktop" specifies undefined mimetype/servicetype "audio/mpc"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/exaile.desktop" specifies undefined mimetype/servicetype "audio/x-mpc"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/exaile.desktop" specifies undefined mimetype/servicetype "audio/mp"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/exaile.desktop" specifies undefined mimetype/servicetype "audio/x-mp"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/exaile.desktop" specifies undefined mimetype/servicetype "application/x-flac"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "katesnippetsplugin.desktop" specifies undefined mimetype/servicetype "Kate/Plugin"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "windowsexethumbnail.desktop" specifies undefined mimetype/servicetype "application/x-msdownload"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "application/x-extension-mp4"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "audio/168sv"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "audio/8svx"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "audio/aiff"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "audio/mpeg2"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "audio/mpeg3"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "audio/vnd.rn-realmedia"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "audio/x-16sv"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "audio/x-8svx"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "audio/x-basic"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "audio/x-mpeg2"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "audio/x-mpeg3"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "audio/x-pn-aiff"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "audio/x-pn-au"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "audio/x-pn-wav"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "audio/x-pn-windows-acm"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "audio/x-real-audio"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "audio/x-realaudio"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "image/ilbm"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "image/x-png"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "video/anim"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "video/mkv"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "video/mng"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "video/mpeg-system"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "video/mpg"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "video/x-mpeg-system"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "video/x-ms-wma"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "phononbackends/vlc.desktop" specifies undefined mimetype/servicetype "video/x-quicktime"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/vlc.desktop" specifies undefined mimetype/servicetype "video/x-flc"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/vlc.desktop" specifies undefined mimetype/servicetype "audio/x-ms-asf"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/vlc.desktop" specifies undefined mimetype/servicetype "audio/x-ms-wax"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/vlc.desktop" specifies undefined mimetype/servicetype "audio/x-real-audio"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/vlc.desktop" specifies undefined mimetype/servicetype "application/x-flac"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/vlc.desktop" specifies undefined mimetype/servicetype "misc/ultravox"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/vlc.desktop" specifies undefined mimetype/servicetype "audio/x-pn-aiff"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/vlc.desktop" specifies undefined mimetype/servicetype "audio/x-pn-au"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/vlc.desktop" specifies undefined mimetype/servicetype "audio/x-pn-wav"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/vlc.desktop" specifies undefined mimetype/servicetype "audio/x-pn-windows-acm"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/vlc.desktop" specifies undefined mimetype/servicetype "application/x-extension-mp4"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/emacs23.desktop" specifies undefined mimetype/servicetype "text/english"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/emacs23.desktop" specifies undefined mimetype/servicetype "text/x-c++"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/xarchiver.desktop" specifies undefined mimetype/servicetype "application/arj"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/xarchiver.desktop" specifies undefined mimetype/servicetype "application/x-bzip2-compressed-tar"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/xarchiver.desktop" specifies undefined mimetype/servicetype "application/deb"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "application/musepack"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "application/x-ape"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "application/x-democracy"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "application/x-extension-m4a"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "application/x-extension-mp4"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "application/x-flac"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "application/x-id3"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "application/x-miro"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "application/x-musepack"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "application/x-troff-msvideo"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "audio/ape"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "audio/avi"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "audio/mp"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "audio/mp4a-latm"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "audio/mpc"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "audio/mpeg3"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "audio/musepack"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "audio/wave"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "audio/x-mp"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "audio/x-mpc"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "audio/x-mpeg-3"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "audio/x-ms-asf"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "audio/x-ms-wax"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "audio/x-pn-aiff"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "audio/x-pn-au"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "audio/x-pn-wav"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "audio/x-pn-windows-acm"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "audio/x-sbc"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "image/avi"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "misc/ultravox"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "video/x-flc"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/banshee.desktop" specifies undefined mimetype/servicetype "video/x-mpg"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/chromium.desktop" specifies undefined mimetype/servicetype "application/xhtml_xml"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/jpg"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-3fr"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-arw"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-bay"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-cap"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-cr2"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-crw"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-dcr"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-dcs"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-dng"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-drf"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-eip"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-erf"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-fff"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-iiq"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-k25"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-kdc"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-mef"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-mos"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-mrw"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-nef"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-nrw"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-orf"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-pef"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-png"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-ptx"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-pxn"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-r3d"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-raf"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-raw"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-rw2"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-rwl"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-rwz"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-sr2"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-srf"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/shotwell-viewer.desktop" specifies undefined mimetype/servicetype "image/x-x3f"
+kbuildsycoca4(22734) KBuildServiceFactory::populateServiceTypes: "/usr/share/applications/qtcreator.desktop" specifies undefined mimetype/servicetype "text/x-xsrc"
+kbuildsycoca4(22734) KMimeAssociations::parseAllMimeAppsList: Parsing "/home/david/.local/share/applications/mimeapps.list"
+kbuildsycoca4(22734) KBuildSycoca::save: Saving
+kbuildsycoca4(22734) kdemain: Emitting notifyDatabaseChanged ("apps", "apps")
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0
+kded(1908)/KPasswdServer KPasswdServer::checkAuthInfoAsync: User = "" , WindowId = 0

@@ -1,0 +1,1 @@
+/usr/share/vim/addons/r-plugin/tex_indent.vim

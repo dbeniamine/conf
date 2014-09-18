@@ -1,0 +1,32 @@
+CC=g++
+ifeq ($(DEBUG),yes)
+	CFLAGS=-Wall -Wextra  -Werror -g
+else
+	CFLAGS=-Wall -Wextra -Werror -O2
+endif
+LDFLAGS=
+SRC=$(wildcard *.cpp)
+OBJ=$(SRC:.c=.o)
+
+#if it doesn't work, put there the name of your Main file
+EXEC=$(shell grep -H  main *.cpp | awk {'print $1'} | cut --delimiter='.' -f1)
+
+
+all : $(EXEC)
+
+$(EXEC) : $(OBJ)
+	$(CC) -o $@ $^ $(LDFLAGS)
+
+%.o: %.cpp
+	$(CC) -o $@ -c $< $(CFLAGS)
+
+.PHONY : clean mrproper run
+
+run:
+	./$(EXEC)
+
+clean :
+	rm -rf *.o
+
+mrproper : clean
+	rm -rf $(EXEC)

@@ -1,0 +1,148 @@
+#
+# Color theme
+#
+source ~/.mutt/theme
+
+#
+# Editor specific
+#
+
+set editor=vim
+set send_charset="us-ascii:utf-8"
+
+#
+# Folders
+#
+
+set mbox_type=MailDir
+source ~/.mutt/mailboxes
+set header_cache = "~/.cache/mutt"
+set message_cachedir = "~/.cache/mutt"
+set certificate_file="~/.mutt/certificates"
+# Variables for mu
+set my_maildir="~/Documents/mail"
+set my_mudir="~/Documents/.mu"
+
+#
+# Usage
+#
+
+set sort="threads"
+set sort_aux='reverse-date'
+set mailcap_path    = ~/.mutt/mailcap
+auto_view text/html
+set pager_index_lines=10
+# when scrolling a message stop at the end
+set pager_stop
+
+#
+# Sidebar
+#
+
+set sidebar_visible = yes
+set sidebar_delim='|'
+color sidebar_new yellow default
+
+#
+# General usage
+#
+
+# Completion
+bind editor <Tab> complete-query
+bind editor ^T complete
+
+# Refresh
+bind index \Cl refresh
+bind pager \Cl redraw-screen
+
+# New
+bind index <esc>n toggle-new
+bind pager <esc>n mark-as-new
+
+# Reply
+bind index,pager R group-reply
+bind index,pager L list-reply
+
+# Search
+bind index,pager,generic N search-opposite
+macro index,pager gf "<search>~F<enter>" "Go to the next important message"
+
+# Limits
+bind index ll limit
+macro index,pager lf "<limit>~F<enter>" "Limit to important messages"
+macro index,pager ln "<limit>~N<enter>" "Limit to new messages"
+macro index,pager la "<limit>all<enter>""Limit to all  messages"
+
+
+# Switch folders
+bind index,pager gn next-unread-mailbox
+macro index,pager gh "<change-folder>=INBOX<enter>" "Go Home (Inbox)"
+macro index,pager gd "<change-folder>=Drafts<enter>" "Go to Drafts"
+macro index,pager gt "<change-folder>=Trash<enter>" "Go to Trash"
+macro index,pager gs "<change-folder>=Sent<enter>" "Go to sent"
+macro index,pager gj "<change-folder>=Junk<enter>" "Go to Junk"
+macro index,pager gn "<next-unread-mailbox>" "Go to next mailbox with new mail"
+
+# Switch accounts
+macro index,pager gi '<enter-command>source ~/.mutt/imag.mutt<enter><change-folder>=INBOX<enter>' "Go to accout: work"
+macro index,pager gp '<enter-command>source ~/.mutt/perso.mutt<enter><change-folder>=INBOX<enter>' "Go to account: perso"
+
+# Moving messages
+macro index,pager D "<save-message>=Trash<enter><enter>"  "Delete message (trash)"
+macro index,pager s "<save-message>=INBOX."  "Save message"
+macro index,pager c "<change-folder>=INBOX."  "Change folder"
+
+#
+# Sidebar
+#
+macro index b '<enter-command>toggle sidebar_visible<enter><refresh>' "Toggle sidebar"
+macro pager b '<enter-command>toggle sidebar_visible<enter><redraw-screen>' "Toggle sidebar"
+bind index,pager \CP sidebar-prev
+bind index,pager \CN sidebar-next
+bind index,pager \CO sidebar-open
+
+#
+# External tools
+#
+
+# Open a new read only instance of Mutt
+macro index,pager ,m '<sync-mailbox><shell-escape>~/scripts/mutt.sh -t "Mutt RO" -R &<enter>' "Start a new instance of mutt RO"
+
+# Urlview
+macro index,pager \cb "v/plain<enter><pipe-entry>'urlview'<enter>" 'Follow links with urlview'
+
+# Check mail
+macro index,pager GG "<shell-escape>xterm -e offlineimap -o -u ttyui &<enter>" "Check mail (all accounts)"
+
+# Pycard (adress book)
+set query_command="pc_query -m '%s'"
+
+macro index,pager Af "<pipe-message>pycard-import --from<enter>" "Add 'From' field to addressbook"
+macro index,pager At "<pipe-message>pycard-import --to <enter>"  "Add 'To' field to addressbook"
+macro index,pager Ac "<pipe-message>pycard-import --cc <enter>"  "Add 'Cc' field to addressbook"
+macro index,pager Ab "<pipe-message>pycard-import --bcc <enter>" "Add 'Bcc' field to pycardsyncer"
+macro index,pager As  "<shell-escape>pycardsyncer<enter>" "Adress book Synchronize"
+macro index,pager Aq  "<shell-escape>pc_query " "Adress book Query"
+
+# Printing
+source "echo \"set my_printer=$(lpstat -s | grep default | cut -d ' ' -f 4)\" |"
+macro index,pager lp "<shell-escape>lpstat -s<enter>" "List Printers"
+macro index,pager p "<shell-escape>$print_command -P $my_printer" "Print message"
+
+#
+# Accounts
+#
+
+source ~/.mutt/lists.mutt
+
+# Hooks
+folder-hook "$my_maildir/imag" "source ~/.mutt/imag.mutt"
+account-hook "imag" "source ~/.mutt/imag.mutt"
+folder-hook "$my_maildir/perso" "source ~/.mutt/perso.mutt"
+account-hook "perso" "source ~/.mutt/perso.mutt"
+
+# Default account
+source ~/.mutt/default.mutt
+
+# Go to inbox
+push  '<change-folder>=INBOX<enter>'
