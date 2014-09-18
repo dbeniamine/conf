@@ -4,8 +4,8 @@
 #
 
 #PATH
-export PATH="$PATH:/home/david/scripts/:/home/david/install/bin:/usr/local/cuda-5.0/bin:/sbin/"
-#the only true editor is vim
+export PATH="$PATH:$HOME/scripts/:$HOME/install/bin:/usr/local/cuda-5.0/bin:/sbin/"
+# The only true editor is vim
 export EDITOR=vim
 
 
@@ -100,12 +100,12 @@ shopt -s checkwinsize
 # Env variables
 #
 
-#for sofa kaapi
-export KAAPI_DIR=/home/david/install/kaapi
-export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/home/david/lib/plasma-installer_2.4.6/install/lib/pkgconfig
-export LD_LIBRARY_PATH=/home/david/install/kaapi/lib:$LD_LIBRARY_PATH
+# For sofa kaapi
+export KAAPI_DIR=$HOME/install/kaapi
+export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:$HOME/lib/plasma-installer_2.4.6/install/lib/pkgconfig
+export LD_LIBRARY_PATH=$HOME/install/kaapi/lib:$LD_LIBRARY_PATH
 
-#for adasdl.gpr
+# For adasdl.gpr
 export GPR_PROJECT_PATH=/usr/local/lib/ada/adasdl_alpha20120723a/Thin/AdaSDL
 
 # mutt background fix

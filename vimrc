@@ -42,11 +42,11 @@ highlight PmenuSel ctermbg=black ctermfg=white
 set splitright
 set splitbelow
 
-"highlighting trailing spaces
+" highlighting trailing spaces
 highlight ExtraWhitespace ctermbg=red guibg=red
 au BufWinEnter * match ExtraWhitespace /\s\+$/
 
-"cursor line only on the active tab
+" cursor line only on the active tab
 augroup CursorLine
     au!
     au VimEnter,WinEnter,BufWinEnter * setlocal cursorline
