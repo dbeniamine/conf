@@ -115,6 +115,8 @@ au Filetype cpp set tags+=~/.vim/tags/tags_cpp
 " Perl indent & fold (broken ?)
 au FileType pl set ai
 
+"It's all text plugin for firefox: activate spell checking
+au BufEnter *mozilla/firefox/*/itsalltext/*.txt set spell spelllang=fr
 " Markdown folds
 au BufEnter *.md setlocal foldexpr=MdLevel() foldmethod=expr ft=pandoc
 " Latex language
@@ -168,11 +170,20 @@ function! RemoveTrailingSpace()
     if &ft=='pandoc'
         " In pandoc files a double space at the end of a line has a meaning
         " and must not be removed
-        " Replace any string of more than two space by two space
+        " If a line ends with more than two space, replace it by two space
         execute ':%s/[ ]\{2,\}$/  /e'
         " Remove single white space at the end of a line
         execute ':%s/[^ ] $//e'
+    elseif &ft=='mail'
+        " In mails we have to allow "-- " as it is the begining of a signature
+        " This one is a bit tricky: the first part until \@! says to match a
+        " line witch doesn't start by -- . Than to make the negation work we
+        " have to match the rest of the line, so we record any string of
+        " caracter not ending by a space in \2 and removing any space between
+        " this pattern and the end of the line
+        execute ':%s/^\(-- \)\@!\(.*[^ ]\)\s\+$/\2/e'
     else
+        " Just remove any character at the end of a line
         execute ':%s/\s\+$//ge'
     endif
     "restore cursor
