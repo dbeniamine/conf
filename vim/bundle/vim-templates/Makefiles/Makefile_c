@@ -21,7 +21,7 @@ $(EXEC) : $(OBJ)
 %.o: %.c
 	$(CC) -o $@ -c $< $(CFLAGS)
 
-.PHONY : clean mrproper run
+.PHONY : clean distclean run
 
 run:
 	./$(EXEC)
@@ -29,5 +29,5 @@ run:
 clean :
 	rm -rf *.o
 
-mrproper : clean
+distclean : clean
 	rm -rf $(EXEC)

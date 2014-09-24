@@ -150,11 +150,13 @@ noremap <leader>mi :call Compile(1,1,0,1,0,0)<CR>
 noremap <leader>mj :call Compile(1,1,1,0,0,0)<CR>
 " make install parallel
 noremap <leader>mij :call Compile(1,1,1,1,0,0)<CR>
+" make & exec parallel
+noremap <leader>mje :call Compile(1,1,1,0,1,0)<CR>
 
 " make clean
 noremap <leader>mc :call Compile(1,0,0,0,0,1)<CR>
 " exec
-noremap <leader>e :call Compile(0,0,0,0,1,0)<CR>
+noremap <leader>e :call Compile(0,0,0,0,1,0)<CR><CR>
 
 " Cscope_map.vim style map to create the cscope files
 nnoremap <C-@>a :call Cscope_Init("create")<CR>
@@ -280,6 +282,12 @@ function! Compile(compi, forcemake, parallel, install, exec,clean)
     if(a:exec)
         "execute the program
         execute ":!".b:start
+        "Redraw screen if no errors
+        if v:shell_error == 0
+            " Let some time to be sure that the start command is finished
+            :sleep 500m
+            :redraw!
+        endif
     endif
 endfunction
 

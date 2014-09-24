@@ -1,7 +1,7 @@
 " Detect mail files
 augroup filetypedetect
     " Mail
-    autocmd BufRead,BufNewFile *mutt-* setfiletype mail
+    autocmd BufEnter *mutt-* setfiletype mail
     "mutt files
-    autocmd BufRead,BufNewFile *.mutt setfiletype muttrc
+    autocmd BufEnter *.mutt setfiletype muttrc
 augroup END
