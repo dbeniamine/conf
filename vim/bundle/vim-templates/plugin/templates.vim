@@ -31,7 +31,7 @@ function! Headers()
     if system("ls | grep Makefile")=="" && &ft !="" && system('ls ' . g:templ_Makefilesdir . '| grep Makefile_' . &ft)!="" && input("Do you want to import an existing makefile ? [y/N]") == "y"
         call ImportMakefile()
     endif
-    execute "normal \<C-j>\<Right>"
+    execute "normal \<C-n>\<Right>"
 endfunction
 
 " Import makefile based on the filetype

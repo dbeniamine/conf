@@ -129,6 +129,20 @@ au Filetype * call SetCompiler()
 
 "========================== User mappings =====================================
 
+"
+"
+" Easily move through windows
+"
+
+" First change the <C-j> mapping from latex suite to <C-n>
+imap <C-n> <Plug>IMAP_JumpForward
+nmap <C-n> <Plug>IMAP_JumpForward
+" Then add moving shortcuts
+noremap <C-h> <C-w>h
+noremap <C-j> <C-w>j
+noremap <C-k> <C-w>k
+noremap <C-l> <C-w>l
+
 " Terminal escape
 noremap <leader>s <ESC>:w<CR>:sh<CR>
 " Auto indent
