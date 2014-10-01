@@ -1,0 +1,56 @@
+# set variable identifying the chroot you work in (used in the prompt below)
+if [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then
+    debian_chroot=$(cat /etc/debian_chroot)
+    debian_chroot_ps1="\[$Yellow\]${debian_chroot:+($debian_chroot)}"
+fi
+
+# Git ps1 dynamic settings
+git_ps1_command()
+{
+    GIT_PS1_SHOWSTASHSTATE=1
+    GIT_PS1_SHOWUNTRACKEDFILES=
+    GIT_PS1_SHOWCOLORHINTS=1
+    GIT_PS1_DESCRIBE_STYLE="branch"
+    GIT_PS1_SHOWUPSTREAM="auto git"
+    #Show less information for work repo which is too huge
+    if $( git remote -v 2> /dev/null | grep work.git > /dev/null )
+    then
+        GIT_PS1_SHOWDIRTYSTATE=
+    else
+        GIT_PS1_SHOWDIRTYSTATE=1
+    fi
+    __git_ps1
+}
+
+#Red or green depending on last command result
+command_color()
+{
+
+    if [[ $? == 0 ]]
+    then
+        echo -n "\[$Green\]"
+    else
+        echo -n "\[$Red\]"
+    fi
+}
+# Create a nice colored prompt
+color_prompt()
+{
+    #Date and time, debian chroot
+    PS1="\[$Cyan\][\D{%x}\A]$debian_chroot_ps1"
+    # user@host:path
+    PS1+="$(command_color)\u@\h\[$Color_Off\]:\[$Blue\]\w"
+    #git stuff
+    PS1+="\[$Yellow\]\$(git_ps1_command)\n\[$Color_Off\]$ "
+}
+
+#
+# PROMPT
+#
+case "$TERM" in
+    xterm*|rxvt*)
+        color_prompt
+        ;;
+    *)
+        ;;
+esac

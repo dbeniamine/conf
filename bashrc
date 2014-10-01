@@ -8,7 +8,6 @@ export PATH="$PATH:$HOME/scripts/:$HOME/install/bin:/usr/local/cuda-5.0/bin:/sbi
 # The only true editor is vim
 export EDITOR=vim
 
-
 #
 # After this changes are made only for interactive sessions
 #
@@ -32,38 +31,6 @@ if [ -e /usr/share/terminfo/x/xterm+256color ]; then
 else
     export TERM='xterm-color'
 fi
-
-
-#
-# PROMPT
-#
-
-# set variable identifying the chroot you work in (used in the prompt below)
-if [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then
-    debian_chroot=$(cat /etc/debian_chroot)
-    debian_chroot_ps1="\[$Yellow\]${debian_chroot:+($debian_chroot)}"
-fi
-
-case "$TERM" in
-    xterm*|rxvt*)
-        #Red or green depending on last command result
-        command_color="if [[ \$? == 0 ]]; then echo -n \"\[$Green\]\"; else \
-            echo -n \"\[$Red\]\"; fi"
-        #git ps1 settings
-        GIT_PS1_SHOWDIRTYSTATE=1
-        GIT_PS1_SHOWSTASHSTATE=1
-        GIT_PS1_SHOWUNTRACKEDFILES=
-        GIT_PS1_SHOWCOLORHINTS=1
-        GIT_PS1_DESCRIBE_STYLE="branch"
-        GIT_PS1_SHOWUPSTREAM="auto git"
-
-        #actual prompt
-        PS1="\[$Cyan\][\D{%x} \A]$debian_chroot_ps1 \$($command_color)\u@\h$Color_Off:\[$Blue\]\w\[$Yellow\]\$(__git_ps1)\n\[$Color_Off\]\$ "
-        ;;
-    *)
-        ;;
-esac
-
 
 #
 # History
@@ -90,7 +57,6 @@ if ! shopt -oq posix; then
         . /etc/bash_completion
     fi
 fi
-
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
