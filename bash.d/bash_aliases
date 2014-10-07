@@ -26,7 +26,7 @@ alias dmenu="dmenu -sb darkgreen"
 #
 
 #Avoid nested session
-if [ -z $TMUX ]
+if [ ! -z $(which tmux) ] && [ -z $TMUX ]
 then
 
     function tvim()
