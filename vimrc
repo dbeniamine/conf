@@ -276,19 +276,19 @@ function! Compile(compi, forcemake, parallel, install, exec,clean)
                 let l:cmd="make clean"
                 execute ":Dispatch ".l:cmd
             endif
-                let l:cmd="make"
-                if(a:parallel)
-                    "Do it in parallel
-                    let l:ncores=system("cat /proc/cpuinfo | grep processor | wc -l")
-                    let l:ncores=substitute(l:ncores,"\n","","g")
-                    let l:cmd.=" -j ".l:ncores
+            let l:cmd="make"
+            if(a:parallel)
+                "Do it in parallel
+                let l:ncores=system("cat /proc/cpuinfo | grep processor | wc -l")
+                let l:ncores=substitute(l:ncores,"\n","","g")
+                let l:cmd.=" -j ".l:ncores
 
-                endif
-                if(a:install)
-                    "Also do make install
-                    let l:oldcmd=l:cmd
-                    let l:cmd.=" && ".l:oldcmd." install"
-                endif
+            endif
+            if(a:install)
+                "Also do make install
+                let l:oldcmd=l:cmd
+                let l:cmd.=" && ".l:oldcmd." install"
+            endif
         endif
         "Do the compilation with Dispatch
         execute ":Dispatch ".l:cmd
@@ -389,6 +389,7 @@ function! InsertRChunk()
     execute "normal `z"
     delmarks z
 endfunction
+
 
 "==============================================================================
 "
@@ -508,3 +509,7 @@ let g:templ_templates_install_dir="~/.vim/bundle/vim-templates"
 
 "Insert a chunk code
 au filetype r,rmd,rhelp,rnoweb,rrst noremap <LocalLeader>nc :call InsertRChunk()<CR>
+
+"======================== Todo.txt ============================================
+
+let g:Todo_txt_first_level_sort_mode="! i"

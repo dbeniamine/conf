@@ -37,3 +37,6 @@
 [submodule "vim/bundle/vim-dispatch"]
 	path = vim/bundle/vim-dispatch
 	url = git://github.com/tpope/vim-dispatch.git
+[submodule "vim/bundle/todo.txt-vim"]
+	path = vim/bundle/todo.txt-vim
+	url = https://github.com/dbeniamine/todo.txt-vim.git
