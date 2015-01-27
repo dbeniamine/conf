@@ -143,6 +143,9 @@ noremap <C-j> <C-w>j
 noremap <C-k> <C-w>k
 noremap <C-l> <C-w>l
 
+"Redraw terminal
+noremap <leader>l :redraw!<CR>
+
 " Terminal escape
 noremap <leader>s <ESC>:w<CR>:sh<CR>
 " Auto indent
@@ -324,8 +327,10 @@ function! Cscope_Init (mode)
     if(a:mode=="create")
         "create cscope file in verbose mode and foreground
         execute ":!"ccmd" -v"
+        :cscope add cscope.out
     else
         execute "silent !"ccmd" &"
+        :cscope reset
     endif
 endfunction
 
@@ -432,9 +437,6 @@ if !exists('g:neocomplcache_keyword_patterns')
 endif
 let g:neocomplcache_keyword_patterns['default'] ='\h\w*'
 
-" Plugin key-mappings.
-inoremap <expr><C-g>     neocomplcache#undo_completion()
-inoremap <expr><C-l> neocomplcache#complete_common_string()
 
 " Recommended key-mappings.
 " <CR>: close popup and save indent.
@@ -492,8 +494,8 @@ let g:airline#extensions#tabline#tab_min_count = 0
 let OmniCpp_MayCompleteDot = 1
 let OmniCpp_MayCompleteArrow = 1
 let OmniCpp_MayCompleteScope = 1
-" Select first item (but don't insert)
-let OmniCpp_SelectFirstItem = 2
+" Select first item
+let OmniCpp_SelectFirstItem = 1
 " Search namespaces in this and included files
 let OmniCpp_NamespaceSearch = 2
 " Show function prototype (i.e. parameters) in popup window
