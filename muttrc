@@ -22,7 +22,8 @@ set certificate_file="~/.mutt/certificates"
 # Variables for mu
 set my_maildir="~/Documents/mail"
 set my_mudir="~/Documents/.mu"
-
+# Quick folder switch
+set sleep_time=0
 #
 # Usage
 #
@@ -30,10 +31,11 @@ set my_mudir="~/Documents/.mu"
 set sort="threads"
 set sort_aux='reverse-date'
 set mailcap_path    = ~/.mutt/mailcap
-auto_view text/html
+set implicit_autoview
 set pager_index_lines=10
 # when scrolling a message stop at the end
 set pager_stop
+#source ~/.mutt/content_type
 
 #
 # Sidebar
@@ -41,7 +43,6 @@ set pager_stop
 
 set sidebar_visible = yes
 set sidebar_delim='|'
-color sidebar_new yellow default
 
 #
 # General usage
@@ -71,7 +72,7 @@ macro index,pager gf "<search>~F<enter>" "Go to the next important message"
 bind index ll limit
 macro index,pager lf "<limit>~F<enter>" "Limit to important messages"
 macro index,pager ln "<limit>~N<enter>" "Limit to new messages"
-macro index,pager la "<limit>all<enter>""Limit to all  messages"
+macro index,pager la "<limit>all<enter>" "Limit to all  messages"
 
 
 # Switch folders
@@ -128,6 +129,7 @@ macro index,pager Aq  "<shell-escape>pc_query " "Adress book Query"
 source "echo \"set my_printer=$(lpstat -s | grep default | cut -d ' ' -f 4)\" |"
 macro index,pager lp "<shell-escape>lpstat -s<enter>" "List Printers"
 macro index,pager p "<shell-escape>$print_command -P $my_printer" "Print message"
+# Send mail as multipart
 
 #
 # Accounts
