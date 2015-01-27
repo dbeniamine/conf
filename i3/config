@@ -29,6 +29,7 @@ floating_modifier $mod
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal
 
+
 # kill focused window
 bindsym $mod+Shift+q kill
 bindsym $mod+Ctrl+w exec xkill
@@ -169,9 +170,9 @@ exec --no-startup-id \time -a -p -o $HOME/.i3/startup.log $prefix/startSession.s
 #XF86Keys
 bindsym XF86MonBrightnessUp exec  $prefix/xbacklight.sh -i
 bindsym XF86MonBrightnessDown exec $prefix/xbacklight.sh -d
-bindsym XF86AudioRaiseVolume exec  $prefix/pactl_volume.sh -u 5%
-bindsym XF86AudioLowerVolume exec  $prefix/pactl_volume.sh -d 5%
-bindsym XF86AudioMute exec $prefix/pactl_volume.sh -m
+bindsym XF86AudioRaiseVolume exec  $prefix/volume.sh -u 5%
+bindsym XF86AudioLowerVolume exec  $prefix/volume.sh -d 5%
+bindsym XF86AudioMute exec $prefix/volume.sh -m
 bindsym XF86Display exec $prefix/DisplaySet.sh -d
 bindsym XF86Explorer exec $prefix/DisplaySet.sh -d
 bindsym XF86PowerOff exec $prefix/i3_exit_menu.sh
@@ -183,6 +184,11 @@ bindsym Mod4+m exec $prefix/mutt.sh
 bindsym XF86Calculator exec galculator
 bindsym XF86MyComputer exec pcmanfm
 
+# Bindings for flo
+bindsym $mod+F2 exec $prefix/dmenu_run.sh
+bindsym Mod4+t exec i3-sensible-terminal
+bindsym Mod4+e exec emacs
+bindsym Mod4+w exec firefox
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
@@ -210,3 +216,4 @@ client.focused          #006f1a #2e6335 #ffffff #2e6335
 #client.focused_inactive #333333 #5f676a #ffffff #484e50
 #client.unfocused        #333333 #222222 #888888 #292d2e
 #client.urgent           #2f343a #900000 #ffffff #900000
+#
