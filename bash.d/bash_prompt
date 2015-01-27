@@ -4,6 +4,10 @@ if [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then
     debian_chroot_ps1="\[$Yellow\]${debian_chroot:+($debian_chroot)}"
 fi
 
+# Color depending on the last command's return value
+ps1_command_color="if [[ \$? == 0 ]]; then echo -n \"\[$Green\]\"; \
+    else echo -n \"\[$Red\]\"; fi"
+
 # Git ps1 dynamic settings
 git_ps1_command()
 {
@@ -22,26 +26,16 @@ git_ps1_command()
     __git_ps1
 }
 
-#Red or green depending on last command result
-command_color()
-{
-
-    if [[ $? == 0 ]]
-    then
-        echo -n "\[$Green\]"
-    else
-        echo -n "\[$Red\]"
-    fi
-}
 # Create a nice colored prompt
 color_prompt()
 {
+    ret=$?
     #Date and time, debian chroot
     PS1="\[$Cyan\][\D{%x}\A]$debian_chroot_ps1"
     # user@host:path
-    PS1+="$(command_color)\u@\h\[$Color_Off\]:\[$Blue\]\w"
+    PS1+="\$($ps1_command_color)\u@\h\[$Color_Off\]:\[$Blue\]\w"
     #git stuff
-    PS1+="\[$Yellow\]\$(git_ps1_command)\n\[$Color_Off\]$ "
+    PS1+="\[$Yellow\]\$(git_ps1_command)\n\[$Color_Off\]\\$ "
 }
 
 #
