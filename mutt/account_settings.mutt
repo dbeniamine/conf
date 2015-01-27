@@ -20,6 +20,7 @@ set record=+Sent
 set postponed=+Drafts
 
 #Signature
+#set sig_dashes=no
 set signature="~/.mutt/signature-$my_account"
 
 #Check mail current account
@@ -38,6 +39,7 @@ macro index <F3> "<change-folder-readonly>$my_mudir/results\n"       "display mu
 macro index <F4> "<shell-escape>mu index --muhome=$my_muhome --maildir=$folder<enter>"    "mu update index"
 macro index <F5> "<shell-escape>~/scripts/muClean.sh<enter>"   "Clean mu results"
 
+macro index,pager \cw "<shell-escape> ~/scripts/maildir_size.sh $folder<enter>" "Show maildir size"
 #
 # pgp signature
 #
