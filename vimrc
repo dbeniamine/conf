@@ -104,7 +104,7 @@ set foldlevelstart=4
 " User variables
 "
 
-let g:my_tagsdir="~/.vim/tags/"
+"let g:my_tagsdir="~/.vim/tags/"
 
 "========================= Filetype features ==================================
 
@@ -179,8 +179,32 @@ noremap <leader>e :call Compile(0,0,0,0,1,0)<CR><CR>
 nnoremap <C-@>a :call Cscope_Init("create")<CR>
 nnoremap <C-@>u :call Cscope_Init("update")<CR>
 
+" Toggle spelllang
+noremap <LocalLeader>l :call SwitchSpellLang()<CR>
+" List of spellangs
+let g:mySpellLang=['fr','en']
 
-"========================= Function ===========================================
+
+"========================= Functions ==========================================
+
+" Switch between spellangs defined in g:mySpellLang
+function! SwitchSpellLang()
+    if &spell==0
+        let l:index=0
+        set spell
+    else
+        let l:curlang=index(g:mySpellLang,&spelllang)
+        if l:curlang == len(g:mySpellLang)-1
+            echo "Disabling spell"
+            set nospell
+            return
+        endif
+        let l:index=l:curlang+1
+    endif
+    let l:nlang=get(g:mySpellLang,l:index)
+    echo "Setting spelllang: ".l:nlang
+    let &spelllang=l:nlang
+endfunction
 
 " Remove trailing space
 function! RemoveTrailingSpace()
@@ -468,6 +492,11 @@ set iskeyword+=:
 let g:Tex_DefaultTargetFormat='pdf'
 let g:Tex_CompileRule_pdf="pdflatex -interaction=nonstopmode $*"
 let g:Tex_UseMakefile=1
+"Map \it to Localeader i
+imap <buffer> <LocalLeader>it <Plug>Tex_InsertItemOnThisLine
+imap <C-b> <Plug>Tex_MathBF
+imap <C-c> <Plug>Tex_MathCal
+imap <C-l> <Plug>Tex_LeftRight
 
 "======================== Commentary ==========================================
 
@@ -515,3 +544,16 @@ au filetype r,rmd,rhelp,rnoweb,rrst noremap <LocalLeader>nc :call InsertRChunk()
 "======================== Todo.txt ============================================
 
 let g:Todo_txt_first_level_sort_mode="! i"
+
+"======================== EasyGrep ============================================
+
+" Track the current extension
+let g:EasyGrepMode=2
+" Exlude extension list
+let g:EasyGrepFilesToExclude='*.swp,*~,*.o,*.ko,*.ali'
+" Recursive mode
+let g:EasyGrepRecursive=1
+" Multiples matchs on same line ('g' flag)
+let g:EasyGrepEveryMatch=1
+" Replace all works per file
+let g:EasyGrepReplaceAllPerFile=1
