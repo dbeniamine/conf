@@ -31,7 +31,7 @@ color_prompt()
 {
     ret=$?
     #Date and time, debian chroot
-    PS1="\[$Cyan\][\D{%x}\A]$debian_chroot_ps1"
+    PS1="\[$Cyan\][\D{%x}_\A]$debian_chroot_ps1"
     # user@host:path
     PS1+="\$($ps1_command_color)\u@\h\[$Color_Off\]:\[$Blue\]\w"
     #git stuff
