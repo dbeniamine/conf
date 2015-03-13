@@ -122,6 +122,8 @@ au BufEnter *.md setlocal foldexpr=MdLevel() foldmethod=expr ft=pandoc
 " Latex language
 au FileType tex setlocal spell spelllang=en spellsuggest=5
 au BufRead *.tex call SetTexLang()
+" gitcommit spell
+au FileType gitcommit setlocal spell spelllang=en
 
 " Set compiler
 au Filetype * call SetCompiler()
@@ -143,6 +145,8 @@ noremap <C-j> <C-w>j
 noremap <C-k> <C-w>k
 noremap <C-l> <C-w>l
 
+"Clean search highlight
+noremap <leader>c :let @/=""<CR>
 "Redraw terminal
 noremap <leader>l :redraw!<CR>
 
@@ -545,6 +549,11 @@ au filetype r,rmd,rhelp,rnoweb,rrst noremap <LocalLeader>nc :call InsertRChunk()
 
 let g:Todo_txt_first_level_sort_mode="! i"
 
+"Intelligent completion for projects and contexts
+au filetype todo imap + +<C-X><C-U>
+au filetype todo imap @ @<C-X><C-U>
+au filetype todo setlocal completefunc=TodoComplete
+
 "======================== EasyGrep ============================================
 
 " Track the current extension
@@ -557,3 +566,7 @@ let g:EasyGrepRecursive=1
 let g:EasyGrepEveryMatch=1
 " Replace all works per file
 let g:EasyGrepReplaceAllPerFile=1
+
+"======================== CheckAttach (mutt) ==================================
+let g:attach_check_keywords=',PJ,ci-joint,pièce jointe'
+let g:checkattach_once = 'y'
