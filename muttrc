@@ -9,6 +9,7 @@ source ~/.mutt/theme
 
 set editor=vim
 set send_charset="us-ascii:utf-8"
+my_hdr User-Agent: Mutt
 
 #
 # Folders
@@ -16,6 +17,7 @@ set send_charset="us-ascii:utf-8"
 
 set mbox_type=MailDir
 source ~/.mutt/mailboxes
+set edit_headers
 set header_cache = "~/.cache/mutt"
 set message_cachedir = "~/.cache/mutt"
 set certificate_file="~/.mutt/certificates"
@@ -24,6 +26,7 @@ set my_maildir="~/Documents/mail"
 set my_mudir="~/Documents/.mu"
 # Quick folder switch
 set sleep_time=0
+
 #
 # Usage
 #
