@@ -118,15 +118,13 @@ au FileType pl set ai
 "It's all text plugin for firefox: activate spell checking
 au BufEnter *mozilla/firefox/*/itsalltext/*.txt set spell spelllang=fr
 " Markdown folds
-au BufEnter *.md setlocal foldexpr=MdLevel() foldmethod=expr ft=pandoc
+au BufEnter *.md,*.markdown setlocal foldexpr=MdLevel() foldmethod=expr ft=pandoc
 " Latex language
 au FileType tex setlocal spell spelllang=en spellsuggest=5
 au BufRead *.tex call SetTexLang()
 " gitcommit spell
 au FileType gitcommit setlocal spell spelllang=en
 
-" Set compiler
-au Filetype * call SetCompiler()
 
 
 "========================== User mappings =====================================
@@ -157,58 +155,13 @@ noremap <leader>i mzgg=G`z :delmarks z<CR>
 " Remove trailing space
 noremap <leader>tr :call RemoveTrailingSpace()<CR>
 
-"
-" Compilation mappings
-"
-
-" make
-noremap <leader>m :call Compile(1,0,0,0,0,0)<CR>
-" make & exec
-noremap <leader>me :call Compile(1,0,0,0,1,0)<CR>
-" make & install
-noremap <leader>mi :call Compile(1,1,0,1,0,0)<CR>
-" make parallel
-noremap <leader>mj :call Compile(1,1,1,0,0,0)<CR>
-" make install parallel
-noremap <leader>mij :call Compile(1,1,1,1,0,0)<CR>
-" make & exec parallel
-noremap <leader>mje :call Compile(1,1,1,0,1,0)<CR>
-
-" make clean
-noremap <leader>mc :call Compile(1,0,0,0,0,1)<CR>
-" exec
-noremap <leader>e :call Compile(0,0,0,0,1,0)<CR><CR>
-
 " Cscope_map.vim style map to create the cscope files
 nnoremap <C-@>a :call Cscope_Init("create")<CR>
 nnoremap <C-@>u :call Cscope_Init("update")<CR>
 
-" Toggle spelllang
-noremap <LocalLeader>l :call SwitchSpellLang()<CR>
-" List of spellangs
-let g:mySpellLang=['fr','en']
 
 
 "========================= Functions ==========================================
-
-" Switch between spellangs defined in g:mySpellLang
-function! SwitchSpellLang()
-    if &spell==0
-        let l:index=0
-        set spell
-    else
-        let l:curlang=index(g:mySpellLang,&spelllang)
-        if l:curlang == len(g:mySpellLang)-1
-            echo "Disabling spell"
-            set nospell
-            return
-        endif
-        let l:index=l:curlang+1
-    endif
-    let l:nlang=get(g:mySpellLang,l:index)
-    echo "Setting spelllang: ".l:nlang
-    let &spelllang=l:nlang
-endfunction
 
 " Remove trailing space
 function! RemoveTrailingSpace()
@@ -238,103 +191,6 @@ function! RemoveTrailingSpace()
     execute "silent :delmarks z"
 endfunction
 
-" Set make and exec functon based on the filetype
-function! SetCompiler()
-    "Set compiler and start action according to filetype
-    if &ft=='cpp'
-        let b:my_makeprg="g\+\+\ \-Wall\ \-Werror\ \-g\ \-o\ %:t:r\ %"
-        let b:start="./%:t:r"
-    elseif &ft=='c'
-        let b:my_makeprg="gcc\ \-Wall\ \-Werror\ \-g\ \-o\ %:t:r\ %"
-        let b:start="./%:t:r"
-    elseif &ft=='java'
-        let b:my_makeprg="javac\ %"
-        let b:start="java\ %:t:r"
-    elseif &ft=='dot'
-        let b:my_makeprg="dot\ \-Tpdf\ %\ \>\ %:t:r.pdf"
-        let b:start="evince %:t:r.pdf > /dev/null 2>&1"
-    elseif &ft=='pandoc'
-        let b:my_makeprg="pandoc\ \--smart\ \--standalone\ \--mathml\ \--listings\ %\ \>\ %:t:r.html"
-        let b:start="firefox %:t:r.html"
-    elseif &ft=='tex'
-        "Use latex-suite settings for compilation
-        let b:my_makeprg=Tex_GetVarValue('Tex_CompileRule_'.g:Tex_DefaultTargetFormat)."\ %"
-        let l:output="%:t:r.".g:Tex_DefaultTargetFormat
-        let b:start=Tex_GetVarValue('Tex_ViewRule_'.g:Tex_DefaultTargetFormat)." ".l:output." &"
-    else
-        " works very often
-        let b:start="./%"
-    endif
-    "If makefile are build xml, ovewrite previous settings
-    if filereadable("Makefile")
-        set makeprg='make'
-        "Change the start only if the make run target exists
-        execute "silent !cat Makefile | grep \"run[ ]*:\""
-        if v:shell_error == 0
-            let b:start="make\ run"
-        endif
-        return
-    elseif filereadable("build.xml")
-        set efm=%A\ %#[javac]\ %f:%l:\ %m,%-Z\ %#[javac]\ %p^,%-C%.%#
-        set makeprg='ant'
-        fi
-    else
-        if exists("b:my_makeprg")
-            let &makeprg=b:my_makeprg
-        endif
-    endif
-endfunction
-
-"
-" Start a compilation
-" All arguments are booleans
-" args:
-"   compi:      Actually compile (or clean)
-"   forcemake:  Use Makefile instead of makeprg
-"   parallel:   Pass -j option to Makefile, require forcemake
-"   install:    Do installation, require forcemake
-"   exec:       Start an execution
-"   clean:      doe a make clean, require forcemake
-function! Compile(compi, forcemake, parallel, install, exec,clean)
-    if(a:compi)
-        "Do compile
-        " Save the file
-        :w
-        let l:cmd=''
-        if(a:forcemake)
-            "Use make command
-            if(a:clean)
-                let l:cmd="make clean"
-                execute ":Dispatch ".l:cmd
-            endif
-            let l:cmd="make"
-            if(a:parallel)
-                "Do it in parallel
-                let l:ncores=system("cat /proc/cpuinfo | grep processor | wc -l")
-                let l:ncores=substitute(l:ncores,"\n","","g")
-                let l:cmd.=" -j ".l:ncores
-
-            endif
-            if(a:install)
-                "Also do make install
-                let l:oldcmd=l:cmd
-                let l:cmd.=" && ".l:oldcmd." install"
-            endif
-        endif
-        "Do the compilation with Dispatch
-        execute ":Dispatch ".l:cmd
-    endif
-    if(a:exec)
-        "execute the program
-        execute ":!".b:start
-        "Redraw screen if no errors
-        if v:shell_error == 0
-            " Let some time to be sure that the start command is finished
-            :sleep 500m
-            :redraw!
-        endif
-    endif
-endfunction
 
 "
 " Tags and cscope
@@ -570,3 +426,13 @@ let g:EasyGrepReplaceAllPerFile=1
 "======================== CheckAttach (mutt) ==================================
 let g:attach_check_keywords=',PJ,ci-joint,pièce jointe'
 let g:checkattach_once = 'y'
+
+"======================== VimMail (mutt) ======================================
+
+au filetype mail setlocal spell spelllang=fr textwidth=72 colorcolumn=74
+
+let g:VimMailClient="/home/david/scripts/mutt.sh -t \"Mutt RO\" -R &"
+
+"======================== Compile =============================================
+
+let g:VimCompileExecutors={'pandoc' : "firefox %:t:r.html > /dev/null 2>&1",}
