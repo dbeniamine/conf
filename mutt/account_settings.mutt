@@ -1,47 +1,41 @@
-# Account specific setting, need to be sourced at each account change
+# Account specific settings {{{1
+# need to be sourced at each account change
 
-#
-# Identity
-#
+# Identity {{{2
 
 set realname="David Beniamine"
 set my_name="David Beniamine"
 
-#
-# Mailbox
-#
+# Mailbox {{{2
 
-#Folder
+# Folders {{{3
 set folder="$my_maildir/$my_account"
 
 set spoolfile=+INBOX
 set record=+Sent
 set postponed=+Drafts
 
-#Signature
-#set sig_dashes=no
+# Signature {{{3
 set signature="~/.mutt/signature-$my_account"
 
-#Check mail current account
+# Check mail current account {{{3
 macro index,pager Ga "<shell-escape>xterm -e offlineimap -o -u ttyui -a $my_account &<enter>" "Check mail (current account)"
 
-#
-# Mu
-#
+# Mu {{{2
 
-#mu home
+# mu home {{{3
 set my_muhome="$my_mudir/$my_account"
 
-# Search complete maildir
+# Search complete maildir {{{3
 macro index <F2> "<change-folder-readonly>$my_mudir/results<enter><shell-escape>mu find --threads --include-related --muhome=$my_muhome --clearlinks --linksdir=$my_mudir/results --format=links "    "mu find"
 macro index <F3> "<change-folder-readonly>$my_mudir/results\n"       "display mu find results"
 macro index <F4> "<shell-escape>mu index --muhome=$my_muhome --maildir=$folder<enter>"    "mu update index"
 macro index <F5> "<shell-escape>~/scripts/muClean.sh<enter>"   "Clean mu results"
 
 macro index,pager \cw "<shell-escape> ~/scripts/maildir_size.sh $folder<enter>" "Show maildir size"
-#
-# pgp signature
-#
+
+# pgp signature {{{2
+
 set pgp_autosign=yes
 set pgp_replyencrypt=yes
 unset pgp_autoencrypt

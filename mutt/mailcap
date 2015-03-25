@@ -5,6 +5,8 @@ text/html; iconv -f %{charset} -t UTF-8 | elinks -dump -dump-charset UTF-8 -defa
 image/*; /home/david/scripts/mutt_bgrun /usr/bin/gpicview %s; test=test -n "$DISPLAY"
 application/pdf; /home/david/scripts/mutt_bgrun /usr/bin/evince %s; test=test -n "$DISPLAY";
 
+# Office {{{1
+# Microsoft {{{2
 #The following Microsoft application MIME attachments are viewed from
 # the attachment menu using QuickView Plus for UNIX. 
 #
@@ -23,6 +25,7 @@ application/x-mspowerpoint;     /home/david/scripts/mutt_bgrun libreoffice %s; t
 application/ppt;                /home/david/scripts/mutt_bgrun libreoffice %s; test=test -n "$DISPLAY";
 #
 application/vnd.oasis.opendocument.text;  /home/david/scripts/mutt_bgrun libreoffice %s; test=test -n "$DISPLAY";
+# openoffice {{{2
 # Manually added openoffice stuff
 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;  /home/david/scripts/mutt_bgrun libreoffice %s; test=test -n "$DISPLAY";
 

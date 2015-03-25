@@ -1,35 +1,33 @@
-#
-# Color theme
-#
+# General settings {{{1
+# Color theme {{{2
+
 source ~/.mutt/theme
 
-#
-# Editor specific
-#
+# Editor specific {{{2
 
 set editor=vim
 set send_charset="us-ascii:utf-8"
+set edit_headers
 my_hdr User-Agent: Mutt
 
-#
-# Folders
-#
+# Folders {{{2
+
 
 set mbox_type=MailDir
 source ~/.mutt/mailboxes
-set edit_headers
 set header_cache = "~/.cache/mutt"
 set message_cachedir = "~/.cache/mutt"
 set certificate_file="~/.mutt/certificates"
+
 # Variables for mu
+
 set my_maildir="~/Documents/mail"
 set my_mudir="~/Documents/.mu"
+
 # Quick folder switch
 set sleep_time=0
 
-#
-# Usage
-#
+# Usage {{{2
 
 set sort="threads"
 set sort_aux='reverse-date'
@@ -40,45 +38,37 @@ set pager_index_lines=10
 set pager_stop
 #source ~/.mutt/content_type
 
-#
-# Sidebar
-#
+# Sidebar {{{2
 
 set sidebar_visible = yes
 set sidebar_delim='|'
 
-#
-# General usage
-#
+# Bindings {{{1
 
-# Completion
+# Completion {{{2
 bind editor <Tab> complete-query
 bind editor ^T complete
 
-# Refresh
-bind index \Cl refresh
-bind pager \Cl redraw-screen
-
-# New
+# New {{{2
 bind index <esc>n toggle-new
 bind pager <esc>n mark-as-new
 
-# Reply
+# Reply {{{2
 bind index,pager R group-reply
 bind index,pager L list-reply
 
-# Search
+# Search {{{2
 bind index,pager,generic N search-opposite
 macro index,pager gf "<search>~F<enter>" "Go to the next important message"
 
-# Limits
+# Limits {{{2
 bind index ll limit
 macro index,pager lf "<limit>~F<enter>" "Limit to important messages"
 macro index,pager ln "<limit>~N<enter>" "Limit to new messages"
 macro index,pager la "<limit>all<enter>" "Limit to all  messages"
 
 
-# Switch folders
+# Switch folders {{{2
 bind index,pager gn next-unread-mailbox
 macro index,pager gh "<change-folder>=INBOX<enter>" "Go Home (Inbox)"
 macro index,pager gd "<change-folder>=Drafts<enter>" "Go to Drafts"
@@ -87,38 +77,34 @@ macro index,pager gs "<change-folder>=Sent<enter>" "Go to sent"
 macro index,pager gj "<change-folder>=Junk<enter>" "Go to Junk"
 macro index,pager gn "<next-unread-mailbox>" "Go to next mailbox with new mail"
 
-# Switch accounts
+# Switch accounts {{{2
 macro index,pager gi '<enter-command>source ~/.mutt/imag.mutt<enter><change-folder>=INBOX<enter>' "Go to accout: work"
 macro index,pager gp '<enter-command>source ~/.mutt/perso.mutt<enter><change-folder>=INBOX<enter>' "Go to account: perso"
 
-# Moving messages
+# Moving messages {{{2
 macro index,pager D "<save-message>=Trash<enter><enter>"  "Delete message (trash)"
 macro index,pager s "<save-message>=INBOX."  "Save message"
 macro index,pager c "<change-folder>=INBOX."  "Change folder"
 
-#
-# Sidebar
-#
+# Sidebar {{{2
 macro index b '<enter-command>toggle sidebar_visible<enter><refresh>' "Toggle sidebar"
 macro pager b '<enter-command>toggle sidebar_visible<enter><redraw-screen>' "Toggle sidebar"
 bind index,pager \CP sidebar-prev
 bind index,pager \CN sidebar-next
 bind index,pager \CO sidebar-open
 
-#
-# External tools
-#
+# External tools {{{2
 
-# Open a new read only instance of Mutt
+# Open a new read only instance of Mutt {{{3
 macro index,pager ,m '<sync-mailbox><shell-escape>~/scripts/mutt.sh -t "Mutt RO" -R &<enter>' "Start a new instance of mutt RO"
 
-# Urlview
+# Urlview {{{3
 macro index,pager \cb "v/plain<enter><pipe-entry>'urlview'<enter>" 'Follow links with urlview'
 
-# Check mail
+# Check mail {{{3
 macro index,pager GG "<shell-escape>xterm -e offlineimap -o -u ttyui &<enter>" "Check mail (all accounts)"
 
-# Pycard (adress book)
+# Pycard (adress book) {{{3
 set query_command="pc_query -m '%s'"
 
 macro index,pager Af "<pipe-message>pycard-import --from<enter>" "Add 'From' field to addressbook"
@@ -128,25 +114,23 @@ macro index,pager Ab "<pipe-message>pycard-import --bcc <enter>" "Add 'Bcc' fiel
 macro index,pager As  "<shell-escape>pycardsyncer<enter>" "Adress book Synchronize"
 macro index,pager Aq  "<shell-escape>pc_query " "Adress book Query"
 
-# Printing
+# Printing {{{3
 source "echo \"set my_printer=$(lpstat -s | grep default | cut -d ' ' -f 4)\" |"
 macro index,pager lp "<shell-escape>lpstat -s<enter>" "List Printers"
 macro index,pager p "<shell-escape>$print_command -P $my_printer" "Print message"
-# Send mail as multipart
 
-#
-# Accounts
-#
+# Accounts {{{1
 
+# Mailing lists {{{2
 source ~/.mutt/lists.mutt
 
-# Hooks
+# Hooks {{{2
 folder-hook "$my_maildir/imag" "source ~/.mutt/imag.mutt"
 account-hook "imag" "source ~/.mutt/imag.mutt"
 folder-hook "$my_maildir/perso" "source ~/.mutt/perso.mutt"
 account-hook "perso" "source ~/.mutt/perso.mutt"
 
-# Default account
+# Default account {{{2
 source ~/.mutt/default.mutt
 
 # Go to inbox
