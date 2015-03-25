@@ -1,21 +1,15 @@
-"========================= Pathogen ===========================================
+"========================= Pathogen {{{1 ======================================
 
-"
 " This section must stay at the beginning of the vimrc it loads the plugins
-"
-
-" Location of the bundle
+" Manually add pathogen bundle {{{2
 runtime bundle/vim-pathogen/autoload/pathogen.vim
-" Syntax must be off for pathogen
-syntax off
-" Do the infection
+" Do the infection {{{2
+syntax off " Syntax must be off for pathogen infection
 execute pathogen#infect()
 
-"========================= General settings ===================================
+"========================= General settings {{{1 ==============================
 
-"
-" Appearance
-"
+"====================== Appearance {{{2 =======================================
 
 " Colors
 set bg=dark
@@ -33,29 +27,16 @@ set laststatus=2
 " Show commands while typing it
 set showcmd
 
-" Always show the completion menu
-set completeopt=menuone,preview
+"Completion colors
 highlight Pmenu ctermbg=gray ctermfg=black
 highlight PmenuSel ctermbg=black ctermfg=white
 
-" split at the right or below
-set splitright
-set splitbelow
 
 " highlighting trailing spaces
 highlight ExtraWhitespace ctermbg=red guibg=red
 au BufWinEnter * match ExtraWhitespace /\s\+$/
 
-" cursor line only on the active tab
-augroup CursorLine
-    au!
-    au VimEnter,WinEnter,BufWinEnter * setlocal cursorline
-    au WinLeave * setlocal nocursorline
-augroup END
-
-"
-" Coding style
-"
+"====================== Coding style {{{2 =====================================
 
 " Define tabs size
 set shiftwidth=4
@@ -68,9 +49,22 @@ set smarttab
 set textwidth=78
 set colorcolumn=80
 
-"
-" Behavior
-"
+"====================== Behavior {{{2 =========================================
+
+" cursor line only on the active tab
+augroup CursorLine
+    au!
+    au VimEnter,WinEnter,BufWinEnter * setlocal cursorline
+    au WinLeave * setlocal nocursorline
+augroup END
+
+" split at the right or below
+set splitright
+set splitbelow
+
+
+" Always show the completion menu
+set completeopt=menuone,preview
 
 " Allow mouse use
 set mouse=a
@@ -100,13 +94,7 @@ filetype plugin indent on
 set foldmethod=syntax
 set foldlevelstart=4
 
-"
-" User variables
-"
-
-"let g:my_tagsdir="~/.vim/tags/"
-
-"========================= Filetype features ==================================
+"====================== Filetype settings {{{2 ================================
 
 " C and Cpp ident and tags
 au FileType c,cpp set cindent  tags+=~/.vim/tags/tags_c
@@ -124,15 +112,15 @@ au FileType tex setlocal spell spelllang=en spellsuggest=5
 au BufRead *.tex call SetTexLang()
 " gitcommit spell
 au FileType gitcommit setlocal spell spelllang=en
+" mutt files
+au BufEnter *.mutt setfiletype muttrc
+" Configuration files
+au FileType vim,muttrc,conf,mailcap setlocal foldmethod=marker foldlevel=1
 
 
+"====================== Mappings {{{2 =========================================
 
-"========================== User mappings =====================================
-
-"
-"
 " Easily move through windows
-"
 
 " First change the <C-j> mapping from latex suite to <C-n>
 imap <C-n> <Plug>IMAP_JumpForward
@@ -161,9 +149,9 @@ nnoremap <C-@>u :call Cscope_Init("update")<CR>
 
 
 
-"========================= Functions ==========================================
+"====================== Functions {{{1 ========================================
 
-" Remove trailing space
+" Remove trailing space {{{2
 function! RemoveTrailingSpace()
     "save position
     normal mz
@@ -191,12 +179,7 @@ function! RemoveTrailingSpace()
     execute "silent :delmarks z"
 endfunction
 
-
-"
-" Tags and cscope
-"
-
-"Create or update cscope and tags files on demand
+"Create or update cscope and tags files on demand {{{2
 function! Cscope_Init (mode)
     "do nothing if cscope.out doesn't exist and the user doesn't explicitly
     "asked to create it
@@ -218,7 +201,7 @@ function! Cscope_Init (mode)
     endif
 endfunction
 
-" Find the right language for latex spell checking
+" Find the right language for latex spell checking {{{2
 function! SetTexLang()
     let file = readfile(expand("%:p"))
     " read current file
@@ -240,7 +223,7 @@ function! SetTexLang()
     endfor
 endfunction
 
-" Wordcount should be a fast implem for status bar
+" Wordcount should be a fast implem for status bar {{{2
 function! WC()
     if &modified || !exists("b:wordcount")
         let l:old_status = v:statusmsg
@@ -259,7 +242,7 @@ function! WC()
     endif
 endfunction
 
-" Markdown folds
+" Markdown folds {{{2
 function! MdLevel()
     let h = matchstr(getline(v:lnum), '^#\+')
     if empty(h)
@@ -269,24 +252,19 @@ function! MdLevel()
     endif
 endfunction
 
-"Insert a R chunk code
+"Insert a R chunk code {{{2
 function! InsertRChunk()
     execute "normal mz"
-    execute "normal i ```{<++>}"
+    execute "normal i```{<++>}"
     execute "normal o<++>"
-    execute "normal o`̀ `<++>"
+    execute "normal o```<++>"
     execute "normal `z"
     delmarks z
 endfunction
 
+"====================== Plugin Configuration {{{1 =============================
 
-"==============================================================================
-"
-"                         Plugin Configuration section
-"
-"==============================================================================
-
-"======================== Indent guides =======================================
+"====================== Indent guides {{{2 ====================================
 
 let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_guide_size = 1
@@ -294,7 +272,7 @@ let g:indent_guides_auto_colors = 0
 hi IndentGuidesOdd  ctermbg=black
 hi IndentGuidesEven ctermbg=lightgrey
 
-"========================== Neocompl ==========================================
+"====================== Neocompl {{{2 =========================================
 
 " Use neocomplcache.
 let g:neocomplcache_enable_at_startup = 1
@@ -333,7 +311,7 @@ inoremap <expr><BS> neocomplcache#smart_close_popup()."\<C-h>"
 inoremap <expr><C-y>  neocomplcache#close_popup()
 inoremap <expr><C-e>  neocomplcache#cancel_popup()
 
-"========================== Latex-suite =======================================
+"====================== Latex-suite {{{2 ======================================
 
 " IMPORTANT: grep will sometimes skip displaying the file name if you
 " " search in a singe file. This will confuse Latex-Suite. Set your grep
@@ -349,21 +327,27 @@ let g:tex_flavor='latex'
 " " type in \ref{fig: and press <C-n> you will automatically cycle through
 " " all the figure labels. Very useful!
 set iskeyword+=:
+
+" Compilation
 let g:Tex_DefaultTargetFormat='pdf'
 let g:Tex_CompileRule_pdf="pdflatex -interaction=nonstopmode $*"
 let g:Tex_UseMakefile=1
+
 "Map \it to Localeader i
 imap <buffer> <LocalLeader>it <Plug>Tex_InsertItemOnThisLine
-imap <C-b> <Plug>Tex_MathBF
-imap <C-c> <Plug>Tex_MathCal
-imap <C-l> <Plug>Tex_LeftRight
 
-"======================== Commentary ==========================================
+" Environments
+let g:Tex_Env_frame = "\\begin{frame}{<++>}\<CR><++>\<CR>\\end{frame}"
+let g:Tex_Env_alertblock = "\\begin{alertblock}{<++>}\<CR><++>\<CR>\\end{alertblock}"
+let g:Tex_Env_exampleblock = "\\begin{exampleblock}{<++>}\<CR><++>\<CR>\\end{exampleblock}"
+let g:Tex_Env_block = "\\begin{block}{<++>}\<CR><++>\<CR>\\end{block}"
+
+"====================== Commentary {{{2 =======================================
 
 au filetype pandoc let b:commentary_format="<!--%s-->"
 au filetype rmd let b:commentary_format="#%s"
 
-"======================== Airline =============================================
+"====================== Airline {{{2 ==========================================
 
 let g:airline_section_z = '%p%% %#__accent_bold#%l%#__restore__#:%c %{WC()}W'
 " Unicode symbols
@@ -377,7 +361,7 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#buffer_min_count = 2
 let g:airline#extensions#tabline#tab_min_count = 0
 
-"======================== OmniCppComplete======================================
+"====================== OmniCppComplete {{{2 ==================================
 "
 " Autocomplete with ->, ., ::
 let OmniCpp_MayCompleteDot = 1
@@ -390,18 +374,18 @@ let OmniCpp_NamespaceSearch = 2
 " Show function prototype (i.e. parameters) in popup window
 let OmniCpp_ShowPrototypeInAbbr = 1
 
-"======================== Templates ===========================================
+"====================== Templates {{{2 ========================================
 
 " This is ugly but for the moment the simplest way to find the templates is to
 " give the path of the install directory
 let g:templ_templates_install_dir="~/.vim/bundle/vim-templates"
 
-"======================== Vim-R-plugin ========================================
+"====================== Vim-R-plugin {{{2 =====================================
 
 "Insert a chunk code
-au filetype r,rmd,rhelp,rnoweb,rrst noremap <LocalLeader>nc :call InsertRChunk()<CR>
+au filetype r,rmd,rhelp,rnoweb,rrst inoremap <LocalLeader>r <ESC>:call InsertRChunk()<CR>i
 
-"======================== Todo.txt ============================================
+"====================== Todo.txt {{{2 =========================================
 
 let g:Todo_txt_first_level_sort_mode="! i"
 
@@ -410,7 +394,7 @@ au filetype todo imap + +<C-X><C-U>
 au filetype todo imap @ @<C-X><C-U>
 au filetype todo setlocal completefunc=TodoComplete
 
-"======================== EasyGrep ============================================
+"====================== EasyGrep {{{2 =========================================
 
 " Track the current extension
 let g:EasyGrepMode=2
@@ -423,16 +407,17 @@ let g:EasyGrepEveryMatch=1
 " Replace all works per file
 let g:EasyGrepReplaceAllPerFile=1
 
-"======================== CheckAttach (mutt) ==================================
+"====================== CheckAttach (mutt) {{{2 ===============================
+
 let g:attach_check_keywords=',PJ,ci-joint,pièce jointe'
 let g:checkattach_once = 'y'
 
-"======================== VimMail (mutt) ======================================
+"====================== VimMail (mutt) {{{2 ===================================
 
 au filetype mail setlocal spell spelllang=fr textwidth=72 colorcolumn=74
 
 let g:VimMailClient="/home/david/scripts/mutt.sh -t \"Mutt RO\" -R &"
 
-"======================== Compile =============================================
+"====================== Compile {{{2 ==========================================
 
 let g:VimCompileExecutors={'pandoc' : "firefox %:t:r.html > /dev/null 2>&1",}
