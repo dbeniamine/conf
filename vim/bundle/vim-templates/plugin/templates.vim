@@ -8,16 +8,22 @@ if (!exists("g:templ_templates_install_dir"))
     let g:templ_templates_install_dir="~/.vim"
 endif
 
-let g:templ_templatesdir=g:templ_templates_install_dir . "/headers/"
-let g:templ_Makefilesdir=g:templ_templates_install_dir . "/Makefiles/"
+let g:templ_templatesdir=g:templ_templates_install_dir."/headers/"
+let g:templ_Makefilesdir=g:templ_templates_install_dir."/Makefiles/"
+
+if( !exists("g:templ_beamer_name"))
+    let g:templ_beamer_name='slides.tex'
+endif
 
 " Insert headers if any
 au BufNewFile * call Headers()
 
+" Functions {{{1
+
 " Insert headers corresponding to the file extension
 function! Headers()
     "insert headers
-    if expand('%')=~'presentation.tex'
+    if expand('%')=~g:templ_beamer_name
         let header=g:templ_templatesdir . "beamer.tex"
         let type="beamer"
     else
@@ -28,7 +34,9 @@ function! Headers()
         execute "0read" header
     catch
     endtry
-    if system("ls | grep Makefile")=="" && &ft !="" && system('ls ' . g:templ_Makefilesdir . '| grep Makefile_' . &ft)!="" && input("Do you want to import an existing makefile ? [y/N]") == "y"
+    if system("[ -e Makefile ] && echo ok")=="" && &ft !="" &&
+        \ system('[ -e'.g:templ_Makefilesdir.'/Makefile_'.&ft." ] && echo ok")!=""
+        \ && input("Do you want to import an existing makefile ? [y/N]") == "y"
         call ImportMakefile()
     endif
     execute "normal \<C-n>\<Right>"
@@ -44,5 +52,3 @@ function! ImportMakefile()
     catch
     endtry
 endfunction
-
-
