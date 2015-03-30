@@ -4,10 +4,6 @@ if [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then
     debian_chroot_ps1="\[$Yellow\]${debian_chroot:+($debian_chroot)}"
 fi
 
-# Color depending on the last command's return value
-ps1_command_color="if [[ \$? == 0 ]]; then echo -n \"\[$Green\]\"; \
-    else echo -n \"\[$Red\]\"; fi"
-
 # gitprompt configuration
 
 # Set config variables first
@@ -15,13 +11,24 @@ ps1_command_color="if [[ \$? == 0 ]]; then echo -n \"\[$Green\]\"; \
 
 # GIT_PROMPT_FETCH_REMOTE_STATUS=0   # uncomment to avoid fetching remote status
 
+# Retrieve color names
+. ~/.bash.d/bash-git-prompt/prompt-colors.sh
 
-GIT_PROMPT_START="\[$Cyan\][\D{%x}_\A]$debian_chroot_ps1"
-GIT_PROMPT_START+="\$($ps1_command_color) \u@\h\[$Color_Off\]:\[$Blue\]\w\[$Color_Off\]"
-GIT_PROMPT_END="\n\[$Color_Off\]\\$ "
+# Pre git stuff
+GIT_PROMPT_START="${White}[\D{%x} \A] _LAST_COMMAND_INDICATOR_ $debian_chroot_ps1\u@\h"
+GIT_PROMPT_START+="${ResetColor}:${BoldBlue}\w"
+
+# Real git stuff yellow
+GIT_PROMPT_PREFIX="${Yellow}(${ResetColor}"
+GIT_PROMPT_SUFFIX="${Yellow})${ResetColor}"
+GIT_PROMPT_SEPARATOR="${Yellow}|${ResetColor}"
+GIT_PROMPT_BRANCH="${Yellow}"
+
+# Post git stuff
+GIT_PROMPT_END="\n${ResetColor}\\$ "
 
 # as last entry source the gitprompt script
-#GIT_PROMPT_THEME=Custom # use custom .git-prompt-colors.sh
+#GIT_PROMPT_THEME="Custom" # use custom .git-prompt-colors.sh
 #GIT_PROMPT_THEME=Solarized # use theme optimized for solarized color scheme
 
 . ~/.bash.d/bash-git-prompt/gitprompt.sh
