@@ -52,3 +52,6 @@
 [submodule "vim/bundle/vim-compile"]
 	path = vim/bundle/vim-compile
 	url = git@github.com:dbeniamine/vim-compile.git
+[submodule "bash.d/bash-git-prompt"]
+	path = bash.d/bash-git-prompt
+	url = https://github.com/magicmonty/bash-git-prompt.git

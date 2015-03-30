@@ -19,7 +19,10 @@ export EDITOR=vim
 bashdir="$HOME/.bash.d"
 for f in $(\ls $bashdir)
 do
-    . $bashdir/$f
+    if [ -f "$bashdir/$f" ]
+    then
+        . $bashdir/$f
+    fi
 done
 
 #

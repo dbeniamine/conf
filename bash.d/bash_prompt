@@ -8,43 +8,20 @@ fi
 ps1_command_color="if [[ \$? == 0 ]]; then echo -n \"\[$Green\]\"; \
     else echo -n \"\[$Red\]\"; fi"
 
-# Git ps1 dynamic settings
-git_ps1_command()
-{
-    GIT_PS1_SHOWSTASHSTATE=1
-    GIT_PS1_SHOWUNTRACKEDFILES=
-    GIT_PS1_SHOWCOLORHINTS=1
-    GIT_PS1_DESCRIBE_STYLE="branch"
-    GIT_PS1_SHOWUPSTREAM="auto git"
-    #Show less information for work repo which is too huge
-    if $( git remote -v 2> /dev/null | grep work.git > /dev/null )
-    then
-        GIT_PS1_SHOWDIRTYSTATE=
-    else
-        GIT_PS1_SHOWDIRTYSTATE=1
-    fi
-    __git_ps1
-}
+# gitprompt configuration
 
-# Create a nice colored prompt
-color_prompt()
-{
-    ret=$?
-    #Date and time, debian chroot
-    PS1="\[$Cyan\][\D{%x}_\A]$debian_chroot_ps1"
-    # user@host:path
-    PS1+="\$($ps1_command_color)\u@\h\[$Color_Off\]:\[$Blue\]\w"
-    #git stuff
-    PS1+="\[$Yellow\]\$(git_ps1_command)\n\[$Color_Off\]\\$ "
-}
+# Set config variables first
+# GIT_PROMPT_ONLY_IN_REPO=1
 
-#
-# PROMPT
-#
-case "$TERM" in
-    xterm*|rxvt*)
-        color_prompt
-        ;;
-    *)
-        ;;
-esac
+# GIT_PROMPT_FETCH_REMOTE_STATUS=0   # uncomment to avoid fetching remote status
+
+
+GIT_PROMPT_START="\[$Cyan\][\D{%x}_\A]$debian_chroot_ps1"
+GIT_PROMPT_START+="\$($ps1_command_color) \u@\h\[$Color_Off\]:\[$Blue\]\w\[$Color_Off\]"
+GIT_PROMPT_END="\n\[$Color_Off\]\\$ "
+
+# as last entry source the gitprompt script
+#GIT_PROMPT_THEME=Custom # use custom .git-prompt-colors.sh
+#GIT_PROMPT_THEME=Solarized # use theme optimized for solarized color scheme
+
+. ~/.bash.d/bash-git-prompt/gitprompt.sh
