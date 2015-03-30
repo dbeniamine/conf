@@ -409,7 +409,7 @@ let g:EasyGrepReplaceAllPerFile=1
 
 "====================== CheckAttach (mutt) {{{2 ===============================
 
-let g:attach_check_keywords=',PJ,ci-joint,pièce jointe'
+let g:attach_check_keywords=',PJ,ci-joint,pièce jointe,attached'
 let g:checkattach_once = 'y'
 
 "====================== VimMail (mutt) {{{2 ===================================
