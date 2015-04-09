@@ -55,3 +55,6 @@
 [submodule "bash.d/bash-git-prompt"]
 	path = bash.d/bash-git-prompt
 	url = https://github.com/magicmonty/bash-git-prompt.git
+[submodule "vim/bundle/vim-licenses"]
+	path = vim/bundle/vim-licenses
+	url = https://github.com/antoyo/vim-licenses.git

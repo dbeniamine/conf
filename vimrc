@@ -392,3 +392,8 @@ let g:VimMailClient="/home/david/scripts/mutt.sh -t \"Mutt RO\" -R &"
 "====================== Compile {{{2 ==========================================
 
 let g:VimCompileExecutors={'pandoc' : "firefox %:t:r.html > /dev/null 2>&1",}
+
+"====================== Licenses {{{2 =========================================
+
+let g:licenses_copyright_holders_name = 'Beniamine, David <David@Beniamine.net>'
+let g:licenses_authors_name = 'Beniamine, David <David@Beniamine.net>'
