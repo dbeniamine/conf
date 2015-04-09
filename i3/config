@@ -194,7 +194,7 @@ bindsym Mod4+w exec firefox
 # finds out, if available)
 bar {
         position top
-        status_command $prefix/i3status.sh
+        status_command i3blocks
 
         # Colors
          colors{
