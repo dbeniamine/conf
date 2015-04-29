@@ -1,16 +1,16 @@
 " Copyright (C) 2015  Beniamine, David <David@Beniamine.net>
 " Author: Beniamine, David <David@Beniamine.net>
-" 
+"
 " This program is free software: you can redistribute it and/or modify
 " it under the terms of the GNU General Public License as published by
 " the Free Software Foundation, either version 3 of the License, or
 " (at your option) any later version.
-" 
+"
 " This program is distributed in the hope that it will be useful,
 " but WITHOUT ANY WARRANTY; without even the implied warranty of
 " MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 " GNU General Public License for more details.
-" 
+"
 " You should have received a copy of the GNU General Public License
 " along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
@@ -96,9 +96,6 @@ set hlsearch
 " Show results while typing the search
 set incsearch
 
-" Allow omni completion
-set omnifunc=syntaxcomplete#Complete
-
 " Change the <LocalLeader> key:
 let maplocalleader = ","
 let mapleader = ";"
@@ -132,6 +129,9 @@ au FileType gitcommit setlocal spell spelllang=en
 au BufEnter *.mutt setfiletype muttrc
 " Configuration files
 au FileType vim,muttrc,conf,mailcap setlocal foldmethod=marker foldlevel=1
+" Disable NeoComplete for certain filetypes
+au Filetype tex,cpp if exists(":NeoCompleteDisable") | NeoCompleteDisable | endif
+
 
 
 "====================== Mappings {{{2 =========================================
@@ -291,43 +291,20 @@ hi IndentGuidesEven ctermbg=lightgrey
 "====================== Neocompl {{{2 =========================================
 
 " Use neocomplcache.
-let g:neocomplcache_enable_at_startup = 1
+let g:neocomplete#enable_at_startup = 1
 " Use smartcase.
-let g:neocomplcache_enable_smart_case = 1
+let g:neocomplete#enable_smart_case = 1
 " Use camel case completion.
-let g:neocomplcache_enable_camel_case_completion = 1
-" Use underbar completion.
-let g:neocomplcache_enable_underbar_completion = 1
-" Set minimum syntax keyword length.
-let g:neocomplcache_min_syntax_length = 3
-let g:neocomplcache_lock_buffer_name_pattern = '\*ku\*'
+let g:neocomplete#enable_camel_case_completion = 1
+"let g:neocomplete#lock_buffer_name_pattern = '\*ku\*'
 
-" Define dictionary.
-let g:neocomplcache_dictionary_filetype_lists = {
-            \ 'default' : '',
-            \ 'vimshell' : $HOME.'/.vimshell_hist',
-            \ 'scheme' : $HOME.'/.gosh_completions'
-            \ }
-
-" Define keyword.
-if !exists('g:neocomplcache_keyword_patterns')
-    let g:neocomplcache_keyword_patterns = {}
+" Enable heavy omni completion.
+if !exists('g:neocomplete#sources#omni#input_patterns')
+  let g:neocomplete#sources#omni#input_patterns = {}
 endif
-let g:neocomplcache_keyword_patterns['default'] ='\h\w*'
-
-
-" Recommended key-mappings.
-" <CR>: close popup and save indent.
-inoremap <expr><CR>  neocomplcache#smart_close_popup()."\<CR>"
-" <TAB>: completion.
-inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
-" <C-h>, <BS>: close popup and delete backword char.
-inoremap <expr><C-h> neocomplcache#smart_close_popup()."\<C-h>"
-inoremap <expr><BS> neocomplcache#smart_close_popup()."\<C-h>"
-inoremap <expr><C-y>  neocomplcache#close_popup()
-inoremap <expr><C-e>  neocomplcache#cancel_popup()
-
-
+"let g:neocomplete#sources#omni#input_patterns.php = '[^. \t]->\h\w*\|\h\w*::'
+let g:neocomplete#sources#omni#input_patterns.c = '[^.[:digit:] *\t]\%(\.\|->\)'
+let g:neocomplete#sources#omni#input_patterns.cpp = '[^.[:digit:] *\t]\%(\.\|->\)\|\h\w*::'
 
 "====================== Commentary {{{2 =======================================
 
@@ -336,7 +313,7 @@ au filetype rmd let b:commentary_format="#%s"
 
 "====================== Airline {{{2 ==========================================
 
-let g:airline_section_z = '%p%% %#__accent_bold#%l%#__restore__#:%c %{WC()}W'
+let g:airline_section_z = '%p%% %#__accent_bold#%l%#__restore__#:%c'
 " Unicode symbols
 let g:airline_left_sep = '▶'
 let g:airline_right_sep = '◀'
