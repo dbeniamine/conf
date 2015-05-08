@@ -40,6 +40,7 @@ do
         . $bashdir/$f
     fi
 done
+unset f
 
 #
 # TERMINAL
