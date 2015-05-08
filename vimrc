@@ -130,7 +130,7 @@ au BufEnter *.mutt setfiletype muttrc
 " Configuration files
 au FileType vim,muttrc,conf,mailcap setlocal foldmethod=marker foldlevel=1
 " Disable NeoComplete for certain filetypes
-au Filetype tex,cpp if exists(":NeoCompleteDisable") | NeoCompleteDisable | endif
+au Filetype todo,tex,cpp if exists(":NeoCompleteDisable") | NeoCompleteDisable | endif
 
 
 
