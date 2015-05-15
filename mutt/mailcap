@@ -14,7 +14,7 @@
 #  0. You just DO WHAT THE FUCK YOU WANT TO.
 
 text/html; /home/david/scripts/mutt_bgrun firefox %s; test=test -n "$DISPLAY"; nametemplate=%s.html
-text/html; iconv -f %{charset} -t UTF-8 | elinks -dump -dump-charset UTF-8 -default-mime-type text/html; needsterminal; copiousoutput;
+text/html; elinks -dump 1 -dump-charset utf-8 -default-mime-type text/html; needsterminal; copiousoutput;
 #text/html; iconv -f %{charset} -t UTF-8 | pandoc --atx-headers -f html -t markdown_strict; copiousoutput; test=type pandoc >/dev/null
 text/html; iconv -f %{charset} -t UTF-8 | pandoc --atx-headers -f html -t markdown-fenced_code_blocks-escaped_line_breaks; copiousoutput; test=type pandoc >/dev/null
 image/*; /home/david/scripts/mutt_bgrun /usr/bin/gpicview %s; test=test -n "$DISPLAY"
