@@ -80,7 +80,7 @@ set splitbelow
 
 
 " Always show the completion menu
-set completeopt=menuone,preview
+set completeopt=longest,menuone,preview
 
 " Allow mouse use
 set mouse=a
@@ -156,12 +156,19 @@ noremap <leader>l :redraw!<CR>
 noremap <leader>s <ESC>:w<CR>:sh<CR>
 " Auto indent
 noremap <leader>i mzgg=G`z :delmarks z<CR>
+
+" Open a new tab
+noremap <leader>t <Esc>:tabnew 
+
 " Remove trailing space
 noremap <leader>tr :call RemoveTrailingSpace()<CR>
 
 " Cscope_map.vim style map to create the cscope files
 nnoremap <C-@>a :call Cscope_Init("create")<CR>
 nnoremap <C-@>u :call Cscope_Init("update")<CR>
+
+" Validate menu entry with enter
+inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 
 
 
@@ -390,3 +397,23 @@ let g:VimCompileExecutors={'pandoc' : "firefox %:t:r.html > /dev/null 2>&1",}
 
 let g:licenses_copyright_holders_name = 'Beniamine, David <David@Beniamine.net>'
 let g:licenses_authors_name = 'Beniamine, David <David@Beniamine.net>'
+
+"====================== Vimux {{{2 ============================================
+
+" Prompt for a command to run
+map <Leader>vp :VimuxPromptCommand<CR>
+
+" Run last command executed by VimuxRunCommand
+map <Leader>vl :VimuxRunLastCommand<CR>
+
+" Inspect runner pane
+map <Leader>vi :VimuxInspectRunner<CR>
+
+" Close vim tmux runner opened by VimuxRunCommand
+map <Leader>vq :VimuxCloseRunner<CR>
+
+" Interrupt any command running in the runner pane
+map <Leader>vx :VimuxInterruptRunner<CR>
+
+" Zoom the runner pane (use <bind-key> z to restore runner pane)
+map <Leader>vz :call VimuxZoomRunner()<CR>
