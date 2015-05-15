@@ -49,6 +49,7 @@ set sort="threads"
 set sort_aux='reverse-date'
 set mailcap_path    = ~/.mutt/mailcap
 set implicit_autoview
+alternative_order text/plain text/enriched text/html
 set pager_index_lines=10
 # when scrolling a message stop at the end
 set pager_stop
