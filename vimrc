@@ -102,6 +102,7 @@ let mapleader = ";"
 
 "auto ident
 filetype plugin indent on
+set omnifunc=syntaxcomplete#Complete
 
 "fold by syntaxic bloc
 set foldmethod=syntax
@@ -130,7 +131,7 @@ au BufEnter *.mutt setfiletype muttrc
 " Configuration files
 au FileType vim,muttrc,conf,mailcap setlocal foldmethod=marker foldlevel=1
 " Disable NeoComplete for certain filetypes
-au Filetype todo,tex,cpp if exists(":NeoCompleteDisable") | NeoCompleteDisable | endif
+au Filetype tex,cpp if exists(":NeoCompleteDisable") | NeoCompleteDisable | endif
 
 
 
@@ -313,6 +314,9 @@ endif
 let g:neocomplete#sources#omni#input_patterns.c = '[^.[:digit:] *\t]\%(\.\|->\)'
 let g:neocomplete#sources#omni#input_patterns.cpp = '[^.[:digit:] *\t]\%(\.\|->\)\|\h\w*::'
 
+let g:neocomplete#enable_auto_select = 1
+let g:neocomplete#disable_auto_complete = 1
+
 "====================== Commentary {{{2 =======================================
 
 au filetype pandoc let b:commentary_format="<!--%s-->"
@@ -344,7 +348,6 @@ let OmniCpp_SelectFirstItem = 1
 let OmniCpp_NamespaceSearch = 2
 " Show function prototype (i.e. parameters) in popup window
 let OmniCpp_ShowPrototypeInAbbr = 1
-
 "====================== Templates {{{2 ========================================
 
 " This is ugly but for the moment the simplest way to find the templates is to
@@ -361,9 +364,9 @@ au filetype r,rmd,rhelp,rnoweb,rrst inoremap <LocalLeader>r <ESC>:call InsertRCh
 let g:Todo_txt_first_level_sort_mode="! i"
 
 "Intelligent completion for projects and contexts
-au filetype todo imap + +<C-X><C-U>
-au filetype todo imap @ @<C-X><C-U>
-au filetype todo setlocal completefunc=TodoComplete
+au filetype todo imap + +<C-X><C-O>
+au filetype todo imap @ @<C-X><C-O>
+au filetype todo setlocal omnifunc=TodoComplete
 
 "====================== EasyGrep {{{2 =========================================
 
