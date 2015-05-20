@@ -139,9 +139,9 @@ au Filetype tex,cpp if exists(":NeoCompleteDisable") | NeoCompleteDisable | endi
 
 " Easily move through windows
 
-" First change the <C-j> mapping from latex suite to <C-n>
-imap <C-n> <Plug>IMAP_JumpForward
-nmap <C-n> <Plug>IMAP_JumpForward
+" First change the <C-j> mapping from latex suite to <C-m>
+imap <C-m> <Plug>IMAP_JumpForward
+nmap <C-m> <Plug>IMAP_JumpForward
 " Then add moving shortcuts
 noremap <C-h> <C-w>h
 noremap <C-j> <C-w>j
@@ -401,22 +401,4 @@ let g:VimCompileExecutors={'pandoc' : "firefox %:t:r.html > /dev/null 2>&1",}
 let g:licenses_copyright_holders_name = 'Beniamine, David <David@Beniamine.net>'
 let g:licenses_authors_name = 'Beniamine, David <David@Beniamine.net>'
 
-"====================== Vimux {{{2 ============================================
 
-" Prompt for a command to run
-map <Leader>vp :VimuxPromptCommand<CR>
-
-" Run last command executed by VimuxRunCommand
-map <Leader>vl :VimuxRunLastCommand<CR>
-
-" Inspect runner pane
-map <Leader>vi :VimuxInspectRunner<CR>
-
-" Close vim tmux runner opened by VimuxRunCommand
-map <Leader>vq :VimuxCloseRunner<CR>
-
-" Interrupt any command running in the runner pane
-map <Leader>vx :VimuxInterruptRunner<CR>
-
-" Zoom the runner pane (use <bind-key> z to restore runner pane)
-map <Leader>vz :call VimuxZoomRunner()<CR>
