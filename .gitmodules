@@ -58,6 +58,3 @@
 [submodule "vim/bundle/vim-licenses"]
 	path = vim/bundle/vim-licenses
 	url = https://github.com/antoyo/vim-licenses.git
-[submodule "vim/bundle/vimux"]
-	path = vim/bundle/vimux
-	url = https://github.com/benmills/vimux.git

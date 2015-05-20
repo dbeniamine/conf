@@ -34,21 +34,20 @@ function! Headers()
         execute "0read" header
     catch
     endtry
-    if system("[ -e Makefile ] && echo ok")=="" && &ft !="" &&
-        \ system('[ -e'.g:templ_Makefilesdir.'/Makefile_'.&ft." ] && echo ok")!=""
-        \ && input("Do you want to import an existing makefile ? [y/N]") == "y"
+    " Ask for Makefile import
+    let mkf=g:templ_Makefilesdir.'Makefile_'.&ft
+    if empty(glob("./Makefile")) && !empty(glob(l:mkf)) &&
+                \ input("Do you want to import an existing makefile ? [y/N]") == "y"
         call ImportMakefile()
     endif
-    execute "normal \<C-n>\<Right>"
+    execute "normal \<C-m>\<Right>"
 endfunction
 
 " Import makefile based on the filetype
 function! ImportMakefile()
-    try
-        if system("ls | grep Makefile")=="" ||input("There is already one Makefile, do you want to overwrite it ? [y/N]")=="y"
-            let mk=g:templ_Makefilesdir. "Makefile_" . &ft
-            exe '!cp ' l:mk 'Makefile'
-        endif
-    catch
-    endtry
+    if empty(glob("./Makefile")) ||
+                \ input("There is already one Makefile, do you want to overwrite it ? [y/N]")=="y"
+        let mk=g:templ_Makefilesdir. "Makefile_" . &ft
+        exe '!cp  -v ' l:mk 'Makefile'
+    endif
 endfunction
