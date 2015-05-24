@@ -8,7 +8,7 @@ if (!exists("g:templ_templates_install_dir"))
     let g:templ_templates_install_dir="~/.vim"
 endif
 
-let g:templ_templatesdir=g:templ_templates_install_dir."/headers/"
+let g:templ_templatesdir=g:templ_templates_install_dir."/templates/"
 let g:templ_Makefilesdir=g:templ_templates_install_dir."/Makefiles/"
 
 if( !exists("g:templ_beamer_name"))
@@ -28,7 +28,7 @@ function! Headers()
         let type="beamer"
     else
         let type=expand('%:e')
-        let header=g:templ_templatesdir . "headers.". l:type
+        let header=g:templ_templatesdir . "template.". l:type
     endif
     try
         execute "0read" header
