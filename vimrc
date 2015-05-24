@@ -154,7 +154,8 @@ noremap <leader>c :let @/=""<CR>
 noremap <leader>l :redraw!<CR>
 
 " Terminal escape
-noremap <leader>s <ESC>:w<CR>:sh<CR>
+" noremap <leader>s <ESC>:w<CR>:sh<CR>
+noremap <leader>s <ESC>:Start<CR>
 " Auto indent
 noremap <leader>i mzgg=G`z :delmarks z<CR>
 
