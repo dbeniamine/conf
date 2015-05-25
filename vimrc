@@ -27,6 +27,8 @@ execute pathogen#infect()
 
 "====================== Appearance {{{2 =======================================
 
+set nocompatible
+
 " Colors
 set bg=dark
 colorscheme slate
@@ -51,6 +53,21 @@ highlight PmenuSel ctermbg=black ctermfg=white
 " highlighting trailing spaces
 highlight ExtraWhitespace ctermbg=red guibg=red
 au BufWinEnter * match ExtraWhitespace /\s\+$/
+
+" Status command line tab completion
+set wildmenu
+
+" keep at least two lines above cursor
+set scrolloff=2
+
+" keep fiver column aside of the cursor
+set sidescrolloff=5
+
+" Show lastline if possible
+set display=lastline
+
+" Character to show with :list command
+set listchars=tab:>\ ,trail:-,extends:>,precedes:<,nbsp:+
 
 "====================== Coding style {{{2 =====================================
 
@@ -85,11 +102,8 @@ set completeopt=longest,menuone,preview
 " Allow mouse use
 set mouse=a
 
-" Fuck old vi
-set nocompatible
-
 " Encoding
-set encoding=utf8
+set encoding=utf-8
 
 " Highlight searched word
 set hlsearch
@@ -107,6 +121,22 @@ set omnifunc=syntaxcomplete#Complete
 "fold by syntaxic bloc
 set foldmethod=syntax
 set foldlevelstart=4
+
+" Wait for a keymap
+set ttimeout
+set ttimeoutlen=100
+
+" Delete comment character when joining commented lines
+set formatoptions+=j
+
+" Re-read files modified out of vim
+set autoread
+
+" Also try to read mac files
+set fileformats+=mac
+
+" Keep a long history
+set history=1000
 
 "====================== Filetype settings {{{2 ================================
 
@@ -149,7 +179,7 @@ noremap <C-k> <C-w>k
 noremap <C-l> <C-w>l
 
 "Clean search highlight
-noremap <leader>c :let @/=""<CR>
+noremap <silent> <leader>c :let @/=""<CR>
 "Redraw terminal
 noremap <leader>l :redraw!<CR>
 
