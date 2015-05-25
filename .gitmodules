@@ -52,3 +52,6 @@
 [submodule "vim/bundle/vim-licenses"]
 	path = vim/bundle/vim-licenses
 	url = https://github.com/antoyo/vim-licenses.git
+[submodule "vim/bundle/vim-scriptease"]
+	path = vim/bundle/vim-scriptease
+	url = https://github.com/tpope/vim-scriptease.git
