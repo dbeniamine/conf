@@ -1,24 +1,24 @@
 %!TEX encoding=UTF-8 Unicode
 
 \documentclass{article}
-\usepackage{fullpage} 
+\usepackage{fullpage}
 
-%=========================encodage fontes et langue=============================
+%========================= Encodage fontes et langues =========================
 
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
-\usepackage[T1]{fontenc}    % (pour les accents)
+\usepackage[T1]{fontenc}
 
-%===============================================================================
+%==============================================================================
 
-%=========================Listings: code mis en forme===========================
+%========================= Mise en forme de code ==============================
 
 \usepackage{listings}
-%language algorithmique:
+%Langage algorithmique français
 \lstdefinelanguage{algo}%
 {
     alsoletter={\\,[,],/,*,\,},%
-    morekeywords=[2]{si, sinon, alors, finSi, pour tout, finPour, 
+    morekeywords=[2]{si, sinon, alors, finSi, pour tout, finPour,
     tantQue, finTantQue, ou, et, non, vrai, faux},%
     otherkeywords={},%
     morestring=[b]"
@@ -43,89 +43,56 @@
     breaklines=true,
 }
 
-%===============================================================================
+%==============================================================================
 
 % gestion des hyperliens
 \usepackage{hyperref}
 \hypersetup{
-    dvips,
-    backref=true, %permet d'ajouter des liens dans...
-    pagebackref=true,%...les bibliographies
-    hyperindex=true, %ajoute des liens dans les index.
     colorlinks=true, %colore les liens
     breaklinks=true, %permet le retour à la ligne dans les liens trop longs
     urlcolor= blue, %couleur des hyperliens
     linkcolor= black, %couleur des liens internes
-    bookmarks=true, %créé des signets pour Acrobat
-bookmarksopen=true} 
+bookmarksopen=true}
 
-%===============================================================================
+%==============================================================================
 
-%=========================Mathématiques========================================
+%========================== Images ============================================
 
-\usepackage{amsmath,amssymb} 
-\usepackage{array} % tableaux pour les matrices
-%les exemples et les théorèmes sont compté par rapport aux sections.
-%Les corrollaires et démonstrations sont compté par rapport aux théorèmes
-\newtheorem{ex}{Exemple}[section]
-\newtheorem{thm}{Théorème}[section]
-\newtheorem{cor}[thm]{Corollaire}
-\newtheorem{dem}[thm]{Démonstration}
-
-%===============================================================================
-
-%==========================inclusion d'images===================================
-
-\usepackage{graphicx} % \includegraphics
 \usepackage[center]{caption}
 
-%===============================================================================
+%==============================================================================
 
-%==========================listes et mise en page===============================
+%========================== Autres ============================================
 
 \usepackage{paralist} % listes : enumerate, itemize
-%\frenchbsetup{StandardLists=true} %pour avoir des listes avec des points
+%\frenchbsetup{StandardLists=true} % Bullet liste en français
 
-\usepackage[usenames,dvipsnames]{color} %de la couleur
+%\usepackage{appendix} %Annexes
 
-\usepackage{appendix} %Annexes
+%==============================================================================
 
-%===============================================================================
-
-%=========================déclaration de titre=================================
+%========================= Titre auteur etc ===================================
 \author{David Beniamine <++>}
 \title{<++> }
 
 
-%===============================================================================
+%==============================================================================
 
 \begin{document}
 
-%==========================page de présentation================================
 
-\maketitle%affichage du titre
+\maketitle
 \begin{center}
-    \tableofcontents%affichage de la table des matières
+    \tableofcontentss
 \end{center}
-\newpage%commencement en page 2
+\newpage
 
-%===============================================================================
-
-%=========================début réel du document==============================
 <++>
-%===============================================================================
-
-%=========================Bibliographie========================================
 
 %\bibliography{biblio}
 
-%===============================================================================
-
-%=========================annexes==============================================
-
-%newpage
+%\newpage
 %\appendix{ \textbf{Annexe }}
 
-%===============================================================================
-
 \end{document}
+
