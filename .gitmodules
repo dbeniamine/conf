@@ -55,3 +55,6 @@
 [submodule "vim/bundle/vim-scriptease"]
 	path = vim/bundle/vim-scriptease
 	url = https://github.com/tpope/vim-scriptease.git
+[submodule "AntibesCompact"]
+	path = AntibesCompact
+	url = https://github.com/dbeniamine/AntibesCompact.git
