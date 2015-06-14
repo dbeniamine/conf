@@ -58,3 +58,6 @@
 [submodule "AntibesCompact"]
 	path = AntibesCompact
 	url = https://github.com/dbeniamine/AntibesCompact.git
+[submodule "vim/bundle/vizardry"]
+	path = vim/bundle/vizardry
+	url = https://github.com/dbeniamine/vizardry.git
