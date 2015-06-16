@@ -436,3 +436,5 @@ let g:licenses_authors_name = 'Beniamine, David <David@Beniamine.net>'
 
 let g:VizardryGitMethod="submodule add"
 let g:VizardryGitBaseDir="/home/david/Documents/Conf"
+let g:VizardryNbScryResults=20
+let g:VizardryReadmeReader='view -c "set ft=pandoc" -'
