@@ -208,17 +208,17 @@ bindsym Mod4+w exec firefox
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        position top
-        status_command i3blocks
+    position top
+    status_command i3blocks
 
-        # Colors
-         colors{
+    # Colors
+     colors{
         # Class             #Border  #background #text
         focused_workspace  #006f1a #2e6335 #ffffff
         active_workspace   #333333 #5f676a #ffffff
         inactive_workspace #333333 #222222 #888888
         urgent_workspace   #2f343a #900000 #ffffff
-}
+    }
 }
 
 
