@@ -18,7 +18,7 @@ text/html; elinks -dump 1 -dump-charset utf-8 -default-mime-type text/html; need
 #text/html; iconv -f %{charset} -t UTF-8 | pandoc --atx-headers -f html -t markdown_strict; copiousoutput; test=type pandoc >/dev/null
 text/html; iconv -f %{charset} -t UTF-8 | pandoc --atx-headers -f html -t markdown-fenced_code_blocks-escaped_line_breaks; copiousoutput; test=type pandoc >/dev/null
 image/*; /home/david/scripts/mutt_bgrun /usr/bin/gpicview %s; test=test -n "$DISPLAY"
-application/pdf; /home/david/scripts/mutt_bgrun /usr/bin/evince %s; test=test -n "$DISPLAY";
+application/pdf; /home/david/scripts/mutt_bgrun xdg-open %s; test=test -n "$DISPLAY";
 
 # Office {{{1
 # Microsoft {{{2
@@ -27,6 +27,7 @@ application/pdf; /home/david/scripts/mutt_bgrun /usr/bin/evince %s; test=test -n
 #
 application/msword;             /home/david/scripts/mutt_bgrun libreoffice %s; test=test -n "$DISPLAY";
 application/vnd.msword;         /home/david/scripts/mutt_bgrun libreoffice %s; test=test -n "$DISPLAY";
+application/vnd.openxmlformats-officedocument.wordprocessingml.document;         /home/david/scripts/mutt_bgrun libreoffice %s; test=test -n "$DISPLAY";
 ###
 application/excel;              /home/david/scripts/mutt_bgrun libreoffice %s; test=test -n "$DISPLAY";
 application/msexcel;            /home/david/scripts/mutt_bgrun libreoffice %s; test=test -n "$DISPLAY";

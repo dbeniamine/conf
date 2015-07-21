@@ -45,6 +45,8 @@ set sleep_time=0
 
 # Usage {{{2
 
+set mark_old=no
+set markers=no
 set sort="threads"
 set sort_aux='reverse-date'
 set mailcap_path    = ~/.mutt/mailcap
