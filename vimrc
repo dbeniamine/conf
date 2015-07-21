@@ -150,9 +150,10 @@ au FileType pl set ai
 "It's all text plugin for firefox: activate spell checking
 au BufEnter *mozilla/firefox/*/itsalltext/*.txt set spell spelllang=fr
 " Markdown folds
-au BufEnter *.md,*.markdown setlocal foldexpr=MdLevel() foldmethod=expr ft=pandoc
+au BufEnter *.md,*.markdown setlocal foldexpr=MdLevel() foldmethod=expr
+            \ ft=pandoc foldlevel=1
 " Latex language
-au FileType tex setlocal spell spelllang=en spellsuggest=5
+au FileType tex,vimwiki setlocal spell spelllang=en spellsuggest=5
 au BufRead *.tex call SetTexLang()
 " gitcommit spell
 au FileType gitcommit setlocal spell spelllang=en
@@ -163,7 +164,7 @@ au FileType vim,muttrc,conf,mailcap setlocal foldmethod=marker foldlevel=1
 " Disable NeoComplete for certain filetypes
 au Filetype tex,cpp if exists(":NeoCompleteDisable") | NeoCompleteDisable | endif
 
-
+au Filetype vimwiki setlocal foldlevel=2 number
 
 "====================== Mappings {{{2 =========================================
 
@@ -190,7 +191,7 @@ noremap <leader>s <ESC>:Start<CR>
 noremap <leader>i mzgg=G`z :delmarks z<CR>
 
 " Open a new tab
-noremap <leader>t <Esc>:tabnew 
+noremap <leader>t <Esc>:tabnew
 
 " Remove trailing space
 noremap <leader>tr :call RemoveTrailingSpace()<CR>
@@ -202,6 +203,13 @@ nnoremap <C-@>u :call Cscope_Init("update")<CR>
 " Validate menu entry with enter
 inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 
+" Go to the directoring containing current file
+nnoremap <leader>cd :cd %:h<CR>
+nnoremap <leader>cc :cd -<CR>
+
+" Compile all wiki
+noremap <Leader>wa :VimwikiAll2HTML<CR>:edit<CR>
+noremap <Leader>waw :VimwikiAll2HTML<CR>:Vimwiki2HTMLBrowse<CR>:edit<CR>
 
 
 "====================== Functions {{{1 ========================================
@@ -425,7 +433,7 @@ let g:VimMailClient="/home/david/scripts/mutt.sh -t \"Mutt RO\" -R &"
 
 "====================== Compile {{{2 ==========================================
 
-let g:VimCompileExecutors={'pandoc' : "firefox %:t:r.html > /dev/null 2>&1",}
+let g:VimCompileExecutors={'pandoc' : "firefox %:p:r.html > /dev/null 2>&1",}
 
 "====================== Licenses {{{2 =========================================
 
@@ -438,3 +446,36 @@ let g:VizardryGitMethod="submodule add"
 let g:VizardryGitBaseDir="/home/david/Documents/Conf"
 let g:VizardryNbScryResults=20
 let g:VizardryReadmeReader='view -c "set ft=pandoc" -'
+
+"====================== VimWiki {{{2 ==========================================
+
+"let g:vimwiki_html_header_numbering = 2
+let g:vimwiki_list = [{'path':'~/Work/Wiki', 'path_html':'~/Work/Wiki/WWW'}]
+let g:vimwiki_folding='expr'
+
+function! VimwikiLinkHandler(link) "{{{ Use Vim to open links with the
+    " 'vlocal:' or 'vfile:' schemes.  E.g.:
+    "   1) [[vfile:///~/Code/PythonProject/abc123.py]], and
+    "   2) [[vlocal:./|Wiki Home]]
+    let link = a:link
+    if link =~ "vlocal:" || link =~ "vfile:"
+      let link = link[1:]
+    else
+      return 0
+    endif
+    let [idx, scheme, path, subdir, lnk, ext, url] =
+         \ vimwiki#base#resolve_scheme(link, 0)
+    if g:vimwiki_debug
+      echom 'LinkHandler: idx='.idx.', scheme=[v]'.scheme.', path='.path.
+           \ ', subdir='.subdir.', lnk='.lnk.', ext='.ext.', url='.url
+    endif
+    if url == ''
+      echom 'Vimwiki Error: Unable to resolve link!'
+      return 0
+    else
+      call vimwiki#base#edit_file('tabnew', url, [], 0)
+      return 1
+    endif
+endfunction " }}}
+
+
