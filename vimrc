@@ -446,6 +446,7 @@ let g:VizardryGitMethod="submodule add"
 let g:VizardryGitBaseDir="/home/david/Documents/Conf"
 let g:VizardryNbScryResults=20
 let g:VizardryReadmeReader='view -c "set ft=pandoc" -'
+let g:VizardrySortScryResults=""
 
 "====================== VimWiki {{{2 ==========================================
 
