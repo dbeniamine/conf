@@ -104,10 +104,10 @@ bindsym $mod+z layout tabbed
 bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
-bindsym $mod+Shift+space floating toggle
+bindsym $mod+ctrl+space floating toggle
 
 # change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
+bindsym $mod+Shift+space focus mode_toggle
 
 # focus the parent container
 bindsym $mod+a focus parent
@@ -191,7 +191,7 @@ bindsym XF86AudioMute exec $prefix/volume.sh -m
 bindsym XF86Display exec $prefix/DisplaySet.sh -d
 bindsym XF86Explorer exec $prefix/DisplaySet.sh -d
 bindsym XF86PowerOff exec $prefix/i3_exit_menu.sh
-bindsym XF86AudioPlay exec exaile --start-anyway -t
+#bindsym XF86AudioPlay exec exaile --start-anyway -t
 bindsym XF86HomePage exec firefox
 bindsym XF86Terminal exec x-terminal-emulator
 bindsym XF86Mail exec $prefix/mutt.sh
@@ -199,7 +199,11 @@ bindsym Mod4+m exec $prefix/mutt.sh
 bindsym XF86Calculator exec galculator
 bindsym XF86MyComputer exec pcmanfm
 
-# Bindings for flo
+bindsym $mod+space exec banshee --toggle-playing
+bindsym $mod+p exec banshee --restart-or-previous
+bindsym $mod+n exec banshee --next
+
+# Bindings for Flo
 bindsym $mod+F2 exec $prefix/dmenu_run.sh
 bindsym Mod4+t exec i3-sensible-terminal
 bindsym Mod4+e exec emacs
