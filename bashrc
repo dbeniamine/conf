@@ -41,6 +41,7 @@ do
     fi
 done
 unset f
+unset bashdir
 
 #
 # TERMINAL

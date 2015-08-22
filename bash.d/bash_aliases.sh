@@ -31,8 +31,6 @@ alias rm='rm -v'
 alias cp='cp -v'
 alias shutdown="sudo shutdown -h -P now"
 alias cscope='cscope -dRq'
-#If the agent is empty, try to add keys, else do a simple ssh command
-alias ssh=". $HOME/scripts/sshAutoAgent.sh; ssh-add -l > /dev/null || ssh-add && ssh"
 
 #i3 (colors)
 alias dmenu="dmenu -sb darkgreen"
@@ -56,10 +54,10 @@ then
             arg="$arg $1"
             shift
         done
-        myopts=''
-        if [ "x$DISPLAY" != "x" ]
+        if [ ! -z "$DISPLAY" ] && [ -z "$(echo $arg | grep 'servername')" ]
         then
-            myopts='--servername VIM'
+            id=$(\vim --serverlist | grep 'VIM[0-9][0-9]*' | wc -l)
+            myopts="--servername VIM$id"
         fi
         tmux new-session "TERM=$TERM \vim $myopts $arg"
     }
