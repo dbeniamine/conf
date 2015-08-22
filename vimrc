@@ -150,11 +150,11 @@ au FileType pl set ai
 "It's all text plugin for firefox: activate spell checking
 au BufEnter *mozilla/firefox/*/itsalltext/*.txt set spell spelllang=fr
 " Markdown folds
-au BufEnter *.md,*.markdown setlocal foldexpr=MdLevel() foldmethod=expr
+au BufEnter *.md,*.markdown setlocal foldexpr=vimrc#MdLevel() foldmethod=expr
             \ ft=pandoc foldlevel=1
 " Latex language
 au FileType tex,vimwiki setlocal spell spelllang=en spellsuggest=5
-au BufRead *.tex call SetTexLang()
+au BufRead *.tex call vimrc#SetTexLang()
 " gitcommit spell
 au FileType gitcommit setlocal spell spelllang=en
 " mutt files
@@ -194,11 +194,11 @@ noremap <leader>i mzgg=G`z :delmarks z<CR>
 noremap <leader>t <Esc>:tabnew
 
 " Remove trailing space
-noremap <leader>tr :call RemoveTrailingSpace()<CR>
+noremap <leader>tr :call vimrc#RemoveTrailingSpace()<CR>
 
 " Cscope_map.vim style map to create the cscope files
-nnoremap <C-@>a :call Cscope_Init("create")<CR>
-nnoremap <C-@>u :call Cscope_Init("update")<CR>
+nnoremap <C-@>a :call vimrc#Cscope_Init("create")<CR>
+nnoremap <C-@>u :call vimrc#Cscope_Init("update")<CR>
 
 " Validate menu entry with enter
 inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
@@ -212,118 +212,9 @@ noremap <Leader>wa :VimwikiAll2HTML<CR>:edit<CR>
 noremap <Leader>waw :VimwikiAll2HTML<CR>:Vimwiki2HTMLBrowse<CR>:edit<CR>
 
 
-"====================== Functions {{{1 ========================================
 
-" Remove trailing space {{{2
-function! RemoveTrailingSpace()
-    "save position
-    normal mz
-    if &ft=='pandoc'
-        " In pandoc files a double space at the end of a line has a meaning
-        " and must not be removed
-        " If a line ends with more than two space, replace it by two space
-        execute ':%s/[ ]\{2,\}$/  /e'
-        " Remove single white space at the end of a line
-        execute ':%s/[^ ] $//e'
-    elseif &ft=='mail'
-        " In mails we have to allow "-- " as it is the begining of a signature
-        " This one is a bit tricky: the first part until \@! says to match a
-        " line witch doesn't start by -- . Than to make the negation work we
-        " have to match the rest of the line, so we record any string of
-        " caracter not ending by a space in \2 and removing any space between
-        " this pattern and the end of the line
-        execute ':%s/^\(-- \)\@!\(.*[^ ]\)\s\+$/\2/e'
-    else
-        " Just remove any character at the end of a line
-        execute ':%s/\s\+$//ge'
-    endif
-    "restore cursor
-    normal `z
-    execute "silent :delmarks z"
-endfunction
 
-"Create or update cscope and tags files on demand {{{2
-function! Cscope_Init (mode)
-    "do nothing if cscope.out doesn't exist and the user doesn't explicitly
-    "asked to create it
-    if(a:mode!="create" && !filereadable("cscope.out") )
-        return
-    endif
-    "List c and cpp files
-    silent !(find . -name '*.c' -o -name '*.h' -o -name '*.cpp' -o -name '*.hpp' -o -name '*.inl' > cscope.files)
-    execute "silent ! ctags --c++-kinds=+p --fields=+iaS --extra=+q -L cscope.files -f tags_temp && mv tags_temp tags &"
-    "cscope cmd to create (or update) cscope files
-    let ccmd="\cscope -R -b -q"
-    if(a:mode=="create")
-        "create cscope file in verbose mode and foreground
-        execute ":!"ccmd" -v"
-        :cscope add cscope.out
-    else
-        execute "silent !"ccmd" &"
-        :cscope reset
-    endif
-endfunction
 
-" Find the right language for latex spell checking {{{2
-function! SetTexLang()
-    let file = readfile(expand("%:p"))
-    " read current file
-    for line in file
-        let g:myLang = matchstr(line, '\\usepackage\[.*\]{babel}')
-        if(!empty(g:myLang))
-            "extract the (list of) language
-            let g:myLang = substitute(g:myLang, '\\usepackage\[',"", "")
-            let g:myLang = substitute(g:myLang, '\]{babel}',"", "")
-            "if there are more than one language, the last one is the main language
-            let ind=stridx(g:myLang, ",")+1
-            let g:myLang=strpart(g:myLang, ind,strlen(g:myLang))
-            "now we have just to set correctly the spellang
-            "echo "language detected : "g:myLang
-            let g:myLang = strpart(g:myLang,0,2)
-            let &l:spelllang=g:myLang
-            return
-        endif
-    endfor
-endfunction
-
-" Wordcount should be a fast implem for status bar {{{2
-function! WC()
-    if &modified || !exists("b:wordcount")
-        let l:old_status = v:statusmsg
-        let position= getpos(".")
-        execute "silent normal g\<c-g>"
-        if v:statusmsg =~ '--No lines in buffer--'
-            let b:wordcount=0
-        else
-            let b:wordcount = str2nr(split(v:statusmsg)[11])
-        endif
-        let v:statusmsg = l:old_status
-        call setpos('.', position)
-        return b:wordcount
-    else
-        return b:wordcount
-    endif
-endfunction
-
-" Markdown folds {{{2
-function! MdLevel()
-    let h = matchstr(getline(v:lnum), '^#\+')
-    if empty(h)
-        return "="
-    else
-        return ">" . len(h)
-    endif
-endfunction
-
-"Insert a R chunk code {{{2
-function! InsertRChunk()
-    execute "normal mz"
-    execute "normal i```{<++>}"
-    execute "normal o<++>"
-    execute "normal o```<++>"
-    execute "normal `z"
-    delmarks z
-endfunction
 
 "====================== Plugin Configuration {{{1 =============================
 
@@ -396,7 +287,8 @@ let g:templ_templates_install_dir="~/.vim/bundle/vim-templates"
 "====================== Vim-R-plugin {{{2 =====================================
 
 "Insert a chunk code
-au filetype r,rmd,rhelp,rnoweb,rrst inoremap <LocalLeader>r <ESC>:call InsertRChunk()<CR>i
+au filetype r,rmd,rhelp,rnoweb,rrst inoremap <LocalLeader>r <ESC>:call
+            \vimrc#InsertRChunk()<CR>i
 
 "====================== Todo.txt {{{2 =========================================
 
@@ -405,7 +297,7 @@ let g:Todo_txt_first_level_sort_mode="! i"
 "Intelligent completion for projects and contexts
 au filetype todo imap <buffer> + +<C-X><C-O>
 au filetype todo imap <buffer> @ @<C-X><C-O>
-au filetype todo setlocal omnifunc=TodoComplete
+au filetype todo setlocal omnifunc=todo#Complete
 
 "====================== EasyGrep {{{2 =========================================
 
@@ -433,7 +325,8 @@ let g:VimMailClient="/home/david/scripts/mutt.sh -t \"Mutt RO\" -R &"
 
 "====================== Compile {{{2 ==========================================
 
-let g:VimCompileExecutors={'pandoc' : "firefox %:p:r.html > /dev/null 2>&1",}
+let g:VimCompileExecutors={'pandoc' : "firefox %:p:r.html > /dev/null 2>&1",
+            \'tex' : "okular --unique %:p:r.pdf\\#src:".line(".")."%:p &",}
 
 "====================== Licenses {{{2 =========================================
 
@@ -446,7 +339,6 @@ let g:VizardryGitMethod="submodule add"
 let g:VizardryGitBaseDir="/home/david/Documents/Conf"
 let g:VizardryNbScryResults=20
 let g:VizardryReadmeReader='view -c "set ft=pandoc" -'
-let g:VizardrySortScryResults=""
 
 "====================== VimWiki {{{2 ==========================================
 
