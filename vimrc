@@ -198,7 +198,7 @@ noremap <leader>tr :call vimrc#RemoveTrailingSpace()<CR>
 
 " Cscope_map.vim style map to create the cscope files
 nnoremap <C-@>a :call vimrc#Cscope_Init("create")<CR>
-nnoremap <C-@>u :call vimrc#Cscope_Init("update")<CR>
+nnoremap <C-@>u :call vimrc#Cscope_Init("update")<CR><CR>:redraw!<CR>
 
 " Validate menu entry with enter
 inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
@@ -265,6 +265,8 @@ let g:airline#extensions#branch#enabled = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#buffer_min_count = 2
 let g:airline#extensions#tabline#tab_min_count = 0
+" Syntastic
+let g:airline#extensions#syntastic#enabled = 1
 
 "====================== OmniCppComplete {{{2 ==================================
 "
@@ -339,6 +341,7 @@ let g:VizardryGitMethod="submodule add"
 let g:VizardryGitBaseDir="/home/david/Documents/Conf"
 let g:VizardryNbScryResults=20
 let g:VizardryReadmeReader='view -c "set ft=pandoc" -'
+let g:VizardryViewReadmeOnEvolve=1
 
 "====================== VimWiki {{{2 ==========================================
 
@@ -372,3 +375,6 @@ function! VimwikiLinkHandler(link) "{{{ Use Vim to open links with the
 endfunction " }}}
 
 
+"====================== EasyMotion {{{2 =======================================
+
+let EasyMotion_do_shade=0
