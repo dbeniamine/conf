@@ -61,6 +61,9 @@ my_hdr X-Clacks-Overhead: GNU Terry Pratchett
 unignore X-PGP
 unignore X-Clacks
 unignore X-Mailer:
+unignore X-Virus
+unignore X-Policy
+unignore X-Amavis
 #source ~/.mutt/content_type
 
 # Sidebar {{{2
