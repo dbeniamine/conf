@@ -58,9 +58,10 @@ function! vimrc#Cscope_Init (mode)
     if(a:mode=="create")
         "create cscope file in verbose mode and foreground
         execute ":!"ccmd" -v"
-        :cscope add cscope.out
+        :cscope add .
     else
-        execute "silent !"ccmd" &"
+        let ccmd="rm cscope.*; ".ccmd
+        execute "silent !".ccmd
         :cscope reset
     endif
 endfunction
