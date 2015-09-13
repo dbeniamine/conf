@@ -25,7 +25,7 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
 #Human, List, Sort, by Time, Reverse
-alias ls='ls -hlstr --color=tty'
+alias ls='ls -hlstr --color=auto'
 alias la='ls -A'
 alias rm='rm -v'
 alias cp='cp -v'
@@ -34,6 +34,21 @@ alias cscope='cscope -dRq'
 
 #i3 (colors)
 alias dmenu="dmenu -sb darkgreen"
+
+# Set git email address according to repo location
+# MAIL and WORK_MAIL must be set before
+set_git_mail()
+{
+    if [[ "$PWD" =~ "$HOME/Work" ]]
+    then
+        export GIT_COMMITTER_EMAIL=$WORK_MAIL
+        export GIT_AUTHOR_EMAIL=$WORK_MAIL
+    else
+        export GIT_COMMITTER_EMAIL=$MAIL
+        export GIT_AUTHOR_EMAIL=$MAIL
+    fi
+}
+alias git='set_git_mail; git'
 
 #
 # Tmux vim
