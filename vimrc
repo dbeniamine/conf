@@ -69,6 +69,12 @@ set display=lastline
 " Character to show with :list command
 set listchars=tab:>\ ,trail:-,extends:>,precedes:<,nbsp:+
 
+" netwrw window size
+let g:netrw_winsize = 22
+let g:netrw_browse_split = 3
+let g:netrw_browsex_viewer= "xdg-open"
+
+
 "====================== Coding style {{{2 =====================================
 
 " Define tabs size
@@ -151,7 +157,8 @@ au FileType pl set ai
 au BufEnter *mozilla/firefox/*/itsalltext/*.txt set spell spelllang=fr
 " Markdown folds
 au BufEnter *.md,*.markdown setlocal foldexpr=vimrc#MdLevel() foldmethod=expr
-            \ ft=pandoc foldlevel=1
+            \ ft=pandoc
+au BufRead *.md,*.markdown setlocal foldlevel=1
 " Latex language
 au FileType tex,vimwiki setlocal spell spelllang=en spellsuggest=5
 au BufRead *.tex call vimrc#SetTexLang()
@@ -178,6 +185,9 @@ noremap <C-h> <C-w>h
 noremap <C-j> <C-w>j
 noremap <C-k> <C-w>k
 noremap <C-l> <C-w>l
+
+" Toggle Explorer
+noremap <silent> <Leader>f :Lexplore<CR>
 
 "Clean search highlight
 noremap <silent> <leader>c :let @/=""<CR>
@@ -290,7 +300,7 @@ let g:templ_templates_install_dir="~/.vim/bundle/vim-templates"
 
 "Insert a chunk code
 au filetype r,rmd,rhelp,rnoweb,rrst inoremap <LocalLeader>r <ESC>:call
-            \vimrc#InsertRChunk()<CR>i
+            \ vimrc#InsertRChunk()<CR>i
 
 "====================== Todo.txt {{{2 =========================================
 
@@ -378,3 +388,13 @@ endfunction " }}}
 "====================== EasyMotion {{{2 =======================================
 
 let EasyMotion_do_shade=0
+
+"====================== Open-url {{{2 =========================================
+
+let g:open_url_browser="xdg-open"
+
+"====================== Templates {{{2 ========================================
+
+let g:templ_templatesdir="~/.vim/templates/"
+let g:templ_Makefilesdir="~/.vim/Makefiles/"
+
