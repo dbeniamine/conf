@@ -35,6 +35,8 @@ alias cscope='cscope -dRq'
 #i3 (colors)
 alias dmenu="dmenu -sb darkgreen"
 
+alias pq="pc_query"
+
 # Set git email address according to repo location
 # MAIL and WORK_MAIL must be set before
 set_git_mail()
@@ -69,6 +71,8 @@ then
             arg="$arg $1"
             shift
         done
+        # Necessary for fugitive
+        set_git_mail
         if [ ! -z "$DISPLAY" ] && [ -z "$(echo $arg | grep 'servername')" ]
         then
             id=$(\vim --serverlist | grep 'VIM[0-9][0-9]*' | wc -l)
@@ -77,5 +81,8 @@ then
         tmux new-session "TERM=$TERM \vim $myopts $arg"
     }
     alias vim='tvim'
-    alias vi='vim'
 fi
+alias vi='vim'
+alias v='vim'
+alias vw='view'
+alias vd="vimdiff"
