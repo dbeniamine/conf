@@ -143,9 +143,8 @@ macro index,pager As  "<shell-escape>pycardsyncer<enter>" "Adress book Synchroni
 macro index,pager Aq  "<shell-escape>pc_query " "Adress book Query"
 
 # Printing {{{3
-source "echo \"set my_printer=$(lpstat -s | grep default | cut -d ' ' -f 4)\" |"
+source "echo \"set my_printer=$(lpstat -s | grep default | awk '{print $4}')\" |"
 macro index,pager lp "<shell-escape>lpstat -s<enter>" "List Printers"
-macro index,pager p "<shell-escape>$print_command -P $my_printer" "Print message"
 
 # Accounts {{{1
 
