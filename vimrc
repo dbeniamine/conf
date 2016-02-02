@@ -33,6 +33,13 @@ set nocompatible
 set bg=dark
 colorscheme slate
 
+:source $VIMRUNTIME/menu.vim
+	:set wildmenu
+	:set cpo-=<
+	:set wcm=<C-Z>
+	:map <F4> :emenu <C-Z>
+
+
 " Syntax coloration
 syntax on
 
@@ -162,6 +169,7 @@ au BufRead *.md,*.markdown setlocal foldlevel=1
 " Latex language
 au FileType tex,vimwiki setlocal spell spelllang=en spellsuggest=5
 au BufRead *.tex call vimrc#SetTexLang()
+au Filetype plaintex set ft=tex
 " gitcommit spell
 au FileType gitcommit setlocal spell spelllang=en
 " mutt files
@@ -214,8 +222,8 @@ nnoremap <C-@>u :call vimrc#Cscope_Init("update")<CR><CR>:redraw!<CR>
 inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 
 " Go to the directoring containing current file
-nnoremap <leader>cd :cd %:h<CR>
-nnoremap <leader>cc :cd -<CR>
+nnoremap <silent><leader>cd :cd %:h<CR>
+nnoremap <silent><leader>cc :cd -<CR>
 
 " Compile all wiki
 noremap <Leader>wa :VimwikiAll2HTML<CR>:edit<CR>
@@ -290,12 +298,6 @@ let OmniCpp_SelectFirstItem = 1
 let OmniCpp_NamespaceSearch = 2
 " Show function prototype (i.e. parameters) in popup window
 let OmniCpp_ShowPrototypeInAbbr = 1
-"====================== Templates {{{2 ========================================
-
-" This is ugly but for the moment the simplest way to find the templates is to
-" give the path of the install directory
-let g:templ_templates_install_dir="~/.vim/bundle/vim-templates"
-
 "====================== Vim-R-plugin {{{2 =====================================
 
 "Insert a chunk code
@@ -337,8 +339,23 @@ let g:VimMailClient="/home/david/scripts/mutt.sh -t \"Mutt RO\" -R &"
 
 "====================== Compile {{{2 ==========================================
 
-let g:VimCompileExecutors={'pandoc' : "firefox %:p:r.html > /dev/null 2>&1",
-            \'tex' : "okular --unique %:p:r.pdf\\#src:".line(".")."%:p &",}
+" Custom starter for latex synctex
+function! VimCompileLatexStarter(cmd,type)
+    if &ft == "tex" && a:type !='m'
+        " Retrieve main file from vim-compile command
+        let l:file=substitute(a:cmd, '.* \([^ ]*\.pdf\).*','\1','')
+        " Generate command
+        execute ':! qpdfview --unique '.l:file.'\#src:'."%:p".':'.
+                    \getpos(".")[1].':'.getpos(".")[2]." &"
+    else
+        " Not a latex start, let vim-compile handle it
+        call vimcompile#DefaultStartCmd(a:cmd,a:type)
+    endif
+endfunction
+
+let g:VimCompileCustomStarter=function("VimCompileLatexStarter")
+
+let g:VimCompileExecutors={'pandoc' : "firefox %:p:r.html > /dev/null 2>&1",}
 
 "====================== Licenses {{{2 =========================================
 
@@ -356,7 +373,9 @@ let g:VizardryViewReadmeOnEvolve=1
 "====================== VimWiki {{{2 ==========================================
 
 "let g:vimwiki_html_header_numbering = 2
-let g:vimwiki_list = [{'path':'~/Work/Wiki', 'path_html':'~/Work/Wiki/WWW'}]
+let g:vimwiki_list = [{'path':'~/Work/Wiki', 'path_html':'~/Work/Wiki/WWW',
+            \'nested_syntaxes': { 'python': 'python', 'c++': 'cpp',
+            \'sh': 'sh', 'c': 'c'}}]
 let g:vimwiki_folding='expr'
 
 function! VimwikiLinkHandler(link) "{{{ Use Vim to open links with the
@@ -395,6 +414,6 @@ let g:open_url_browser="xdg-open"
 
 "====================== Templates {{{2 ========================================
 
-let g:templ_templatesdir="~/.vim/templates/"
-let g:templ_Makefilesdir="~/.vim/Makefiles/"
+let g:VimTemplates_templatesdir="~/.vim/templates/"
+let g:VimTemplates_Makefilesdir="~/.vim/Makefiles/"
 
