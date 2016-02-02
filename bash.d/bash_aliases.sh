@@ -31,11 +31,24 @@ alias rm='rm -v'
 alias cp='cp -v'
 alias shutdown="sudo shutdown -h -P now"
 alias cscope='cscope -dRq'
+alias o="xdg-open"
 
 #i3 (colors)
 alias dmenu="dmenu -sb darkgreen"
 
+# Contacts
 alias pq="pc_query"
+
+# ssh auto agent if no x session
+ssh_auto_agent()
+{
+    eval $(ssh-agent)
+    ssh-add
+    unalias ssh
+    \ssh $@
+}
+[ -z "$XAUTHORITY" ] &&  alias ssh="ssh_auto_agent"
+
 
 # Set git email address according to repo location
 # MAIL and WORK_MAIL must be set before
@@ -71,11 +84,18 @@ then
             arg="$arg $1"
             shift
         done
-        # Necessary for fugitive
+        # Mandatory for fugitive
         set_git_mail
         if [ ! -z "$DISPLAY" ] && [ -z "$(echo $arg | grep 'servername')" ]
         then
-            id=$(\vim --serverlist | grep 'VIM[0-9][0-9]*' | wc -l)
+            # Need a server name
+            if [ ! -z "$(echo $arg | grep '.tex')" ] \
+            && [ -z "$(\vim --serverlist | grep 'VIMTEX')" ]
+            then
+                id="TEX"
+            else
+                id=$(\vim --serverlist | grep 'VIM[0-9][0-9]*' | wc -l)
+            fi
             myopts="--servername VIM$id"
         fi
         tmux new-session "TERM=$TERM \vim $myopts $arg"
