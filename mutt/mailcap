@@ -13,35 +13,8 @@
 # 
 #  0. You just DO WHAT THE FUCK YOU WANT TO.
 
-text/html; /home/david/scripts/mutt_bgrun firefox %s; test=test -n "$DISPLAY"; nametemplate=%s.html
+text/html; /home/david/scripts/mutt_bgrun xdg-open %s; test=test -n "$DISPLAY";
+# Use xdg-open by default
+application/*; /home/david/scripts/mutt_bgrun xdg-open %s; test=test -n "$DISPLAY";
+image/*; /home/david/scripts/mutt_bgrun xdg-open %s; test=test -n "$DISPLAY";
 text/html; elinks -dump 1 -dump-charset utf-8 -default-mime-type text/html; needsterminal; copiousoutput;
-#text/html; iconv -f %{charset} -t UTF-8 | pandoc --atx-headers -f html -t markdown_strict; copiousoutput; test=type pandoc >/dev/null
-text/html; iconv -f %{charset} -t UTF-8 | pandoc --atx-headers -f html -t markdown-fenced_code_blocks-escaped_line_breaks; copiousoutput; test=type pandoc >/dev/null
-image/*; /home/david/scripts/mutt_bgrun /usr/bin/gpicview %s; test=test -n "$DISPLAY"
-application/pdf; /home/david/scripts/mutt_bgrun xdg-open %s; test=test -n "$DISPLAY";
-
-# Office {{{1
-# Microsoft {{{2
-#The following Microsoft application MIME attachments are viewed from
-# the attachment menu using QuickView Plus for UNIX. 
-#
-application/msword;             /home/david/scripts/mutt_bgrun libreoffice %s; test=test -n "$DISPLAY";
-application/vnd.msword;         /home/david/scripts/mutt_bgrun libreoffice %s; test=test -n "$DISPLAY";
-application/vnd.openxmlformats-officedocument.wordprocessingml.document;         /home/david/scripts/mutt_bgrun libreoffice %s; test=test -n "$DISPLAY";
-###
-application/excel;              /home/david/scripts/mutt_bgrun libreoffice %s; test=test -n "$DISPLAY";
-application/msexcel;            /home/david/scripts/mutt_bgrun libreoffice %s; test=test -n "$DISPLAY";
-application/vnd.ms-excel;       /home/david/scripts/mutt_bgrun libreoffice %s; test=test -n "$DISPLAY";
-application/x-excel;            /home/david/scripts/mutt_bgrun libreoffice %s; test=test -n "$DISPLAY";
-application/x-msexcel;          /home/david/scripts/mutt_bgrun libreoffice %s; test=test -n "$DISPLAY";
-application/ms-Excel;           /home/david/scripts/mutt_bgrun libreoffice %s; test=test -n "$DISPLAY";
-##
-application/vnd.ms-powerpoint;  /home/david/scripts/mutt_bgrun libreoffice %s; test=test -n "$DISPLAY";
-application/x-mspowerpoint;     /home/david/scripts/mutt_bgrun libreoffice %s; test=test -n "$DISPLAY";
-application/ppt;                /home/david/scripts/mutt_bgrun libreoffice %s; test=test -n "$DISPLAY";
-#
-application/vnd.oasis.opendocument.text;  /home/david/scripts/mutt_bgrun libreoffice %s; test=test -n "$DISPLAY";
-# openoffice {{{2
-# Manually added openoffice stuff
-application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;  /home/david/scripts/mutt_bgrun libreoffice %s; test=test -n "$DISPLAY";
-
