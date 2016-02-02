@@ -50,7 +50,7 @@ bindsym $mod+Shift+q kill
 bindsym $mod+Ctrl+w exec xkill
 
 #i3lock todo setup
-bindsym $mod+Ctrl+l exec xscreensaver-command -lock
+#bindsym $mod+Ctrl+l exec xscreensaver-command -lock
 
 
 # start dmenu (a program launcher)
@@ -189,6 +189,7 @@ bindsym XF86AudioRaiseVolume exec  $prefix/volume.sh -u 5%
 bindsym XF86AudioLowerVolume exec  $prefix/volume.sh -d 5%
 bindsym XF86AudioMute exec $prefix/volume.sh -m
 bindsym XF86Display exec $prefix/DisplaySet.sh -d
+bindsym $mod+Shift+s exec $prefix/DisplaySet.sh -d
 bindsym XF86Explorer exec $prefix/DisplaySet.sh -d
 bindsym XF86PowerOff exec $prefix/i3_exit_menu.sh
 #bindsym XF86AudioPlay exec exaile --start-anyway -t
@@ -211,20 +212,22 @@ bindsym Mod4+w exec firefox
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-bar {
-    position top
-    status_command i3blocks
+ bar {
+     position bottom
+     tray_output none
+     status_command i3blocks
+ 
+     # Colors
+      colors{
+         # Class             #Border  #background #text
+         focused_workspace  #006f1a #2e6335 #ffffff
+         active_workspace   #333333 #5f676a #ffffff
+         inactive_workspace #333333 #222222 #888888
+         urgent_workspace   #2f343a #900000 #ffffff
+     }
+ }
 
-    # Colors
-     colors{
-        # Class             #Border  #background #text
-        focused_workspace  #006f1a #2e6335 #ffffff
-        active_workspace   #333333 #5f676a #ffffff
-        inactive_workspace #333333 #222222 #888888
-        urgent_workspace   #2f343a #900000 #ffffff
-    }
-}
-
+for_window [title="ownCloud"] floating disable
 
 #i3 color scheme
 
