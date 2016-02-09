@@ -1,9 +1,10 @@
 conf
 ====
 
-This repo contains some of my configuration files, but not all of them for
-some obvious reason of privacy. Therefore some variables might not be
-correctly set (particulary in mutt files) and some parts of the configuration
-might usable without a few adaptations.
+This repo contains most of my configuration files. For privacy reason some
+files are missing (especially for offlineimap and mutt thus some of the
+available files may rely on unset variables, feel free to open an issue if you
+don't understand where / when such variables should be set.
 
-Most of the scripts used here are available in my [script repo](https://github.com/dbeniamine/scripts)
+Several of my these configuration files relies on some of my scripts which are
+also available on [github](https://github.com/dbeniamine/scripts).
