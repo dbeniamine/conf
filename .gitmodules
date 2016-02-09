@@ -7,9 +7,6 @@
 [submodule "vim/bundle/vim-commentary"]
 	path = vim/bundle/vim-commentary
 	url = https://github.com/tpope/vim-commentary
-[submodule "vim/bundle/vim-eunuch"]
-	path = vim/bundle/vim-eunuch
-	url = https://github.com/tpope/vim-eunuch
 [submodule "vim/bundle/vim-fugitive"]
 	path = vim/bundle/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
@@ -49,9 +46,6 @@
 [submodule "vim/bundle/vim-licenses"]
 	path = vim/bundle/vim-licenses
 	url = https://github.com/antoyo/vim-licenses.git
-[submodule "vim/bundle/vim-scriptease"]
-	path = vim/bundle/vim-scriptease
-	url = https://github.com/tpope/vim-scriptease.git
 [submodule "AntibesCompact"]
 	path = AntibesCompact
 	url = https://github.com/dbeniamine/AntibesCompact.git
@@ -61,15 +55,9 @@
 [submodule "vim/bundle/neocomplete"]
 	path = vim/bundle/neocomplete
 	url = https://github.com/Shougo/neocomplete.vim.git
-[submodule "vim/bundle/vim-surround"]
-	path = vim/bundle/vim-surround
-	url = https://github.com/tpope/vim-surround
 [submodule "vim/bundle/vimwiki"]
 	path = vim/bundle/vimwiki
 	url = https://github.com/durcheinandr/vimwiki.git
-[submodule "vim/bundle/Ada-Bundle"]
-	path = vim/bundle/Ada-Bundle
-	url = https://github.com/vim-scripts/Ada-Bundle.git
 [submodule "vim/bundle/cscope_macros.vim"]
 	path = vim/bundle/cscope_macros.vim
 	url = https://github.com/vim-scripts/cscope_macros.vim.git
@@ -85,3 +73,21 @@
 [submodule "vim/bundle/vim-templates"]
 	path = vim/bundle/vim-templates
 	url = https://github.com/dbeniamine/vim-templates
+[submodule "vim/bundle/calendar.vim--Matsumoto"]
+	path = vim/bundle/calendar.vim--Matsumoto
+	url = https://github.com/vim-scripts/calendar.vim--Matsumoto
+[submodule "vim/bundle/EasyMotion"]
+	path = vim/bundle/EasyMotion
+	url = https://github.com/vim-scripts/EasyMotion
+[submodule "vim/bundle/python-mode"]
+	path = vim/bundle/python-mode
+	url = https://github.com/klen/python-mode
+[submodule "vim/bundle/SudoEdit.vim"]
+	path = vim/bundle/SudoEdit.vim
+	url = https://github.com/chrisbra/SudoEdit.vim
+[submodule "vim/bundle/vim-open-url"]
+	path = vim/bundle/vim-open-url
+	url = https://github.com/henrik/vim-open-url
+[submodule "vim/bundle/vim-speeddating"]
+	path = vim/bundle/vim-speeddating
+	url = https://github.com/tpope/vim-speeddating
