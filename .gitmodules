@@ -67,9 +67,6 @@
 [submodule "vim/bundle/Vim-R-plugin"]
 	path = vim/bundle/Vim-R-plugin
 	url = https://github.com/vim-scripts/Vim-R-plugin.git
-[submodule "home/david/Documents/Conf/pub/vim/bundle/vim-templates"]
-	path = home/david/Documents/Conf/pub/vim/bundle/vim-templates
-	url = https://github.com/dbeniamine/vim-templates
 [submodule "vim/bundle/vim-templates"]
 	path = vim/bundle/vim-templates
 	url = https://github.com/dbeniamine/vim-templates
