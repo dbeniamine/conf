@@ -56,3 +56,4 @@ set pgp_autosign=yes
 set pgp_replyencrypt=yes
 unset pgp_autoencrypt
 set pgp_timeout=3600
+set pgp_verify_command="gpg -u $pgp_sign_as --no-verbose --batch --output - --verify %s %f"
