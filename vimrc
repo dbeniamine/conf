@@ -406,7 +406,7 @@ endfunction " }}}
 
 "====================== EasyMotion {{{2 =======================================
 
-let EasyMotion_do_shade=0
+" let EasyMotion_do_shade=0
 
 "====================== Open-url {{{2 =========================================
 
@@ -417,3 +417,6 @@ let g:open_url_browser="xdg-open"
 let g:VimTemplates_templatesdir="~/.vim/templates/"
 let g:VimTemplates_Makefilesdir="~/.vim/Makefiles/"
 
+"====================== SudoEdit {{{2 =========================================
+
+let g:sudo_no_gui=1
