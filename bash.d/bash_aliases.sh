@@ -40,14 +40,27 @@ alias dmenu="dmenu -sb darkgreen"
 alias pq="pc_query"
 
 # ssh auto agent if no x session
+SSH_AGENT_FILE="$HOME/.ssh/agent" # Needed to retrieve agent info
 ssh_auto_agent()
 {
-    eval $(ssh-agent)
-    ssh-add
+    cmd=$(which $1)
+    shift
+    if [ $(ps ux | grep ssh-agent | wc -l ) -le 1 ]
+    then
+        # Start ssh agent
+        ssh-agent > $SSH_AGENT_FILE
+        . $SSH_AGENT_FILE
+        ssh-add
+    else
+        # Source agent file if required
+        [ -z "$SSH_AGENT_PID" ] && . $SSH_AGENT_FILE
+    fi
     unalias ssh
-    \ssh $@
+    unalias scp
+    $cmd $@
 }
-[ -z "$XAUTHORITY" ] &&  alias ssh="ssh_auto_agent"
+[ -z "$XAUTHORITY" ] && alias ssh="ssh_auto_agent ssh" && \
+    alias scp="ssh_auto_agent scp"
 
 
 # Set git email address according to repo location
