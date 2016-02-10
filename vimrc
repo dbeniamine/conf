@@ -33,13 +33,6 @@ set nocompatible
 set bg=dark
 colorscheme slate
 
-:source $VIMRUNTIME/menu.vim
-	:set wildmenu
-	:set cpo-=<
-	:set wcm=<C-Z>
-	:map <F4> :emenu <C-Z>
-
-
 " Syntax coloration
 syntax on
 
@@ -59,7 +52,10 @@ highlight PmenuSel ctermbg=black ctermfg=white
 
 " highlighting trailing spaces
 highlight ExtraWhitespace ctermbg=red guibg=red
-au BufWinEnter * match ExtraWhitespace /\s\+$/
+augroup trailing
+    au!
+    au BufWinEnter * match ExtraWhitespace /\s\+$/
+augroup END
 
 " Status command line tab completion
 set wildmenu
@@ -153,33 +149,46 @@ set history=1000
 
 "====================== Filetype settings {{{2 ================================
 
-" C and Cpp ident and tags
-au FileType c,cpp set cindent  tags+=~/.vim/tags/tags_c
-au Filetype cpp set tags+=~/.vim/tags/tags_cpp
+augroup ftsettings
+    au!
+    " C and Cpp ident and tags
+    au FileType c,cpp set cindent  tags+=~/.vim/tags/tags_c
+    au Filetype cpp set tags+=~/.vim/tags/tags_cpp
+    
+    " Perl indent & fold (broken ?)
+    au FileType pl set ai
+    
+    "It's all text plugin for firefox: activate spell checking
+    au BufEnter *mozilla/firefox/*/itsalltext/*.txt set spell spelllang=fr
+    
+    " Markdown folds
+    au BufEnter *.md,*.markdown setlocal foldexpr=vimrc#pandoc#MdLevel() foldmethod=expr
+                \ ft=pandoc
+    au BufRead *.md,*.markdown setlocal foldlevel=1
+    " Latex language
+    au FileType tex,vimwiki setlocal spell spelllang=en spellsuggest=5
+    au BufRead *.tex call vimrc#tex#SetLang()
+    au Filetype plaintex set ft=tex
+    
+    " gitcommit spell
+    au FileType gitcommit setlocal spell spelllang=en
+    
+    " mutt files
+    au BufEnter *.mutt setfiletype muttrc
+    " Configuration files
+    au FileType vim,muttrc,conf,mailcap setlocal foldmethod=marker foldlevel=1
+    
+    " Disable NeoComplete for certain filetypes
+    au Filetype tex,cpp if exists(":NeoCompleteDisable") | NeoCompleteDisable | endif
+    
+    " Wiki fold 
+    au Filetype vimwiki setlocal foldlevel=2 number
 
-" Perl indent & fold (broken ?)
-au FileType pl set ai
+    "Insert a chunk code
+    au filetype r,rmd,rhelp,rnoweb,rrst inoremap <LocalLeader>r <ESC>:call
+                \ vimrc#r#InsertChunk()<CR>i
 
-"It's all text plugin for firefox: activate spell checking
-au BufEnter *mozilla/firefox/*/itsalltext/*.txt set spell spelllang=fr
-" Markdown folds
-au BufEnter *.md,*.markdown setlocal foldexpr=vimrc#MdLevel() foldmethod=expr
-            \ ft=pandoc
-au BufRead *.md,*.markdown setlocal foldlevel=1
-" Latex language
-au FileType tex,vimwiki setlocal spell spelllang=en spellsuggest=5
-au BufRead *.tex call vimrc#SetTexLang()
-au Filetype plaintex set ft=tex
-" gitcommit spell
-au FileType gitcommit setlocal spell spelllang=en
-" mutt files
-au BufEnter *.mutt setfiletype muttrc
-" Configuration files
-au FileType vim,muttrc,conf,mailcap setlocal foldmethod=marker foldlevel=1
-" Disable NeoComplete for certain filetypes
-au Filetype tex,cpp if exists(":NeoCompleteDisable") | NeoCompleteDisable | endif
-
-au Filetype vimwiki setlocal foldlevel=2 number
+augroup END
 
 "====================== Mappings {{{2 =========================================
 
@@ -215,8 +224,8 @@ noremap <leader>t <Esc>:tabnew
 noremap <leader>tr :call vimrc#RemoveTrailingSpace()<CR>
 
 " Cscope_map.vim style map to create the cscope files
-nnoremap <C-@>a :call vimrc#Cscope_Init("create")<CR>
-nnoremap <C-@>u :call vimrc#Cscope_Init("update")<CR><CR>:redraw!<CR>
+nnoremap <C-@>a :call vimrc#cscope#Init("create")<CR>
+nnoremap <C-@>u :call vimrc#cscope#Init("update")<CR><CR>:redraw!<CR>
 
 " Validate menu entry with enter
 inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
@@ -228,10 +237,6 @@ nnoremap <silent><leader>cc :cd -<CR>
 " Compile all wiki
 noremap <Leader>wa :VimwikiAll2HTML<CR>:edit<CR>
 noremap <Leader>waw :VimwikiAll2HTML<CR>:Vimwiki2HTMLBrowse<CR>:edit<CR>
-
-
-
-
 
 
 "====================== Plugin Configuration {{{1 =============================
@@ -267,8 +272,11 @@ let g:neocomplete#disable_auto_complete = 1
 
 "====================== Commentary {{{2 =======================================
 
-au filetype pandoc let b:commentary_format="<!--%s-->"
-au filetype rmd let b:commentary_format="#%s"
+augroup commentaryvimrc
+    au!
+    au filetype pandoc let b:commentary_format="<!--%s-->"
+    au filetype rmd let b:commentary_format="#%s"
+augroup END
 
 "====================== Airline {{{2 ==========================================
 
@@ -298,20 +306,18 @@ let OmniCpp_SelectFirstItem = 1
 let OmniCpp_NamespaceSearch = 2
 " Show function prototype (i.e. parameters) in popup window
 let OmniCpp_ShowPrototypeInAbbr = 1
-"====================== Vim-R-plugin {{{2 =====================================
-
-"Insert a chunk code
-au filetype r,rmd,rhelp,rnoweb,rrst inoremap <LocalLeader>r <ESC>:call
-            \ vimrc#InsertRChunk()<CR>i
 
 "====================== Todo.txt {{{2 =========================================
 
 let g:Todo_txt_first_level_sort_mode="! i"
 
 "Intelligent completion for projects and contexts
-au filetype todo imap <buffer> + +<C-X><C-O>
-au filetype todo imap <buffer> @ @<C-X><C-O>
-au filetype todo setlocal omnifunc=todo#Complete
+augroup todotxt
+    au!
+    au filetype todo imap <buffer> + +<C-X><C-O>
+    au filetype todo imap <buffer> @ @<C-X><C-O>
+    au filetype todo setlocal omnifunc=todo#Complete
+augroup END
 
 "====================== EasyGrep {{{2 =========================================
 
@@ -326,34 +332,21 @@ let g:EasyGrepEveryMatch=1
 " Replace all works per file
 let g:EasyGrepReplaceAllPerFile=1
 
-"====================== CheckAttach (mutt) {{{2 ===============================
+"====================== CheckAttach & VimMail (mutt) {{{2 =====================
 
-let g:attach_check_keywords=',PJ,ci-joint,pièce jointe,attached'
-let g:checkattach_once = 'y'
-
-"====================== VimMail (mutt) {{{2 ===================================
-
-au filetype mail setlocal spell spelllang=fr textwidth=72 colorcolumn=74
-
-let g:VimMailClient="/home/david/scripts/mutt.sh -t \"Mutt RO\" -R &"
+augroup mail
+    au!
+    au filetype mail setlocal spell spelllang=fr textwidth=72 colorcolumn=74
+    au filetype mail let g:attach_check_keywords=',PJ,ci-joint,pièce jointe,attached'
+    au filetype mail let g:checkattach_once = 'y'
+    au filetype mail let g:VimMailClient="/home/david/scripts/mutt.sh -t \"Mutt RO\" -R &"
+augroup END
 
 "====================== Compile {{{2 ==========================================
 
-" Custom starter for latex synctex
-function! VimCompileLatexStarter(cmd,type)
-    if &ft == "tex" && a:type !='m'
-        " Retrieve main file from vim-compile command
-        let l:file=substitute(a:cmd, '.* \([^ ]*\.pdf\).*','\1','')
-        " Generate command
-        execute ':! qpdfview --unique '.l:file.'\#src:'."%:p".':'.
-                    \getpos(".")[1].':'.getpos(".")[2]." &"
-    else
-        " Not a latex start, let vim-compile handle it
-        call vimcompile#DefaultStartCmd(a:cmd,a:type)
-    endif
-endfunction
 
-let g:VimCompileCustomStarter=function("VimCompileLatexStarter")
+
+let g:VimCompileCustomStarter=function("vimrc#tex#Starter")
 
 let g:VimCompileExecutors={'pandoc' : "firefox %:p:r.html > /dev/null 2>&1",}
 
@@ -377,32 +370,6 @@ let g:vimwiki_list = [{'path':'~/Work/Wiki', 'path_html':'~/Work/Wiki/WWW',
             \'nested_syntaxes': { 'python': 'python', 'c++': 'cpp',
             \'sh': 'sh', 'c': 'c'}}]
 let g:vimwiki_folding='expr'
-
-function! VimwikiLinkHandler(link) "{{{ Use Vim to open links with the
-    " 'vlocal:' or 'vfile:' schemes.  E.g.:
-    "   1) [[vfile:///~/Code/PythonProject/abc123.py]], and
-    "   2) [[vlocal:./|Wiki Home]]
-    let link = a:link
-    if link =~ "vlocal:" || link =~ "vfile:"
-      let link = link[1:]
-    else
-      return 0
-    endif
-    let [idx, scheme, path, subdir, lnk, ext, url] =
-         \ vimwiki#base#resolve_scheme(link, 0)
-    if g:vimwiki_debug
-      echom 'LinkHandler: idx='.idx.', scheme=[v]'.scheme.', path='.path.
-           \ ', subdir='.subdir.', lnk='.lnk.', ext='.ext.', url='.url
-    endif
-    if url == ''
-      echom 'Vimwiki Error: Unable to resolve link!'
-      return 0
-    else
-      call vimwiki#base#edit_file('tabnew', url, [], 0)
-      return 1
-    endif
-endfunction " }}}
-
 
 "====================== EasyMotion {{{2 =======================================
 
