@@ -209,23 +209,23 @@ noremap <silent> <Leader>f :Lexplore<CR>
 "Clean search highlight
 noremap <silent> <leader>c :let @/=""<CR>
 "Redraw terminal
-noremap <leader>l :redraw!<CR>
+noremap <silent><leader>l :redraw!<CR>
 
 " Terminal escape
 " noremap <leader>s <ESC>:w<CR>:sh<CR>
-noremap <leader>s <ESC>:Start<CR>
+noremap <silent><leader>s <ESC>:Start<CR>
 " Auto indent
-noremap <leader>i mzgg=G`z :delmarks z<CR>
+noremap <silent><leader>i mzgg=G`z :delmarks z<CR>
 
 " Open a new tab
 noremap <leader>t <Esc>:tabnew
 
 " Remove trailing space
-noremap <leader>tr :call vimrc#RemoveTrailingSpace()<CR>
+noremap <silent><leader>tr :call vimrc#RemoveTrailingSpace()<CR>
 
 " Cscope_map.vim style map to create the cscope files
-nnoremap <C-@>a :call vimrc#cscope#Init("create")<CR>
-nnoremap <C-@>u :call vimrc#cscope#Init("update")<CR><CR>:redraw!<CR>
+nnoremap <silent><C-@>a :call vimrc#cscope#Init("create")<CR>
+nnoremap <silent><C-@>u :call vimrc#cscope#Init("update")<CR><CR>:redraw!<CR>
 
 " Validate menu entry with enter
 inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
@@ -235,8 +235,8 @@ nnoremap <silent><leader>cd :cd %:h<CR>
 nnoremap <silent><leader>cc :cd -<CR>
 
 " Compile all wiki
-noremap <Leader>wa :VimwikiAll2HTML<CR>:edit<CR>
-noremap <Leader>waw :VimwikiAll2HTML<CR>:Vimwiki2HTMLBrowse<CR>:edit<CR>
+noremap <silent><Leader>wa :VimwikiAll2HTML<CR>:edit<CR>
+noremap <silent><Leader>waw :VimwikiAll2HTML<CR>:Vimwiki2HTMLBrowse<CR>:edit<CR>
 
 
 "====================== Plugin Configuration {{{1 =============================
