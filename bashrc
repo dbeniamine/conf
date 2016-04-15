@@ -19,15 +19,23 @@
 # do not add anything except if you know what you are doing
 #
 
-#PATH
+unalias -a
+# PATH
 export PATH="$PATH:$HOME/scripts/:$HOME/install/bin:/usr/local/cuda-5.0/bin:/sbin/"
 # The only true editor is vim
 export EDITOR=vim
+# I hate that fucking bell !
+xset b off
+# For Inria printers
+export CUPS_USER="dbeniami"
 
 #
 # After this changes are made only for interactive sessions
 #
 [ -z "$PS1" ] && return
+
+# PATH
+export PATH="$PATH:$HOME/scripts/pass-tools"
 
 #
 # Source other configuration files
@@ -83,17 +91,18 @@ fi
 # update the values of LINES and COLUMNS.
 shopt -s checkwinsize
 
+
 #
-# Env variables
+# Environment
 #
 
 # For sofa kaapi
-export KAAPI_DIR=$HOME/install/kaapi
-export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:$HOME/lib/plasma-installer_2.4.6/install/lib/pkgconfig
-export LD_LIBRARY_PATH=$HOME/install/kaapi/lib:$LD_LIBRARY_PATH
+# export KAAPI_DIR=$HOME/install/kaapi
+# export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:$HOME/lib/plasma-installer_2.4.6/install/lib/pkgconfig
+# export LD_LIBRARY_PATH=$HOME/install/kaapi/lib:$LD_LIBRARY_PATH
 
 # For adasdl.gpr
-export GPR_PROJECT_PATH=/usr/local/lib/ada/adasdl_alpha20120723a/Thin/AdaSDL
+# export GPR_PROJECT_PATH=/usr/local/lib/ada/adasdl_alpha20120723a/Thin/AdaSDL
 
 # mutt background fix
 export COLORFGBG="default;default"
