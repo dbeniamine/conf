@@ -27,27 +27,3 @@ function! vimrc#tex#Starter(cmd,type)
         call vimcompile#DefaultStartCmd(a:cmd,a:type)
     endif
 endfunction
-
-" Find the right language for latex spell checking {{{1
-function! vimrc#tex#SetLang()
-    let file = readfile(expand("%:p"))
-    " read current file
-    for line in file
-        let g:myLang = matchstr(line, '\\usepackage\[.*\]{babel}')
-        if(!empty(g:myLang))
-            "extract the (list of) language
-            let g:myLang = substitute(g:myLang, '\\usepackage\[',"", "")
-            let g:myLang = substitute(g:myLang, '\]{babel}',"", "")
-            "if there are more than one language, the last one is the main language
-            let ind=stridx(g:myLang, ",")+1
-            let g:myLang=strpart(g:myLang, ind,strlen(g:myLang))
-            "now we have just to set correctly the spellang
-            "echo "language detected : "g:myLang
-            let g:myLang = strpart(g:myLang,0,2)
-            let &l:spelllang=g:myLang
-            return
-        endif
-    endfor
-endfunction
-
-
