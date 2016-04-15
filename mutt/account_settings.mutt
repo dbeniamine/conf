@@ -52,8 +52,7 @@ macro index,pager \cw "<shell-escape> ~/scripts/maildir_size.sh $folder<enter>" 
 
 # pgp signature {{{2
 
-set pgp_autosign=yes
-set pgp_replyencrypt=yes
-unset pgp_autoencrypt
-set pgp_timeout=3600
+#set pgp_replyencrypt=yes
+#unset pgp_autoencrypt
 set pgp_verify_command="gpg -u $pgp_sign_as --no-verbose --batch --output - --verify %s %f"
+#set pgp_decode_command="gpg  -u $pgp_sign_as %?p?--passphrase-fd 0? --no-verbose --batch --output - %f"

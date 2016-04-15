@@ -24,7 +24,6 @@ source ~/.mutt/theme
 set editor=vim
 set send_charset="us-ascii:utf-8"
 set edit_headers
-my_hdr User-Agent: Mutt
 
 # Folders {{{2
 
@@ -45,26 +44,38 @@ set sleep_time=0
 
 # Usage {{{2
 
+set quit=ask-yes
+
+set pgp_auto_decode=yes
+set pgp_autosign=yes
+set crypt_replysignencrypted=yes
+set pgp_timeout=3600
+set crypt_verify_sig=yes
+
 set mark_old=no
 set markers=no
+
 set sort="threads"
 set sort_aux='reverse-date'
+
 set mailcap_path    = ~/.mutt/mailcap
 set implicit_autoview
 alternative_order text/plain text/enriched text/html
+
 set pager_index_lines=10
 # when scrolling a message stop at the end
 set pager_stop
 set mime_forward=yes
+
 # Send some clacks
 my_hdr X-Clacks-Overhead: GNU Terry Pratchett
+my_hdr User-Agent: Mutt
 unignore X-PGP
 unignore X-Clacks
 unignore X-Mailer:
 unignore X-Virus
 unignore X-Policy
 unignore X-Amavis
-#source ~/.mutt/content_type
 
 # Sidebar {{{2
 
