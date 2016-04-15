@@ -29,6 +29,12 @@ set $mod Mod1
 #Prefix for scripts
 set $prefix $HOME/scripts
 
+# The middle button over a titlebar kills the window
+bindsym --release button2 kill
+
+# The right button toggles floating
+bindsym button3 floating toggle
+
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below. ISO 10646 = Unicode
 font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
@@ -71,6 +77,8 @@ bindsym $mod+Left focus left
 bindsym $mod+Down focus down
 bindsym $mod+Up focus up
 bindsym $mod+Right focus right
+bindsym $mod+Tab focus right
+bindsym $mod+Shift+Tab focus left
 
 # move focused window
 bindsym $mod+Shift+j move left
@@ -86,8 +94,8 @@ bindsym $mod+Shift+Right move right
 
 
 #Move entire workspace to next output
-bindsym $mod+x move workspace to output right
-bindsym $mod+Shift+x move workspace to output down
+# bindsym $mod+x move workspace to output right
+# bindsym $mod+Shift+x move workspace to output down
 
 # split in horizontal orientation
 bindsym $mod+h split h
