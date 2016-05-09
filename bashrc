@@ -25,7 +25,7 @@ export PATH="$PATH:$HOME/scripts/:$HOME/install/bin:/usr/local/cuda-5.0/bin:/sbi
 # The only true editor is vim
 export EDITOR=vim
 # I hate that fucking bell !
-xset b off
+[ ! -z "$DISPLAY" ] && xset b off
 # For Inria printers
 export CUPS_USER="dbeniami"
 
