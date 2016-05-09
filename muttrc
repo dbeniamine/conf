@@ -85,8 +85,11 @@ unignore X-Amavis
 set sidebar_sort=yes
 set sidebar_visible = yes
 set sidebar_delim='|'
-set sidebar_folderindent = yes
-set sidebar_shortpath = yes
+# Retrieve mutt version, ugly
+set my_version=`mutt -v | head -n 1 | awk '{print $2}' | cut -d . -f 1-2`
+# The following are only available on mutt > 1.6
+source "[ $(echo $my_version'>='1.6 | bc -l) -eq 1 ] && \
+    echo 'set sidebar_folderindent' && echo 'set sidebar_shortpath' |"
 
 # Bindings {{{1
 
