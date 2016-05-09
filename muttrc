@@ -29,7 +29,6 @@ set edit_headers
 
 
 set mbox_type=MailDir
-source ~/.mutt/mailboxes
 set header_cache = "~/.cache/mutt"
 set message_cachedir = "~/.cache/mutt"
 set certificate_file="~/.mutt/certificates"
@@ -45,6 +44,10 @@ set sleep_time=0
 # Usage {{{2
 
 set quit=ask-yes
+
+# Status and help
+set status_on_top=yes
+set help=no
 
 set pgp_auto_decode=yes
 set pgp_autosign=yes
@@ -79,8 +82,11 @@ unignore X-Amavis
 
 # Sidebar {{{2
 
+set sidebar_sort=yes
 set sidebar_visible = yes
 set sidebar_delim='|'
+set sidebar_folderindent = yes
+set sidebar_shortpath = yes
 
 # Bindings {{{1
 
@@ -109,11 +115,11 @@ macro index,pager la "<limit>all<enter>" "Limit to all  messages"
 
 # Switch folders {{{2
 bind index,pager gn next-unread-mailbox
-macro index,pager gh "<change-folder>=INBOX<enter>" "Go Home (Inbox)"
-macro index,pager gd "<change-folder>=Drafts<enter>" "Go to Drafts"
-macro index,pager gt "<change-folder>=Trash<enter>" "Go to Trash"
-macro index,pager gs "<change-folder>=Sent<enter>" "Go to sent"
-macro index,pager gj "<change-folder>=Junk<enter>" "Go to Junk"
+macro index,pager gh "<sync-mailbox><change-folder>=INBOX<enter>" "Go Home (Inbox)"
+macro index,pager gd "<sync-mailbox><change-folder>=Drafts<enter>" "Go to Drafts"
+macro index,pager gt "<sync-mailbox><change-folder>=Trash<enter>" "Go to Trash"
+macro index,pager gs "<sync-mailbox><change-folder>=Sent<enter>" "Go to sent"
+macro index,pager gj "<sync-mailbox><change-folder>=Junk<enter>" "Go to Junk"
 macro index,pager gn "<next-unread-mailbox>" "Go to next mailbox with new mail"
 
 # Switch accounts {{{2
@@ -131,6 +137,8 @@ macro pager b '<enter-command>toggle sidebar_visible<enter><redraw-screen>' "Tog
 bind index,pager \CP sidebar-prev
 bind index,pager \CN sidebar-next
 bind index,pager \CO sidebar-open
+bind index,pager \CU sidebar-scroll-up
+bind index,pager \CD sidebar-scroll-down
 
 # External tools {{{2
 
@@ -154,7 +162,7 @@ macro index,pager As  "<shell-escape>pycardsyncer<enter>" "Adress book Synchroni
 macro index,pager Aq  "<shell-escape>pc_query " "Adress book Query"
 
 # Printing {{{3
-source "echo \"set my_printer=$(lpstat -s | grep default | awk '{print $4}')\" |"
+#source "echo \"set my_printer=$(lpstat -s | grep default | awk '{print $4}')\" |"
 macro index,pager lp "<shell-escape>lpstat -s<enter>" "List Printers"
 
 # Accounts {{{1
@@ -173,3 +181,7 @@ source ~/.mutt/default.mutt
 
 # Go to inbox
 push  '<change-folder>=INBOX<enter>'
+
+#PGP signature {{{1
+set pgp_sign_as=0x72850E10
+my_hdr X-PGP-Key: http://keys.gnupg.net/pks/lookup?search=0xDFC3C8C672850E10&op=vindex
