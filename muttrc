@@ -173,10 +173,16 @@ macro index,pager lp "<shell-escape>lpstat -s<enter>" "List Printers"
 # Accounts {{{1
 
 # Hooks {{{2
+# Change account / folder when required
 folder-hook "$my_maildir/imag" "source ~/.mutt/imag.mutt"
 account-hook "imag" "source ~/.mutt/imag.mutt"
 folder-hook "$my_maildir/perso" "source ~/.mutt/perso.mutt"
 account-hook "perso" "source ~/.mutt/perso.mutt"
+
+# Update smtp credentials when editing a new mail
+send2-hook '~f "^.*@(inria|imag)\.fr"' "source ~/.mutt/imag.mutt"
+send2-hook '!~f "^.*@(inria|imag)\.fr"' "source ~/.mutt/perso.mutt"
+send2-hook '.*' "source ~/.mutt/pass.mutt"
 
 # Default account {{{2
 source ~/.mutt/default.mutt
