@@ -27,10 +27,6 @@ set my_name="David Beniamine"
 # Folders {{{3
 set folder="$my_maildir/$my_account"
 
-# Source mailboxes of current account
-source "~/scripts/mutt-account-mailboxes.sh ~/.mutt/mailboxes $my_account |"
-exec sidebar-scroll-up
-
 set spoolfile=+INBOX
 set record=+Sent
 set postponed=+Drafts

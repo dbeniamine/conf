@@ -36,7 +36,9 @@ set certificate_file="~/.mutt/certificates"
 # Variables for mu
 
 set my_maildir="~/Documents/mail"
-set my_mudir="~/Documents/.mu"
+set my_mudir="~/Documents/mu"
+
+source "~/scripts/mutt-account-mailboxes.sh ~/.mutt/mailboxes '$my_maildir' 4 |"
 
 # Quick folder switch
 set sleep_time=0
@@ -82,7 +84,7 @@ unignore X-Amavis
 
 # Sidebar {{{2
 
-set sidebar_sort=yes
+#set sidebar_sort=yes
 set sidebar_visible = yes
 set sidebar_delim='|'
 # Retrieve mutt version, ugly
@@ -169,9 +171,6 @@ macro index,pager Aq  "<shell-escape>pc_query " "Adress book Query"
 macro index,pager lp "<shell-escape>lpstat -s<enter>" "List Printers"
 
 # Accounts {{{1
-
-# Mailing lists {{{2
-source ~/.mutt/lists.mutt
 
 # Hooks {{{2
 folder-hook "$my_maildir/imag" "source ~/.mutt/imag.mutt"
