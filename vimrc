@@ -121,7 +121,7 @@ set incsearch
 
 " Change the <LocalLeader> key:
 let maplocalleader = ","
-let mapleader = ";"
+let mapleader = " "
 
 "auto ident
 filetype plugin indent on
