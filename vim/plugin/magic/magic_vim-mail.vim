@@ -1,4 +1,5 @@
 let g:VimMailStartFlags='boi'
+set completefunc=vimmail#CompleteAddr
 augroup mail
     au!
     au filetype mail setlocal spell spelllang=fr textwidth=72 colorcolumn=74
