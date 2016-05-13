@@ -22,9 +22,6 @@
 set realname="David Beniamine"
 set my_name="David Beniamine"
 
-# No need to keep that in memory all the time
-unset smtp_pass
-
 # Mailbox {{{2
 
 # Folders {{{3
