@@ -46,10 +46,15 @@ macro index,pager Ga "<shell-escape>xterm -e offlineimap -o -u ttyui -a $my_acco
 set my_muhome="$my_mudir/$my_account"
 
 # Search complete maildir {{{3
-macro index <F2> "<change-folder-readonly>$my_mudir/results<enter><shell-escape>mu find --threads --include-related --muhome=$my_muhome --clearlinks --linksdir=$my_mudir/results --format=links "    "mu find"
-macro index <F3> "<change-folder-readonly>$my_mudir/results\n"       "display mu find results"
-macro index <F4> "<shell-escape>mu index --muhome=$my_muhome --maildir=$folder<enter>"    "mu update index"
-macro index <F5> "<shell-escape>~/scripts/muClean.sh<enter>"   "Clean mu results"
+macro index Sm "<change-folder-readonly>$my_mudir/results<enter><shell-escape>mu find --threads --include-related --muhome=$my_muhome --clearlinks --linksdir=$my_mudir/results --format=links "    "mu find"
+# Search addresses
+macro index Sa "<shell-escape>mu cfind --muhome=$my_muhome " "Search  emailed contacts"
+# Go to search results
+macro index Sg "<change-folder-readonly>$my_mudir/results\n"       "display mu find results"
+# Update index
+macro index Su "<shell-escape>mu index --muhome=$my_muhome --maildir=$folder<enter>"    "mu update index"
+# Clean search results
+macro index Sc "<shell-escape>~/scripts/muClean.sh<enter>"   "Clean mu results"
 
 macro index,pager \cw "<shell-escape> ~/scripts/maildir_size.sh $folder<enter>" "Show maildir size"
 
