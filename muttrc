@@ -120,11 +120,11 @@ macro index,pager la "<limit>all<enter>" "Limit to all  messages"
 
 # Switch folders {{{2
 bind index,pager gn next-unread-mailbox
-macro index,pager gh "<sync-mailbox><change-folder>=INBOX<enter>" "Go Home (Inbox)"
-macro index,pager gd "<sync-mailbox><change-folder>=Drafts<enter>" "Go to Drafts"
-macro index,pager gt "<sync-mailbox><change-folder>=Trash<enter>" "Go to Trash"
-macro index,pager gs "<sync-mailbox><change-folder>=Sent<enter>" "Go to sent"
-macro index,pager gj "<sync-mailbox><change-folder>=Junk<enter>" "Go to Junk"
+macro index,pager gh "<change-folder>=INBOX<enter>" "Go Home (Inbox)"
+macro index,pager gd "<change-folder>=Drafts<enter>" "Go to Drafts"
+macro index,pager gt "<change-folder>=Trash<enter>" "Go to Trash"
+macro index,pager gs "<change-folder>=Sent<enter>" "Go to sent"
+macro index,pager gj "<change-folder>=Junk<enter>" "Go to Junk"
 macro index,pager gn "<next-unread-mailbox>" "Go to next mailbox with new mail"
 
 # Switch accounts {{{2
